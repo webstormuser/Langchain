@@ -1,0 +1,8 @@
+langchain
+ipykernel
+python-dotenv
+langchain_community
+pypdf
+beautifulsoup4
+pymupdf
+pdfplumber
