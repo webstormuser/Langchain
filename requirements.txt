@@ -6,3 +6,5 @@ pypdf
 beautifulsoup4
 pymupdf
 pdfplumber
+arxiv
+wikipedia
