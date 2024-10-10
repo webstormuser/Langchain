@@ -1,6 +1,7 @@
 langchain
 ipykernel
 python-dotenv
+langchain-openai
 langchain_community
 pypdf
 beautifulsoup4
