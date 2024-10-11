@@ -2,7 +2,7 @@ langchain
 ipykernel
 python-dotenv
 langchain-openai
-langchain_community
+langchain-community
 pypdf
 beautifulsoup4
 pymupdf
@@ -11,3 +11,4 @@ arxiv
 wikipedia
 langchain-text-splitters
 lxml
+chromadb
