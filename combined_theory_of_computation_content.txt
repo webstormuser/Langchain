@@ -1,0 +1,7363 @@
+Automata Tutorial | Theory of Computation - JavatpointTutorials×PythonPython Django Numpy Pandas Tkinter Pytorch Flask OpenCVAI, ML and Data ScienceArtificial Intelligence Machine Learning Data Science Deep Learning TensorFlow Artificial Neural Network Matplotlib Python ScipyJavaJava Servlet JSP Spring Boot Spring Framework Hibernate JavaFX Java Web ServicesB.Tech and MCADBMS Data Structures Operating System Computer Network DAA Computer Organization Software Engineering Data MiningWeb TechnologyHTML CSS JavaScript Jquery Angular-8 React JS React Native Node JSSoftware TestingSoftware Testing Selenium JIRA JMeter Postman TestNG SoapUI CucumberInterview×Technical InterviewC C++ Php Java Python JavaScript TypeScriptJava InterviewJDBC Servlet Maven Jenkins Spring Spring Boot JDB Hibernate JSFWeb InterviewHTML CSS JavaScript Jquery Angular Node-JS AJAXDatabase InterviewDBMS SQL PL/SQL Oracle MySQL MongoDB Redis MariaDBCompany InterviewsIBM Adobe Microsoft Amazon TCS HCL Wipro DXC Accenture Capgemini Space X Ericsson Infosy IGate EXL IndiaMART SapientCompilerPythonJavaPhpCC++RHtmlJavascriptTypescriptSwiftHome Python Java JavaScriptHTML SQL PHP C# C++ DS Aptitude Reasoning Selenium DBMS C Andriod Interview QAutomata TutorialAutomata TutorialTheory of AutomataFinite AutomataTransition DiagramTransition TableDFAExamples of DFANFAExamples of NFAEliminating ε TransitionsConversion from NFA to DFAConversion from NFA with ε to DFAMinimization of DFARegular ExpressionRegular ExpressionExamples of Regular ExpressionConversion of RE to FAArden's TheoremMoore MachineMealy MachineConversion from Mealy machine to Moore machineConversion from Moore machine to Mealy machineCFGContext-free GrammarDerivationDerivation TreeAmbiguity in GrammarUnambiguous GrammarSimplification of CFGChomsky's Normal Form (CNF)Greibach Normal Form (GNF)PDAPushdown AutomataPDA AcceptanceNon-deterministic Pushdown AutomataCFG to PDA ConversionTuring MachineApplication of Different Automata | Theory of ComputationIntroduction to Computational Complexity TheoryAutomata and Game TheoryRecursive Descent Parsernext →Automata TutorialTheory of automata is a theoretical branch of computer science and mathematical. It is the study of abstract machines and the computation problems that can be solved using these machines. The abstract machine is called the automata. An automaton with a finite number of states is called a Finite automaton.In this tutorial, we are going to learn how to construct deterministic finite automata, non-deterministic finite automata, Regular expression, context-free grammar, context-free language, Push down automata, Turning machines, etc.PrerequisiteBefore learning Automata, you should have a basic understanding of string, language, alphabets, symbols.AudienceOur Automata Tutorial is designed to help beginners and professionals.ProblemsWe assure that you will not find any problem in this Automata Tutorial. But if there is any mistake, please post the problem in contact form.Next TopicTheory of Automatanext →Latest CoursesWe provides tutorials and interview questions of all technology like java tutorial, android, java frameworksContact info G-13, 2nd Floor, Sec-3, Noida, UP, 201301, India[email protected].Follow usLatest PostPRIVACY POLICYTutorialsJava Data Structures C Programming C++ Tutorial C# Tutorial PHP Tutorial HTML Tutorial JavaScript Tutorial jQuery Tutorial Spring TutorialInterview QuestionsTcs Intuit Wipro Adobe Infosys Amazon Accenture Cognizant Capgemini MicrosoftOnline CompilerC R C++ Php Java Html Swift Python JavaScript TypeScript© Copyright 2024 Javatpoint. All Rights Reserved.
+
+Introduction of Theory of Computation - GeeksforGeeks
+oursesDSA to DevelopmentNewly Launched!Android with KotlinGenerative AI & ChatGPTMaster Django FrameworkBecome AWS CertifiedFor Working ProfessionalsInterview 101: DSA & System DesignData Science Training ProgramJAVA Backend Development (Live)DevOps Engineering (LIVE)Software Testing & Automation (Live)Data Structures & Algorithms in PythonFor StudentsPlacement Preparation CourseData Science (Live)Data Structure & Algorithm-Self Paced (C++/JAVA)Master Competitive Programming (Live)Full Stack Development with React & Node JS (Live)GATE Exam CoursesGATE CS & IT (Self-Paced)GATE DS & AI (Self-Paced)All CoursesTutorialsData Structures & AlgorithmsDSA for BeginnersData StructuresArraysMatrixStringsLinked ListStackQueueTreeGeneric TreeBinary TreeBinary Search TreeAVL TreeB TreeB+ TreeRed Black TreeTree Data Structure TutorialHeapHashingGraphSet Data StructureMap Data StructureAdvanced Data StructureData Structures TutorialAlgorithmsAnalysis of AlgorithmsSearching AlgorithmsLinear SearchBinary SearchSearching Algorithms TutorialSorting AlgorithmsSelection SortBubble SortInsertion SortMerge SortQuick SortHeap SortCounting SortRadix SortBucket SortSorting Algorithms TutorialGreedy AlgorithmsDynamic ProgrammingGraph AlgorithmsPattern SearchingRecursionBacktrackingDivide and ConquerMathematical AlgorithmsGeometric AlgorithmsBitwise AlgorithmsRandomized AlgorithmsBranch and BoundAlgorithms TutorialComplete DSA TutorialCompetitive ProgrammingCompany Wise SDE SheetsFacebook SDE SheetAmazon SDE SheetApple SDE SheetNetflix SDE SheetGoogle SDE SheetWipro Coding SheetInfosys Coding SheetTCS Coding SheetCognizant Coding SheetHCL Coding SheetDSA Cheat SheetsDSA Sheet for BeginnersSDE SheetsFAANG Coding SheetLove Babbaar SheetMass Recruiter SheetProduct-Based Coding SheetCompany-Wise Preparation SheetTop 100 DSA Interview Questions Topic-wise100 Days of CodePythonPython TutorialPython ExercisesPython List ExercisePython String ExercisePython Tuple ExercisePython Dictionary ExercisePython Set ExercisePython Excercises Topic wisePython QuizPython ProgramsAdvanced Python TutorialPython API TutorialPython Database TutorialPython JSONPython Cheat SheetPython ProjectsPython Interview QuestionsML & Data ScienceMachine LearningMachine Learning TutorialMaths for MLML Projects100 Days of Machine LearningData Science TutorialData Science PackagesPandas TutorialNumPy TutorialData VisualizationData Visualization with PythonData Visualization with RTableauPower BIData AnalysisData Analysis with PythonData Analysis with R100 Days of Data AnalyticsDeep LearningNLP TutorialOpenCV TutorialInterview QuestionsMachine Learning Interview QuestionsDeep Learning Interview QuestionsR Interview QuestionsSystem DesignSystem Design TutorialSoftware Design PatternsSystem Design RoadmapTop 10 System Design Interview QuestionsInterview CornerCompany PreparationTop TopicsPractice Company QuestionsInterview ExperiencesExperienced InterviewsInternship InterviewsCompetitive ProgrammingMultiple Choice QuizzesAptitude for PlacementsPuzzles for InterviewsLanguagesCC++JavaPythonR TutorialC#SQLScalaPerlGo LanguageWeb DevelopmentHTMLHTML TutorialFree HTML CourseHTML Cheat SheetCSSCSS TutorialFree CSS CourseCSS Cheat SheetJavaScriptJavaScript TutorialJavaScript QuestionsJavaScript Cheat SheetDSA using JavaScriptFree JavaScript CourseJavaScript A to Z Complete GuideTypeScriptReactJSReactJS TutorialFree ReactJS CourseReactJS Cheat SheetNextJSNode.jsPHPAngularJSjQueryWeb Development Using PythonDjangoFlaskSeleniumPostmanGithubWeb Design100 Days of Web DevelopmentCS SubjectsOperating SystemDBMSComputer NetworksEngineering MathematicsComputer Organization and ArchitectureTheory of ComputationCompiler DesignDigital LogicSoftware EngineeringDevOps And LinuxDevOps TutorialGITAWSKubernetesDockerMicrosoft Azure TutorialGoogle Cloud PlatformDevOps RoadmapDevOps Interview QuestionsLinuxLinux TutorialLinux Commands A-ZLinux Commands CheatsheetFile Permissions in LinuxLinux System AdministrationLinux Shell ScriptingLinux NetworkingLinux Interview QuestionsSchool LearningClass 8 Study MaterialClass 9 Study MaterialClass 10 Study MaterialClass 11Study MaterialClass 12 Study MaterialEnglish GrammarGfG SchoolCommerceGATEGATE Computer Science NotesLast Minute NotesGATE CS Solved PapersGATE CS Original Papers and Official KeysGATE CS 2025 SyllabusGATE DA 2025 SyllabusOther CS ExamsISROUGC NETGeeksforGeeks VideosJobsGet Hired: Apply for JobsCorporate Hiring SolutionsFiltered JobsJobs for FreshersJobs for ExperiencedAll JobsPracticePractice Coding ProblemsAll DSA ProblemsProblem of the DayCompany Wise Coding PracticeAmazonMicrosoftFlipkartExplore AllGfG SDE SheetPractice Problems Difficulty WiseBasicEasyMediumHardLanguage Wise Coding PracticeCPPJavaPythonCurated DSA ListsBeginner's DSA SheetLove Babbar SheetTop 50 Array ProblemsTop 50 String ProblemsTop 50 DP ProblemsTop 50 Graph ProblemsTop 50 Tree ProblemsContestsJob-A-Thon Hiring ChallengeGfG Weekly [Rated Contest]All Contests and Events
+
+Introduction of Theory of Computation
+
+Automata theory (also referred to as the Theory Of Computation) is a branch of Computer Science and Mathematics that studies how machines compute functions and solve problems. This field is mainly focused on mathematical structures called automata and is crucial for the purpose of studying processes occurring in discrete systems.
+What is Automata Theory?
+In automata theory, scientists and engineers can predict the behavior of computing systems thereby improving problem-solving approaches. Originally developed to describe and explain the dynamics of systems, automata theory is the theoretical base of the formal languages theory, grammar, and computational complexity.
+Basic Terminologies of Theory of Computation
+Now, let’s understand the basic terminologies, which are important and frequently used in the Theory of Computation. 
+Symbol
+A symbol (often also called a character) is the smallest building block, which can be any alphabet, letter, or picture. 
+
+Alphabets (Σ)
+Alphabets are a set of symbols, which are always finite. 
+
+String 
+A string is a finite sequence of symbols from some alphabet. A string is generally denoted as w and the length of a string is denoted as |w|. 
+Empty string is the string with zero occurrence of symbols, represented as ε.
+Number of Strings (of length 2) that can be generated over the alphabet {a, b}:                     -   -                     a   a                     a   b                     b   a                     b   bLength of String |w| = 2Number of Strings = 4Conclusion:For alphabet {a, b} with length n, number of strings can be generated = 2n.
+__mask-blockquote__index=1__
+
+The Theory of Computation explores automata, languages, and complexity. If you want to dive deeper into this subject for GATE, the GATE CS Self-Paced Course covers it extensively.
+
+Closure Representation in TOC
+L+: It is a Positive Closure that represents a set of all strings except Null or ε-strings.
+L*: It is “Kleene Closure“, that represents the occurrence of certain alphabets for given language alphabets from zero to the infinite number of times. In which ε-string is also included.
+From the above two statements, it can be concluded that:
+L* = εL+
+Example:(a) Regular expression for language accepting all combination of g's over Σ={g}:                                         R = g*                               R={ε,g,gg,ggg,gggg,ggggg,...}(b) Regular Expression for language accepting all combination of g's over Σ={g} : R = g+                               R={g,gg,ggg,gggg,ggggg,gggggg,...}
+Note: Σ* is a set of all possible strings(often power set(need not be unique here or we can say multiset) of string) So this implies that language is a subset of Σ*.This is also called a “Kleene Star”.
+Kleene Star is also called a “Kleene Operator” or “Kleene Closure”. Engineers and IT professionals make use of Kleene Star to achieve all set of strings which is to be included from a given set of characters or symbols. It is one kind of Unary operator. In Kleene Star methodology all individual elements of a given string must be present but additional elements or combinations of these alphabets can be included to any extent.
+Example:Input String: "GFG".Σ* = { ε,"GFG","GGFG","GGFG","GFGGGGGGGG","GGGGGGGGFFFFFFFFFGGGGGGGG",...}  (Kleene Star is an infinite set but if we provide any grammar rules then it can work as a finite set.Please note that we can include ε string also in given Kleene star representation.)
+Language
+A language is a set of strings, chosen from some Σ* or we can say- ‘A language is a subset of Σ* ‘. A language that can be formed over ‘ Σ ‘ can be Finite or Infinite.
+Example of Finite Language:           L1 = { set of string of 2 }         L1 = { xy, yx, xx, yy }Example of Infinite Language:         L1 = { set of all strings starts with 'b' }         L1 = { babb, baa, ba, bbb, baab, ....... }
+Conclusion
+It is an important branch of computation that is concerned with formal languages, and automata theory in particular. It provides a basis for other courses such as Turing machines and computational complexity that are very important in computer science.
+Introduction of Theory of Computation – FAQs
+What is the relevance of the automata theory in computer science?
+
+Automata theory is used in modeling computational problems hence enhancing the understanding and design of systems such as compilers, interpreters among others.
+
+what is the purpose of using Kleene Star in the study of formal languages?
+
+The Kleene Star extends symbols from a given alphabet where one is able to create infinite strings from it or even the null string.
+
+Is it possible to implement automata theory into real life?
+
+Of course, automata theory has found its use in certain areas like compiler design, artificial intelligence, network security and natural language processing.
+
+Next Article
+
+Chomsky Hierarchy in Theory of Computation
+
+Introduction to Computation Complex Theory
+Broad Overview : Complexity theory, in a nutshell, a complexity word is a quite fancy word, literally, it sounds complex, but it is not an intimidating topic. What it really means is analyzing the program or we can say analyzing the efficiency of the program, figuring out whether the program is correct, figuring out whether one program is better th
+
+Introduction To Grammar in Theory of Computation
+Prerequisite - Theory of ComputationGrammar :It is a finite set of formal rules for generating syntactically correct sentences or meaningful correct sentences.Constitute Of Grammar :Grammar is basically composed of two basic elements - Terminal Symbols - Terminal symbols are those which are the components of the sentences generated using a grammar
+
+Theory of Computation - GATE CSE Previous Year Questions
+Solving GATE Previous Year's Questions (PYQs) not only clears the concepts but also helps to gain flexibility, speed, accuracy, and understanding of the level of questions generally asked in the GATE exam, and that eventually helps you to gain good marks in the examination. Previous Year Questions help a candidate practice and revise for GATE, whic
+
+Relationship between grammar and language in Theory of Computation
+A grammar is a set of production rules which are used to generate strings of a language. In this article, we have discussed how to find the language generated by a grammar and vice versa as well. Language generated by a grammar - Given a grammar G, its corresponding language L(G) represents the set of all strings generated from G. Consider the foll
+
+Theory of Computation | Regular languages and finite automata | Question 2
+What is the complement of the language accepted by the NFA shown below? (A) A (B) B (C) C (D) D Answer: (B) Explanation: Quiz of this QuestionPlease comment below if you find anything wrong in the above post
+
+Arden's Theorem in Theory of Computation
+Arden's theorem state that: "If P and Q are two regular expressions over "∑", and if P does not contain "∈" , then the following equation in R given by R = Q + RP has a unique solution i.e., R = QP*." That means, whenever we get any equation in the form of R = Q + RP, then we can directly replace it with R = QP*. So, here we will first prove that R
+
+Decidability Table in Theory of Computation
+Prerequisite - Undecidability, Decidable and undecidable problems Identifying languages (or problems*) as decidable, undecidable or partially decidable is a very common question in GATE. With correct knowledge and ample experience, this question becomes very easy to solve. A language is undecidable if it is not decidable. An undecidable language ma
+
+Chomsky Hierarchy in Theory of Computation
+According to Chomsky hierarchy, grammar is divided into 4 types as follows: Type 0 is known as unrestricted grammar.Type 1 is known as context-sensitive grammar.Type 2 is known as a context-free grammar.Type 3 Regular Grammar.Type 0: Unrestricted Grammar: Type-0 grammars include all formal grammar. Type 0 grammar languages are recognized by turing
+
+Pumping Lemma in Theory of Computation
+There are two Pumping Lemmas, which are defined for 1. Regular Languages, and 2. Context - Free Languages Pumping Lemma for Regular Languages For any regular language L, there exists an integer n, such that for all x ? L with |x| ? n, there exists u, v, w ? ?*, such that x = uvw, and (1) |uv| ? n (2) |v| ? 1 (3) for all i ? 0: uviw ? L In simple te
+
+Decidable and Undecidable Problems in Theory of Computation
+In the Theory of Computation, problems can be classified into decidable and undecidable categories based on whether they can be solved using an algorithm. A decidable problem is one for which a solution can be found in a finite amount of time, meaning there exists an algorithm that can always provide a correct answer. While an undecidable problem i
+
+Halting Problem in Theory of Computation
+To understand better the halting problem, we must know Decidability , Undecidability and Turing machine , decision problems and also a theory named as Computability theory and Computational complexity theory. Some important terms: Computability theory - The branch of theory of computation that studies which problems are computationally solvable usi
+
+
+Automata Theory | Set 2
+Following questions have been asked in GATE CS 2012 exam. 1) What is the complement of the language accepted by the NFA shown below? Assume ∑ = {a} and ε is the empty string (A) Φ (B) ε (C) a (D) {a, ε} Answer (B) The given alphabet ∑ contains only one symbol {a} and the given NFA accepts all strings with any number of occurrences of 'a'. In other
+
+Automata Theory | Set 3
+Following questions have been asked in GATE CS 2011 exam. 1) The lexical analysis for a modern language such as Java needs the power of which one of the following machine models in a necessary and sufficient sense? (A) Finite state automata (B) Deterministic pushdown automata (C) Non-deterministic pushdown automata (D) Turing machine Answer (A) Lex
+
+Automata Theory | Set 4
+Following questions have been asked in GATE CS 2011 exam. 1) Let P be a regular language and Q be context-free language such that Q ⊆ P. (For example, let P be the language represented by the regular expression p*q* and Q be {pnqn|n ∈ N}). Then which of the following is ALWAYS regular? (A) P ∩ Q (B) P - Q (C) ∑* - P (D) ∑* - Q
+
+Automata Theory | Set 5
+Following questions have been asked in GATE CS 2009 exam. 1) S --> aSa| bSb| a| b ;The language generated by the above grammar over the alphabet {a,b} is the set of (A) All palindromes. (B) All odd length palindromes. (C) Strings that begin and end with the same symbol (D) All even length palindromes. Answer (B) The strings accepted by language are
+
+Automata Theory | Set 7
+These questions for practice purpose for GATE CS Exam. Ques-1: Consider L= {(TM) | TM is the Turing machine that halts on all input and L(TM)= L' for some undecidable language L'}. Here, (TM) is the encoding of a Turing machine as a string over alphabet {0, 1} then L is: (A) decidable and recursively enumerable (B) decidable and recursive (C) decid
+
+Automata Theory | Set 8
+These questions for practice purpose for GATE CS Exam. Ques-1: Which one of the following language is Regular? (A) {wxwR | w,x ∈ (a+b)+} (B) {wxwR | w ∈ (a+b)*, x ∈ {a,b}} (C) {wwRx | w,x ∈ (a+b)+} (D) {wwR | w ∈ (a+b)*} Explanation: (A) It is correct, since this language can form regular expression which is {{ a(a + b)+a } + {b(a + b)+b}}, i.e., s
+
+Automata Theory | Set 9
+These questions for practice purpose for GATE CS Exam. Ques-1: Consider the following two statements with respect to Countability: Statement-1: If X union of 'Y' is uncountable, then both set 'X' and set 'Y' must be uncountable. Statement-2: The Cartesian product of two countable sets 'X' and 'Y' is countable. Which of the following option is true
+
+Automata Theory | Set 10
+These questions for practice purpose of GATE CS Exam. Ques-1: Consider the following statements: X: For any language either a language L or its complement L' must be finite.Y: DFA for language which contains epsilon must have initial state as final state.Z: Non-deterministic finite automata is more powerful than deterministic finite automata. Which
+
+Regular Graph in Graph Theory
+Prerequisite: Graph Theory Basics – Set 1, Set 2 Regular Graph: A graph is called regular graph if degree of each vertex is equal. A graph is called K regular if degree of each vertex in the graph is K. Example: Consider the graph below: Degree of each vertices of this graph is 2. So, the graph is 2 Regular. Similarly, below graphs are 3 Regular an
+
+
+5 Color Theorem in Graph Theory
+The graph is a data structure that is used extensively in real-life. Planar Graph: If a graph can be drawn on the plane without crossing, it is said to be planar. Coloring of a simple graph is the assignment of color to each vertex of the graph so that no two adjacent vertices are assigned the same color. Bi-Partite Graphs: A bipartite graph, also
+
+
+
+4 min read
+
+
+
+
+Mathematics | Graph Theory Basics - Set 1
+A graph is a data structure that is defined by two components : A node or a vertex.An edge E or ordered pair is a connection between two nodes u,v that is identified by unique pair(u,v). The pair (u,v) is ordered because (u,v) is not same as (v,u) in case of directed graph.The edge may have a weight or is set to one in case of unweighted graph.Cons
+
+
+
+4 min read
+
+
+
+
+Mathematics | Graph theory practice questions
+Problem 1 - There are 25 telephones in Geeksland. Is it possible to connect them with wires so that each telephone is connected with exactly 7 others. Solution - Let us suppose that such an arrangement is possible. This can be viewed as a graph in which telephones are represented using vertices and wires using the edges. Now we have 25 vertices in
+
+
+
+4 min read
+
+
+
+
+
+Set Theory Operations in Relational Algebra
+Relational Algebra in DBMS These Set Theory operations are the standard mathematical operations on set. These operations are Binary operations that are, operated on 2 relations unlike PROJECT, SELECT and RENAME operations. These operations are used to merge 2 sets in various ways. The set operation is mainly categorized into the following: Union op
+
+
+
+3 min read
+
+
+
+
+Applications of Group Theory
+Group theory is the branch of mathematics that includes the study of elements in a group. Group is the fundamental concept of algebraic structure like other algebraic structures like rings and fields. Group: A non-empty set G with * as operation, (G, *) is called a group if it follows the closure, associativity, identity, and inverse properties. Pr
+
+
+
+4 min read
+
+
+
+
+Quotient Group in Group Theory
+We can say that "o" is the binary operation on set G if: G is a non-empty set & G * G = { (a,b): a, b∈ G } and o: G * G --> G. Here, aob denotes the image of ordered pair (a,b) under the function/operation o.Example - "+" is called a binary operation on G (any non-empty set ) if & only if: a+b ∈G; ∀ a,b ∈G and a+b give the same result ev
+
+
+
+12 min read
+
+
+
+
+Types of Sets in Set Theory
+In mathematics, a Set is a fundamental concept representing a collection of well-defined objects or elements. Sets are typically denoted by capital letters, and the individual elements within a set are listed in curly braces, separated by commas. For example, A={1,2,3,4,5} represents a set A with elements 1, 2, 3, 4, and 5. The order of elements wi
+
+
+
+7 min read
+
+
+
+
+
+Mathematics | Graph Theory Basics - Set 2
+Graph theory is a basic branch of discrete mathematics that mainly focuses on the relationship between objects. These objects are called vertices and these vertices are joined by edges. Graphs are common in computer science, network analysis, and many other everyday uses because they provide a good representation of connection, relationship, and pr
+
+
+
+10 min read
+
+
+
+
+Group in Maths: Group Theory
+Group theory is one of the most important branches of abstract algebra which is concerned with the concept of the group. A group consists of a set equipped with a binary operation that satisfies four key properties: specifically, it includes property of closure, associativity, the existence of an identity element, and the existence of inverse eleme
+
+
+
+13 min read
+
+
+
+
+Matching (Graph Theory)
+Matching (Graph Theory): In graph theory, matching is a fundamental concept used to describe a set of edges without common vertices. Matchings are used in various applications such as network design, job assignments, and scheduling. Understanding matchings is essential for solving problems involving optimal pairings and resource allocation. Table o
+
+
+
+4 min read
+
+
+
+
+
+
+Article Tags : 
+
+
+GATE CS
+
+
+Theory of Computation
+ 
+
+
+
+
+
+
+Like
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Please Login to comment...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+76k+ interested Geeks 
+
+
+
+Core Computer Science Subject for Interview Preparation 
+
+
+
+
+Explore
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+28k+ interested Geeks 
+
+
+
+GATE Computer Science & Information Technology - 2025 
+
+
+
+
+Explore
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12k+ interested Geeks 
+
+
+
+CBSE Class 12 Computer Science 
+
+
+
+
+Explore
+
+
+
+
+
+
+ 
+
+
+
+
+Explore More
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      Corporate & Communications Address:- A-143, 9th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305) | Registered Address:- K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CompanyAbout UsLegalCareersIn MediaContact UsAdvertise with usGFG Corporate SolutionPlacement Training ProgramExploreJob-A-Thon Hiring ChallengeHack-A-ThonGfG Weekly ContestOffline Classes (Delhi/NCR)DSA in JAVA/C++Master System DesignMaster CPGeeksforGeeks VideosGeeks CommunityLanguagesPythonJavaC++PHPGoLangSQLR LanguageAndroid TutorialDSAData StructuresAlgorithmsDSA for BeginnersBasic DSA ProblemsDSA RoadmapDSA Interview QuestionsCompetitive ProgrammingData Science & MLData Science With PythonData Science For BeginnerMachine LearningML MathsData VisualisationPandasNumPyNLPDeep LearningWeb TechnologiesHTMLCSSJavaScriptTypeScriptReactJSNextJSNodeJsBootstrapTailwind CSSPython TutorialPython Programming ExamplesDjango TutorialPython ProjectsPython TkinterWeb ScrapingOpenCV TutorialPython Interview QuestionComputer ScienceGATE CS NotesOperating SystemsComputer NetworkDatabase Management SystemSoftware EngineeringDigital Logic DesignEngineering MathsDevOpsGitAWSDockerKubernetesAzureGCPDevOps RoadmapSystem DesignHigh Level DesignLow Level DesignUML DiagramsInterview GuideDesign PatternsOOADSystem Design BootcampInterview QuestionsSchool SubjectsMathematicsPhysicsChemistryBiologySocial ScienceEnglish GrammarCommerceAccountancyBusiness StudiesEconomicsManagementHR ManagementFinanceIncome TaxDatabasesSQLMYSQLPostgreSQLPL/SQLMongoDBPreparation CornerCompany-Wise Recruitment ProcessResume TemplatesAptitude PreparationPuzzlesCompany-Wise PreparationCompaniesCollegesCompetitive ExamsJEE AdvancedUGC NETUPSCSSC CGLSBI POSBI ClerkIBPS POIBPS ClerkMore TutorialsSoftware DevelopmentSoftware TestingProduct ManagementProject ManagementLinuxExcelAll Cheat SheetsRecent ArticlesFree Online ToolsTyping TestImage EditorCode FormattersCode ConvertersCurrency ConverterRandom Number GeneratorRandom Password GeneratorWrite & EarnWrite an ArticleImprove an ArticlePick Topics to WriteShare your ExperiencesInternships 
+
+
+
+
+
+
+@GeeksforGeeks, Sanchhaya Education Private Limited, All rights reserved
+
+
+
+
+
+
+
+
+
+
+
+        We use cookies to ensure you have the best browsing experience on our website. By using our site, you
+
+        acknowledge that you have read and understood our
+
+        Cookie Policy &
+
+        Privacy Policy
+
+
+
+        Got It !
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Improvement
+
+
+
+
+
+Please go through our recently updated Improvement Guidelines before submitting any improvements.
+This improvement is locked by another user right now. You can suggest the changes for now and it will be under 'My Suggestions' Tab on Write.
+You will be notified via email once the article is available for improvement.
+
+                        Thank you for your valuable feedback!
+
+                    
+
+Suggest changes
+
+
+
+Please go through our recently updated Improvement Guidelines before submitting any improvements.
+
+
+Suggest Changes
+Help us improve. Share your suggestions to enhance the article. Contribute your expertise and make a difference in the GeeksforGeeks portal.
+
+
+
+
+
+
+
+Create Improvement
+Enhance the article with your expertise. Contribute to the GeeksforGeeks community and help create better learning resources for all.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Suggest Changes
+
+
+
+
+
+
+
+min 4 words, max CharLimit:2000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Create Improvement
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+What kind of Experience do you want to share?
+
+
+
+
+
+
+
+
+
+Interview Experiences
+
+
+
+
+
+
+
+Admission Experiences
+
+
+
+
+
+
+
+Career Journeys
+
+
+
+
+
+
+
+Work Experiences
+
+
+
+
+
+
+
+Campus Experiences
+
+
+
+
+
+
+
+Competitive Exam Experiences
+
+
+
+
+
+
+                        Can't choose a topic to write? click here for suggested topics
+                    
+
+
+
+                       Write and publish your own Article
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+www.geektonight.com | 524: A timeout occurred
+
+
+
+
+
+
+
+
+
+
+
+
+A timeout occurred
+Error code 524
+
+
+               Visit cloudflare.com for more information.
+            
+2024-10-19 09:10:03 UTC
+
+
+
+
+
+
+
+
+
+You
+
+    
+    Browser
+    
+  
+Working
+
+
+
+
+
+
+
+
+Singapore
+
+
+    Cloudflare
+    
+
+Working
+
+
+
+
+
+
+www.geektonight.com
+
+    
+    Host
+    
+  
+Error
+
+
+
+
+
+
+
+What happened?
+The origin web server timed out responding to this request.
+
+
+What can I do?
+If you're a visitor of this website:
+Please try again in a few minutes.
+If you're the owner of this website:
+The connection to the origin web server was made, but the origin web server timed out before responding. The likely cause is an overloaded background task, database or application, stressing the resources on your web server. To resolve, please work with your hosting provider or web development team to free up resources for your database or overloaded application. Additional troubleshooting information here.
+
+
+
+
+
+Cloudflare Ray ID: 8d4f9f8dedf344c5
+•
+
+      Your IP:
+      Click to reveal
+49.248.249.94
+•
+
+Performance & security by Cloudflare
+
+
+
+
+
+
+
+
+
+MBA NOTES 
+THEORY OF COMPUTATION
+BCS601T 
+THEORY OF COMPUTATION 
+Unit – I 
+ 
+(12 hours) 
+Introduction to Automata: The Methods Introduction to Finite Automata, Structural
+Representations, Automata and Complexity. Proving Equivalences about Sets, The Contrapositive, 
+Proof by Contradiction, Inductive Proofs: General Concepts of Automata Theory: Alphabets 
+Strings, Languages, Applications of Automata Theory. 
+ 
+Finite Automata: The Ground Rules, The Protocol, Deterministic Finite Automata: Definition of 
+a Deterministic Finite Automata, How a DFA Processes Strings, Simpler Notations for DFA’s, 
+Extending the Transition Function to Strings, The Language of a DFA 
+ 
+Nondeterministic Finite Automata: An Informal View. The Extended Transition Function, The 
+Languages of an NFA, Equivalence of Deterministic and Nondeterministic Finite Automata. Finite 
+Automata With Epsilon-Transitions: Uses of -Transitions, The Formal Notation for an 
+ 
+-NFA, Epsilon-Closures, Extended Transitions and Languages for -NFA’s, Eliminating -
+Transitions. 
+ 
+Unit – II 
+(12 hours) 
+Regular  Expressions
+and  Languages:  Regular  Expressions:  The  Operators  of  regular
+Expressions, Building 
+Regular  Expressions,  Precedence  of  Regular-Expression  Operators,
+ 
+Precedence of Regular-Expression Operators 
+ 
+Finite Automata and Regular Expressions: From DFA’s to Regular Expressions, Converting 
+DFA’s to Regular Expressions, Converting DFA’s to R egular Expressions by Eliminating States, 
+Converting Regular Expressions to Automata. 
+ 
+Algebraic Laws for Regular Expressions: 
+ 
+Properties of Regular Languages: The Pumping Lemma for Regular Languages, Applications of 
+the Pumping Lemma Closure Properties of Regular Languages, Decision Properties of Regular 
+Languages, Equivalence and Minimization of Automata, 
+ 
+Unit – III 
+(12 hours) 
+Grammar : Types of Grammar 
+Context-Free Grammars and Languages: Definition of Context-Free Grammars, Derivations 
+Using a Grammars Leftmost and Rightmost Derivations, The Languages of a Grammar, 
+ 
+Parse Trees: Constructing Parse Trees, The Yield of a Parse Tree, Inference Derivations, and 
+Parse Trees, From Inferences to Trees, From Trees to Derivations, From Derivation to Recursive 
+Inferences, 
+ 
+Applications of Context-Free Grammars: Parsers, Ambiguity in Grammars and Languages: 
+Ambiguous Grammars, Removing Ambiguity From Grammars, Leftmost Derivations as a Way to 
+Express Ambiguity, Inherent Anbiguity 
+www.indiansbrain.com
+ 
+Unit – IV 
+ 
+(12 hours) 
+ 
+Pushdown Automata: Definition Formal Definition of Pushdown Automata, A Graphical 
+Notation for PDA’s, Instantaneous Descriptions of a PDA, 
+ 
+Languages of PDA: Acceptance by Final State, Acceptance by Empty Stack, From Empty Stack 
+to Final State, From Final State to Empty Stack 
+ 
+Equivalence of PDA’s and CFG’s: From Grammars to Pu shdown Automata, From PDA’s to 
+Grammars 
+ 
+Deterministic Pushdown Automata: Definition of a Deterministic PDA, Regular Languages and 
+Deterministic PDA’s, DPDA’s and Context-Free La nguages, DPDA’s and Ambiguous Grammars 
+ 
+Properties of Context-Free Languages: Normal Forms for Context-Free Grammars, The 
+Pumping Lemma for Context-Free Languages, Closure Properties of Context-Free Languages, 
+Decision Properties of CFL’s 
+ 
+Unit – V 
+ 
+(12 hours) 
+Introduction to Turing Machines: The Turing Machine: The Instantaneous Descriptions for 
+Turing Machines, Transition Diagrams for Turing Machines, The Language of a Turing Machine, 
+Turing Machines and Halting 
+ 
+Programming Techniques for Turing Machines, Extensions to the Basic Turing Machine, 
+Restricted Turing Machines, Turing Machines and Computers, 
+ 
+Undecidability: A Language That is Not Recursively Enumerable, Enumerating the Binary 
+Strings, Codes for Turing Machines, The Diagonalization Language 
+ 
+An Undecidable Problem That Is RE: Recursive Languages, Complements of Recursive and RE 
+languages, The Universal Languages, Undecidability of the Universal Language 
+ 
+Undecidable Problems About Turing Machines: Reductions, Turing Machines That Accept the 
+Empty Language. Post’s Correspondence Problem: Definition of Post’s Correspondence Problem, 
+The “Modified” PCP, Other Undecidable Prob lems: Undecidability of Ambiguity for CFG’s 
+ 
+ 
+ 
+ 
+Text Book: 
+ 
+1. Introduction to Automata Theory Languages, and Computation, by J.E.Hopcroft, 
+R.Motwani & J.D.Ullman (3rd Edition) – Pearson Education 
+ 
+www.indiansbrain.com
+ 
+UNIT - I 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+What is TOC? 
+ 
+In theoretical computer science, the theory of computation is the branch that deals with 
+whether and how efficiently problems can be solved on a model of computation, using an 
+algorithm. The field is divided into three major branches: automata theory, computability theory 
+and computational complexity theory. 
+ 
+In order to perform a rigorous study of computation, computer scientists work with a 
+mathematical abstraction of computers called a model of computation. There are several 
+models in use, but the most commonly examined is the Turing machine. 
+ 
+Automata theory 
+ 
+In theoretical computer science, automata theory is the study of abstract machines (or more 
+appropriately, abstract 'mathematical' machines or systems) and the computational problems that 
+can be solved using these machines. These abstract machines are called automata. 
+ 
+This automaton consists of 
+ 
+ states (represented in the figure by circles),
+ and transitions (represented by arrows).
+ 
+As the automaton sees a symbol of input, it makes a transition (or jump) to another state, 
+according to its transition function (which takes the current state and the recent symbol as 
+its inputs). 
+Uses of Automata: compiler design and parsing. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Introduction to formal proof: 
+Basic Symbols used : 
+U – Union 
+∩- Conjunction 
+ 
+ϵ - Empty String 
+Φ – NULL set 
+7- negation 
+ 
+‘ – compliment 
+= > implies 
+www.indiansbrain.com
+Additive inverse: a+(-a)=0 
+Multiplicative inverse: a*1/a=1 
+Universal set U={1,2,3,4,5} 
+Subset A={1,3} 
+A’ ={2,4,5} 
+Absorption law: AU(A ∩B) = A, A∩(AUB) = A 
+ 
+De Morgan’s Law: 
+ 
+(AUB)’ =A’ ∩ B’ 
+(A∩B)’ = A’ U B’ 
+Double compliment 
+(A’)’ =A 
+ 
+A ∩ A’ = Φ 
+ 
+Logic relations: 
+a b = > 7a U b 
+7(a∩b)=7a U 7b 
+ 
+Relations: 
+ 
+Let a and b be two sets a relation R contains aXb. 
+Relations used in TOC: 
+Reflexive: a = a 
+Symmetric: aRb = > bRa 
+Transition: aRb, bRc = > aRc 
+ 
+If a given relation is reflexive, symmentric and transitive then the relation is called equivalence 
+relation. 
+ 
+Deductive proof: Consists of sequence of statements whose truth lead us from some 
+initial statement called the hypothesis or the give statement to a conclusion statement. 
+ 
+ 
+ 
+ 
+Additional forms of proof: 
+Proof of sets 
+Proof by contradiction 
+Proof by counter example 
+ 
+Direct proof (AKA) Constructive proof: 
+If p is true then q is true 
+ 
+Eg: if a and b are odd numbers then product is also an odd 
+number. Odd number can be represented as 2n+1 
+ 
+a=2x+1, b=2y+1 
+product of a X b = (2x+1) X (2y+1) 
+= 2(2xy+x+y)+1 = 2z+1 (odd number) 
+www.indiansbrain.com
+ 
+ 
+ 
+Proof by contrapositive: 
+www.indiansbrain.com
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Proof by Contradiction: 
+ 
+H and not C implies falsehood. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Be regarded as an observation than a theorem. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+For any sets a,b,c if a∩b = Φ and c is a subset of b the prove that a∩c 
+=Φ Given : a∩b=Φ and c subset b 
+ 
+Assume: a∩c  Φ 
+ 
+Then 
+ 
+ 
+= > a∩b Φ = > a∩c=Φ(i.e., the assumption is wrong) 
+www.indiansbrain.com
+Proof by mathematical Induction: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Languages : 
+ 
+The languages we consider for our discussion is an abstraction of natural languages. That is, 
+our focus here is on formal languages that need precise and formal definitions. Programming 
+languages belong to this category. 
+ 
+Symbols : 
+ 
+Symbols are indivisible objects or entity that cannot be defined. That is, symbols are the atoms 
+ 
+of the world of languages. A symbol is any single object such as begin, or do. 
+ 
+Alphabets : 
+ 
+An alphabet is a finite, nonempty set of symbols. The alphabet of a language is 
+normally denoted by 
+. When more than one alphabets are considered for discussion, 
+then 
+subscripts may be used (e.g.    
+etc) or sometimes other symbol like G may also be 
+ 
+introduced. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Example : 
+ 
+Strings or Words over Alphabet : 
+ 
+A string or word over an alphabet   
+is a finite sequence of concatenated symbols of     
+. 
+ , a, 0, 1, #, 
+www.indiansbrain.com
+Example : 0110, 11, 001 are three strings over the binary alphabet { 0, 1 } . 
+ 
+aab, abcb, b, cc are four strings over the alphabet { a, b, c }. 
+ 
+It is not the case that a string over some alphabet should contain all the symbols from the alpha-
+bet. For example, the string cc over the alphabet { a, b, c } does not contain the symbols a and b. 
+Hence, it is true that a string over an alphabet is also a string over any superset of that alphabet. 
+ 
+Length of a string : 
+The number of symbols in a string w is called its length, denoted by |w|. 
+ 
+Example : | 011 | = 4, |11| = 2, | b | = 1 
+ 
+Convention : We will use small case letters towards the beginning of the English alphabet 
+to denote symbols of an alphabet and small case letters towards the end to 
+ 
+denote strings over an alphabet. That is, 
+ (symbols) and 
+ 
+are strings. 
+ 
+Some String Operations : 
+Let 
+and 
+be two strings. The concatenation of x and y 
+ 
+denoted by xy, is the string   
+. That is, the concatenation of x and y 
+ 
+denoted by xy is the string that has a copy of x followed by a copy of y without any intervening 
+space between them. 
+ 
+Example : Consider the string 011 over the binary alphabet. All the prefixes, suffixes and 
+substrings of this string are listed below. 
+ 
+Prefixes:  , 0, 01, 011. 
+ 
+Suffixes:  , 1, 11, 011. 
+ 
+Substrings:  , 0, 1, 01, 11, 011. 
+ 
+Note that x is a prefix (suffix or substring) to x, for any string x and is a prefix (suffix or 
+substring) to any string. 
+ 
+A string x is a proper prefix (suffix) of string y if x is a prefix (suffix) of y and x 蝤 y. 
+ 
+In the above example, all prefixes except 011 are proper prefixes. 
+ 
+Powers of Strings : For any string x and integer 
+, we use 
+to denote the string formed 
+by sequentially concatenating n copies of x. We can also give an inductive 
+definition of 
+as follows: 
+= e, if n 
+= 0 ; otherwise 
+ 
+www.indiansbrain.com
+Example : If x = 011, then  
+= 011011011,  
+= 011 and 
+ 
+Powers of Alphabets : 
+ 
+We write 
+(for some integer k) to denote the set of strings of length k with symbols 
+ 
+from 
+. In other words, 
+ 
+= { w | w is a string over  
+ and | w | = k}. Hence, for any alphabet,   
+denotes the set 
+ 
+of all strings of length zero. That is,   
+= { e }. For the binary alphabet { 0, 1 } we have 
+ 
+the following. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The set of all strings over an alphabet 
+ is denoted by 
+. That is, 
+ 
+ 
+ 
+ 
+ 
+ 
+The set  
+ contains all the strings that can be generated by iteratively concatenating sym- 
+bols from      
+any number of times. 
+ 
+Example : If 
+= { a, b }, then 
+= {  , a, b, aa, ab, ba, bb, aaa, aab, aba, abb, baa, …}. 
+ 
+Please note that if 
+, then 
+ that is 
+. It may look odd that one can proceed 
+from the empty set to a non-empty set by iterated concatenation. But there is a reason for this 
+and we accept this convention 
+ 
+The set of all nonempty strings over an alphabet     
+is denoted by 
+. That is, 
+ 
+ 
+ 
+ 
+ 
+ 
+Note that  
+is infinite. It contains no infinite strings but strings of arbitrary lengths. 
+ 
+Reversal : 
+For any string  
+the reversal of the string is 
+. 
+ 
+An inductive definition of reversal can be given as follows: 
+www.indiansbrain.com
+Languages : 
+A language over an alphabet is a set of strings over 
+that alphabet. Therefore, a 
+ 
+language L is any subset of 
+. That is, any 
+is a language. 
+Example : 
+ 
+ 
+1. F is the empty language.  
+ 
+2.
+is a language for any 
+. 
+ 
+3. {e} is a language for any 
+. Note that, 
+. Because the language F does not 
+ 
+contain any string but {e} contains one string of length zero. 
+4. The set of all strings over { 0, 1 } containing equal number of 0's and 1's. 
+ 
+5. The set of all strings over {a, b, c} that starts with a. 
+ 
+Convention : Capital letters A, B, C, L, etc. with or without subscripts are normally used 
+to denote languages. 
+ 
+Set operations on languages : Since languages are set of strings we can apply set operations to 
+languages. Here are some simple examples (though there is nothing new in it). 
+ 
+ 
+Union : A string 
+ 
+ 
+ 
+ 
+ 
+ 
+iff 
+or 
+ 
+Example : { 0, 11, 01, 011 } 
+{ 1, 01, 110 } = { 0, 11, 01, 011, 111 } 
+Intersection  : 
+A   string, 
+xϵ  L1 
+∩ L2 
+iff    x   ϵ  L1    and   x   ϵ  L2    .
+Example : { 0, 11, 01, 011 } 
+{ 1, 01, 110 } = { 01 } 
+ 
+Complement :  Usually, 
+is the universe that a complement is taken with respect to. 
+ 
+Thus for a language L, the complement is L(bar) = { 
+| 
+}. 
+ 
+Example : Let L = { x | |x| is even }. Then its complement is the language { 
+| |x| is 
+ 
+odd }. 
+ 
+Similarly we can define other usual set operations on languages like relative 
+com-plement, symmetric difference, etc. 
+ 
+Reversal of a language : 
+The reversal of a language L, denoted as 
+, is defined as:  
+. 
+ 
+Example : 
+ 
+1.  Let L = { 0, 11, 01, 011 }. Then 
+= { 0, 11, 10, 110 }.
+www.indiansbrain.com
+2.  Let L = { 
+| n is an integer }. Then  
+=  { 
+| n is an integer }. 
+ 
+Language concatenation : The concatenation of languages       
+and 
+is defined as 
+ 
+= { xy | 
+and 
+}. 
+ 
+Example : { a, ab }{ b, ba } = { ab, aba, abb, abba }. 
+ 
+Note that , 
+1. 
+  in general. 
+2. 
+ 
+ 
+3. 
+ 
+ 
+Iterated concatenation of languages : Since we can concatenate two languages, we also repeat this to 
+concatenate any number of languages. Or we can concatenate a language with itself any 
+ 
+number of times. The operation L with itself n times. This is 
+defined formally as follows: 
+ 
+ 
+ 
+ 
+ 
+ 
+Example :  Let L = { a, ab }. Then according to the definition, 
+we have 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+and so on. 
+ 
+ 
+ 
+Kleene's Star operation : The Kleene star operation on a language L, denoted as is defined as 
+follows : 
+ 
+= ( Union n in N ) 
+ 
+= 
+ 
+ 
+= { x | x is the concatenation of zero or more strings from L } 
+ 
+denotes the concatenation of 
+www.indiansbrain.com
+Thus 
+is the set of all strings derivable by any number of concatenations of strings in 
+L. It is also useful to define 
+ 
+=, i.e., all strings derivable by one or more concatenations of strings in L. That is 
+ 
+= (Union n in N and n >0) 
+ 
+= 
+ 
+Example :  Let L = { a, ab }. Then we have, 
+ 
+= 
+ 
+= {e} 
+{a, ab} 
+{aa, aab, aba, abab} 
+… 
+ 
+= 
+ 
+= {a, ab} 
+{aa, aab, aba, abab} 
+… 
+ 
+Note : 
+is in  
+, for every language L, including . 
+ 
+The previously introduced definition of   
+is an instance of Kleene star. 
+ 
+ 
+ 
+ 
+ 
+(Generates) 
+(Recognizes) 
+Grammar 
+Language 
+  Automata 
+ 
+Automata: A algorithm or program that automatically recognizes if a particular string belongs to 
+the language or not, by checking the grammar of the string. 
+ 
+An automata is an abstract computing device (or machine). There are different varities of such 
+abstract machines (also called models of computation) which can be defined mathematically. 
+ 
+Every Automaton fulfills the three basic requirements. 
+ 
+• 
+Every automaton consists of some essential features as in real computers. It has a mech-
+anism for reading input. The input is assumed to be a sequence of symbols over a given 
+alphabet and is placed on an input tape(or written on an input file). The simpler automata 
+can only read the input one symbol at a time from left to right but not change. Powerful 
+versions can both read (from left to right or right to left) and change the input. 
+www.indiansbrain.com
+ The automaton can produce output of some form. If the output in response to an input 
+string is binary (say, accept or reject), then it is called an accepter. If it produces an out-
+put sequence in response to an input sequence, then it is called a transducer(or 
+automaton with output).
+
+• 
+The automaton may have a temporary storage, consisting of an unlimited number of 
+cells, each capable of holding a symbol from an alphabet ( whcih may be different from 
+the input alphabet). The automaton can both read and change the contents of the storage 
+cells in the temporary storage. The accusing capability of this storage varies depending 
+on the type of the storage. 
+ 
+• 
+The most important feature of the automaton is its control unit, which can be in any 
+one of a finite number of interval states at any point. It can change state in some de-
+fined manner determined by a transition function. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 1: The figure above shows a diagrammatic representation of a generic 
+automa-tion. 
+ 
+Operation of the automation is defined as follows. 
+ 
+At any point of time the automaton is in some integral state and is reading a particular symbol 
+from the input tape by using the mechanism for reading input. In the next time step the automa-
+ton then moves to some other integral (or remain in the same state) as defined by the transition 
+function. The transition function is based on the current state, input symbol read, and the content 
+of the temporary storage. At the same time the content of the storage may be changed and the 
+input read may be modifed. The automation may also produce some output during this transition. 
+The internal state, input and the content of storage at any point defines the configuration of the 
+automaton at that point. The transition from one configuration to the next ( as defined by the 
+transition function) is called a move. Finite state machine or Finite Automation is the simplest 
+type of abstract machine we consider. Any system that is at any point of time in one of a finite 
+number of interval state and moves among these states in a defined manner in response to some 
+input, can be modeled by a finite automaton. It doesnot have any temporary storage and hence a 
+restricted model of computation. 
+www.indiansbrain.com
+Finite Automata 
+ 
+Automata (singular : automation) are a particularly simple, but useful, model of compu-
+tation. They were initially proposed as a simple model for the behavior of neurons. 
+ 
+States, Transitions and Finite-State Transition System : 
+ 
+ 
+Let us first give some intuitive idea about a state of a system and state transitions before 
+describing finite automata. 
+ 
+Informally, a state of a system is an instantaneous description of that system which gives all 
+relevant information necessary to determine how the system can evolve from that point on. 
+ 
+Transitions are changes of states that can occur spontaneously or in response to inputs to the 
+states. Though transitions usually take time, we assume that state transitions are instantaneous 
+(which is an abstraction). 
+ 
+Some examples of state transition systems are: digital systems, vending machines, etc. A system 
+ 
+containing only a finite number of states and transitions among them is 
+called a finite-state transition system. 
+ 
+Finite-state transition systems can be modeled abstractly by a mathematical model called 
+finite automation 
+ 
+Deterministic Finite (-state) Automata 
+ 
+Informally, a DFA (Deterministic Finite State Automaton) is a simple machine that reads an in-
+put string -- one symbol at a time -- and then, after the input has been completely read, decides 
+whether to accept or reject the input. As the symbols are read from the tape, the automaton can 
+change its state, to reflect how it reacts to what it has seen so far. A machine for which a deter-
+ministic code can be formulated, and if there is only one unique way to formulate the code, then 
+the machine is called deterministic finite automata. 
+ 
+Thus, a DFA conceptually consists of 3 parts: 
+ 
+ 
+ 
+ 
+1. A tape to hold the input string. The tape is divided into a finite number of cells. Each 
+cell holds a symbol from 
+. 
+2. A tape head for reading symbols from the tape 
+3. A control , which itself consists of 3 things: 
+ 
+o 
+finite number of states that the machine is allowed to be in (zero or more states 
+are designated as accept or final states), 
+ 
+o a current state, initially set to a start state, 
+www.indiansbrain.com
+o a state transition function for changing the current state. 
+ 
+An automaton processes a string on the tape by repeating the following actions until the 
+tape head has traversed the entire string: 
+ 
+1. The tape head reads the current tape cell and sends the symbol s found there to 
+the control. Then the tape head moves to the next cell. 
+ 
+2. he control takes s and the current state and consults the state transition function to 
+get the next state, which becomes the new current state. 
+ 
+Once the entire string has been processed, the state in which the automation enters is examined. 
+ 
+If it is an accept state , the input string is accepted ; otherwise, the string is rejected . Summariz- 
+ 
+ing all the above we can formulate the following formal definition: 
+ 
+ 
+Deterministic Finite State Automaton : A Deterministic Finite State Automaton (DFA) is 
+ 
+a 5-tuple : 
+ 
+ Q is a finite set of states.
+• 
+is a finite set of input symbols or alphabet 
+ 
+ 
+is the “next state” transition function (which is total ). Intuitively, 
+is
+ a 
+function that tells which state to move to in response to an input, i.e., if M is in 
+ 
+state q and sees input a, it moves to state      
+. 
+ 
+ 
+is the start state.
+• 
+is the set of accept or final states. 
+ 
+Acceptance of Strings : 
+ 
+A DFA accepts a string   
+if there is a sequence of states     
+in Q 
+ 
+such that 
+ 
+1.  
+is the start state. 
+2.  
+for all 
+. 
+ 
+3. 
+ 
+Language Accepted or Recognized by a DFA : 
+ 
+The language accepted or recognized by a DFA M is the set of all strings accepted by M , and 
+ 
+is denoted by 
+i.e. 
+The  notion 
+of 
+acceptance can also be made more precise by extending the transition function 
+.
+ 
+Extended transition function : 
+www.indiansbrain.com
+Extend 
+(which is function on symbols) to a function on strings, i.e. . 
+ 
+ 
+ 
+That is, 
+ is the state the automation reaches when it starts from the state q and finish 
+processing the string w. Formally, we can give an inductive definition as follows: 
+ 
+The language of the DFA M is the set of strings that can take the start state to one of 
+the accepting states i.e. 
+ 
+ 
+L(M) = { 
+| M accepts w } 
+ 
+= {
+| 
+} 
+ 
+ 
+Example 1 : 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+is the start state 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+It is a formal description of a DFA. But it is hard to comprehend. For ex. The language of the 
+DFA is any string over { 0, 1} having at least one 1 
+ 
+We can describe the same DFA by transition table or state transition diagram as follow-
+ing: 
+ 
+ 
+ 
+ 
+Transition Table : 
+ 
+0    1 
+www.indiansbrain.com
+ 
+ 
+It is easy to comprehend the transition diagram. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Explanation :  We cannot 
+reach find state 
+w/0 or in the i/p string. There can be any no. 
+of 0's at the beginning. 
+( The self-loop at 
+on label 0 indicates it ). Similarly there 
+can be any no. of 0's & 1's in any order at the end of the string. 
+ 
+Transition table : 
+ 
+It is basically a tabular representation of the transition function that takes two arguments (a 
+state and a symbol) and returns a value (the “next state”). 
+ 
+• 
+Rows correspond to states, 
+• 
+Columns correspond to input symbols, 
+• 
+Entries correspond to next states 
+• 
+The start state is marked with an arrow 
+• 
+The accept states are marked with a star (*). 
+ 
+ 
+ 
+0    1 
+ 
+ 
+ 
+(State) Transition diagram : 
+ 
+A state transition diagram or simply a transition diagram is a directed graph which can 
+be constructed as follows: 
+ 
+1.  For each state in Q there is a node. 
+2. There is a directed edge from node q to node p labeled a iff 
+ . (If there are 
+several input symbols that cause a transition, the edge is labeled by the list of these 
+symbols.) 
+3. There is an arrow with no source into the start state. 
+4. Accepting states are indicated by double circle. 
+www.indiansbrain.com
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+5. 
+ 
+6. Here is an informal description how a DFA operates. An input to a DFA can be any 
+ 
+string. 
+Put a pointer to the start state q. Read the input string w from left 
+ 
+to right, one symbol at a time, moving the pointer according to the transition  
+ 
+function, 
+.  If the next symbol of w is a and the pointer is on state p, move the 
+ 
+pointer to 
+. When the end of the input string w is encountered, the pointer is on 
+ 
+some state, r. The string is said to be accepted by the DFA if 
+and 
+ 
+rejected if 
+. Note that there is no formal mechanism for moving the pointer. 
+7. A language 
+is said to be regular if L = L(M) for some DFA M. 
+ 
+ 
+ 
+Regular Expressions: Formal Definition 
+ 
+We construct REs from primitive constituents (basic elements) by repeatedly applying 
+certain recursive rules as given below. (In the definition) 
+ 
+Definition : Let S be an alphabet. The regular expressions are defined recursively as follows. 
+ 
+Basis : 
+ 
+i) is a RE 
+ 
+ii) is a RE 
+ 
+iii) 
+, a is RE. 
+ 
+These are called primitive regular expression i.e. Primitive Constituents 
+ 
+Recursive Step : 
+ 
+ 
+If 
+ 
+and 
+are REs over, then so are 
+ 
+i) 
+ 
+ 
+ii) 
+ 
+www.indiansbrain.com
+iii) 
+ 
+ 
+iv) 
+ 
+ 
+ 
+ 
+ 
+Closure : r is RE over only if it can be obtained from the basis elements (Primitive 
+REs) by a finite no of applications of the recursive step (given in 2). 
+ 
+Example : Let 
+ = { 0,1,2 }. Then (0+21)*(1+ F ) is a RE, because we can construct this 
+expression by applying the above rules as given in the following step. 
+ 
+Steps 
+RE Constructed 
+Rule Used 
+1 
+1 
+Rule 1(iii) 
+2 
+ 
+Rule 1(i) 
+3 
+1+ 
+Rule 2(i) & Results of Step 1, 2 
+4 
+(1+  ) 
+Rule 2(iv) & Step 3 
+5 
+2 
+1(iii) 
+6 
+1 
+1(iii) 
+7 
+21 
+2(ii), 5, 6 
+8 
+0 
+1(iii) 
+9 
+0+21 
+2(i), 7, 8 
+10 
+(0+21) 
+2(iv), 9 
+11 
+(0+21)* 
+2(iii), 10 
+12 
+(0+21)* 
+2(ii), 4, 11 
+ 
+Language described by REs : Each describes a language (or a language is associated 
+with every RE). We will see later that REs are used to attribute regular languages. 
+ 
+ 
+ 
+Notation : If r is a RE over some alphabet then L(r) is the language associate with r . We 
+can define the language L(r) associated with (or described by) a REs as follows. 
+ 
+1. is the RE describing the empty language i.e. L( ) = . 
+ 
+2. is a RE describing the language {
+} i.e. L( ) = {
+} . 
+ 
+3. 
+, a is a RE denoting the language {a} i.e . L(a) = {a} . 
+ 
+4. If 
+and 
+are REs denoting language L(
+) and L(
+) respectively, then 
+ 
+i) 
+is a regular expression denoting the language L(
+) = L(
+) ∪ L(
+) 
+www.indiansbrain.com
+ii) 
+is a regular expression denoting the language L(
+)=L(
+) L(
+) 
+ 
+iii) 
+is a regular expression denoting the language 
+ 
+ 
+iv) (
+) is a regular expression denoting the language L((
+)) = L(
+) 
+ 
+Example : Consider the RE (0*(0+1)). Thus the language denoted by the RE is 
+ 
+L(0*(0+1)) = L(0*) L(0+1) .......................by 4(ii) 
+ 
+= L(0)*L(0) ∪ L(1) 
+ 
+= {
+ , 0,00,000,. } {0} 
+{1} 
+ 
+= {  , 0,00,000,........} {0,1} 
+ 
+= {0, 00, 000, 0000,..........,1, 01, 001, 0001,...............} 
+ 
+Precedence Rule 
+Consider the RE ab + c. The language described by the RE can be thought of either 
+L(a)L(b+c) or L (ab) L(c) as provided by the rules (of languages described by REs) 
+given already. But these two represents two different languages lending to 
+ambiguity. To remove this ambiguity we can either 
+ 
+1) Use fully parenthesized expression- (cumbersome) or 
+ 
+2) Use a set of precedence rules to evaluate the options of REs in some order. 
+Like other algebras mod in mathematics. 
+ 
+For REs, the order of precedence for the operators is as follows: 
+ 
+i) The star operator precedes concatenation and concatenation precedes union (+) 
+operator. 
+ 
+ii) It is also important to note that concatenation & union (+) operators are 
+associative and union operation is commutative. 
+ 
+Using these precedence rule, we find that the RE ab+c represents the language 
+L(ab) L(c) i.e. it should be grouped as ((ab)+c). 
+ 
+We can, of course change the order of precedence by using parentheses. For 
+example, the language represented by the RE a(b+c) is L(a)L(b+c). 
+www.indiansbrain.com
+Example : The RE ab*+b is grouped as ((a(b*))+b) which describes the language 
+L(a)(L(b))*
+L(b) 
+ 
+Example : The RE (ab)*+b represents the language (L(a)L(b))* 
+L(b). 
+ 
+Example : It is easy to see that the RE (0+1)*(0+11) represents the language of all 
+strings over {0,1} which are either ended with 0 or 11. 
+ 
+Example : The regular expression r =(00)*(11)*1 denotes the set of all strings with an 
+even number of 0's followed by an odd number of 1's i.e. 
+ 
+ 
+Note : The notation 
+is used to represent the RE rr*. Similarly, 
+represents the RE 
+rr, 
+denotes 
+r, and so on. 
+ 
+An arbitrary string over 
+= {0,1} is denoted as (0+1)*. 
+ 
+Exercise : Give a RE r over {0,1} s.t. L(r)={
+ has at least one pair of 
+consecutive 1's} 
+ 
+Solution : Every string in L(r) must contain 00 somewhere, but what comes before and 
+what goes before is completely arbitrary. Considering these observations we can write 
+the REs as (0+1)*11(0+1)*. 
+ 
+Example : Considering the above example it becomes clean that the RE 
+(0+1)*11(0+1)*+(0+1)*00(0+1)* represents the set of string over {0,1} that contains 
+the substring 11 or 00. 
+ 
+Example : Consider the RE 0*10*10*. It is not difficult to see that this RE describes the 
+set of strings over {0,1} that contains exactly two 1's. The presence of two 1's in the 
+RE and any no of 0's before, between and after the 1's ensure it. 
+ 
+Example : Consider the language of strings over {0,1} containing two or more 1's. 
+ 
+Solution : There must be at least two 1's in the RE somewhere and what comes before, 
+between, and after is completely arbitrary. Hence we can write the RE as 
+(0+1)*1(0+1)*1(0+1)* . But following two REs also represent the same language, each 
+ensuring presence of least two 1's somewhere in the string 
+ 
+i) 0*10*1(0+1)* 
+ 
+ii) (0+1)*10*10* 
+ 
+Example : Consider a RE r over {0,1} such that 
+www.indiansbrain.com
+L(r) = {
+ has no pair of consecutive 1's} 
+ 
+Solution : Though it looks similar to ex ……., it is harder to construct to construct. We 
+observer that, whenever a 1 occurs, it must be immediately followed by a 0. This 
+substring may be preceded & followed by any no of 0's. So the final RE must be a 
+repetition of strings of the form: 00…0100….00 i.e. 0*100*. So it looks like the RE is 
+(0*100*)*. But in this case the strings ending in 1 or consisting of all 0's are not 
+accounted for. Taking these observations into consideration, the final RE is r = 
+(0*100*)(1+ )+0*(1+
+). 
+ 
+Alternative Solution : 
+ 
+The language can be viewed as repetitions of the strings 0 and 01. Hence get the RE as 
+r = (0+10)*(1+ ).This is a shorter expression but represents the same language. 
+ 
+Regular Expression and Regular Language : 
+ 
+Equivalence(of REs) with FA : 
+ 
+Recall that, language that is accepted by some FAs are known as Regular language. 
+The two concepts : REs and Regular language are essentially same i.e. (for) every 
+regular language can be developed by (there is) a RE, and for every RE there is a 
+Regular Langauge. This fact is rather suprising, because RE approach to describing 
+language is fundamentally differnet from the FA approach. But REs and FA are 
+equivalent in their descriptive power. We can put this fact in the focus of the following 
+Theorem. 
+ 
+Theorem : A language is regular iff some RE describes it. 
+ 
+This Theorem has two directions, and are stated & proved below as a separate lemma 
+ 
+ 
+RE to FA : 
+ 
+REs denote regular languages : 
+ 
+Lemma : If L(r) is a language described by the RE r, then it is regular i.e. there is a FA 
+such that L(M)
+L(r). 
+ 
+Proof : To prove the lemma, we apply structured index on the expression r. First, we 
+ 
+show how to construct FA for the basis elements: 
+, and for any 
+. Then we show 
+how to combine these Finite Automata into Complex Automata that accept the Union, 
+Concatenation, Kleen Closure of the languages accepted by the original smaller 
+automata. 
+www.indiansbrain.com
+Use of NFAs is helpful in the case i.e. we construct NFAs for every REs which are 
+represented by transition diagram only. 
+ 
+Basis : 
+ 
+ Case (i) : 
+. Then 
+. Then 
+and the following NFA N 
+recognizes L(r). Formally 
+where Q = {q} 
+and 
+.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Case (ii) : 
+. 
+, and the following NFA N accepts L(r). Formally
+where 
+. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Since the start state is also the accept step, and there is no any transition defined, it 
+will accept the only string 
+and nothing else. 
+ 
+ Case (iii) : r = a for some 
+. Then L(r) = {a}, and the following NFA 
+N accepts L(r).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Formally, 
+where 
+for 
+or 
+ 
+ 
+ 
+ 
+ 
+Induction : 
+www.indiansbrain.com
+Assume that the start of the theorem is true for REs 
+and 
+. Hence we can assume 
+that we have automata 
+and 
+that accepts languages denoted by REs 
+and 
+, 
+ 
+respectively i.e. 
+and 
+. The FAs are represented 
+schematically as shown below. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Each has an initial state and a final state. There are four cases to consider. 
+ 
+ Case (i) : Consider the RE 
+denoting the language 
+. We 
+construct FA 
+, from 
+and 
+to accept the language denoted by RE 
+as 
+follows :
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Create a new (initial) start state 
+and give 
+- transition to the initial state of 
+ and 
+.This is the initial state of 
+. 
+ 
+ Create a final state 
+and give 
+-transition from the two final state of 
+and 
+. 
+is the only final state of 
+and final state of 
+and 
+will be 
+ordinary states in 
+.
+ All the state of 
+and 
+are also state of 
+.
+www.indiansbrain.com
+ All the moves of 
+and 
+are also moves of 
+. [ Formal Construction] 
+ 
+ 
+It is easy to prove that 
+ 
+Proof: To show that 
+we must show that 
+ 
+= 
+ 
+ 
+= 
+by following transition of 
+ 
+ 
+Starts at initial state 
+and enters the start state of either 
+or 
+follwoing the 
+transition i.e. without consuming any input. WLOG, assume that, it enters the start state 
+of 
+. From this point onward it has to follow only the transition of 
+to enter the final 
+ 
+state of 
+, because this is the only way to enter the final state of M by following the e-
+transition.(Which is the last transition & no input is taken at hte transition). Hence the 
+ 
+whole input w is considered while traversing from the start state of 
+to the final 
+state of 
+. Therefore 
+must accept 
+. 
+ 
+Say, 
+or 
+. 
+ 
+ 
+WLOG, say 
+ 
+Therefore when 
+process the string w , it starts at the initial state and enters the final 
+state when w consumed totally, by following its transition. Then 
+also accepts w, by 
+starting at state 
+and taking 
+-transition enters the start state of 
+-follows the moves 
+ 
+of 
+to enter the final state of 
+consuming input w thus takes -transition to 
+. Hence proved 
+ 
+ Case(ii) : Consider the RE 
+denoting the language 
+. We construct 
+FA 
+from 
+& 
+to accept 
+as follows :
+www.indiansbrain.com
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Create a new start state 
+and a new final state 
+ 
+1. Add 
+- transition from 
+o 
+to the start state of 
+ 
+ 
+o 
+to 
+ 
+ 
+o final state of 
+to the start state of 
+ 
+ 
+2. All the states of 
+are also the states of 
+. 
+has 2 more states than that of 
+namely 
+and 
+. 
+3. All the moves of 
+are also included in 
+. 
+ 
+By the transition of type (b), 
+can accept . 
+By the transition of type (a), 
+can enters the initial state of 
+w/o any input and then 
+follow all kinds moves of 
+to enter the final state of 
+and then following 
+-transition 
+can enter 
+. Hence if any 
+is accepted by 
+then w is also accepted by 
+. By the 
+transition of type (b), strings accepted by 
+can be repeated by any no of times & thus 
+accepted by 
+. Hence 
+accepts 
+and any string accepted by 
+repeated (i.e. 
+ 
+concatenated) any no of times. Hence 
+ 
+Case(iv) : Let 
+=(
+). Then the FA 
+is also the FA for (
+), since the use of 
+parentheses does not change the language denoted by the expression 
+ 
+Non-Deterministic Finite Automata 
+Nondeterminism is an important abstraction in computer science. Importance of 
+nondeterminism is found in the design of algorithms. For examples, there are many 
+problems with efficient nondeterministic solutions but no known efficient deterministic 
+solutions. ( Travelling salesman, Hamiltonean cycle, clique, etc). Behaviour of a process 
+is in a distributed system is also a good example of nondeterministic situation. Because 
+www.indiansbrain.com
+the behaviour of a process might depend on some messages from other processes 
+that might arrive at arbitrary times with arbitrary contents. 
+It is easy to construct and comprehend an NFA than DFA for a given regular 
+language. The concept of NFA can also be used in proving many theorems and 
+results. Hence, it plays an important role in this subject. 
+In the context of FA nondeterminism can be incorporated naturally. That is, an NFA is 
+defined in the same way as the DFA but with the following two exceptions: 
+ multiple next state.
+
+ 
+- transitions.
+ 
+Multiple Next State : 
+ 
+ In contrast to a DFA, the next state is not necessarily uniquely determined by the 
+current state and input symbol in case of an NFA. (Recall that, in a DFA there is 
+exactly one start state and exactly one transition out of every state for each 
+symbol in 
+).
+ 
+This means that - in a state q and with input symbol a - there could be one, more 
+than one or zero next state to go, i.e. the value of 
+is a subset of Q. Thus
+ 
+= 
+which means that any one of 
+could be the next 
+state. 
+ 
+ The zero next state case is a special one giving 
+=
+, which means that 
+there is no next state on input symbol when the automata is in state q. In such 
+a case, we may think that the automata "hangs" and the input will be rejected.
+ 
+- transitions : 
+ 
+In an -transition, the tape head doesn't do anything- it doesnot read and it doesnot move. 
+However, the state of the automata can be changed - that is can go to zero, one 
+ 
+or more states. This is written formally as 
+implying that the next 
+state could by any one of 
+w/o consuming the next input symbol. 
+ 
+ 
+ 
+ 
+Acceptance : 
+ 
+Informally, an NFA is said to accept its input 
+if it is possible to start in some start state 
+and process 
+, moving according to the transition rules and making choices along the way 
+whenever the next state is not uniquely defined, such that when 
+is completely processed 
+(i.e. end of 
+is reached), the automata is in an accept state. There may be several 
+possible paths through the automation in response to an input 
+since the start state is not 
+determined and there are choices along the way because of multiple next states. Some of 
+these paths may lead to accpet states while others may not. The 
+www.indiansbrain.com
+automation is said to accept 
+if at least one computation path on input 
+starting from at 
+least one start state leads to an accept state- otherwise, the automation rejects input 
+. 
+Alternatively, we can say that, 
+is accepted iff there exists a path with label 
+from some 
+start state to some accept state. Since there is no mechanism for determining which state 
+to start in or which of the possible next moves to take (including the 
+- transitions) in 
+response to an input symbol we can think that the automation is having some "guessing" 
+power to chose the correct one in case the input is accepted 
+ 
+Example 1 : Consider the language L = {
+ {0, 1}* | The 3rd symbol from the right 
+is 1}. The following four-state automation accepts L. 
+ 
+The m/c is not deterministic since there are two transitions from state 
+on input 1 
+and no transition (zero transition) from 
+on both 0 & 1. 
+ 
+For any string 
+whose 3rd symbol from the right is a 1, there exists a sequence of legal 
+transitions leading from the start state q, to the accept state 
+. But for any string 
+where 3rd symbol from the right is 0, there is no possible sequence of legal 
+ 
+tranisitons leading from 
+and 
+. Hence m/c accepts L. How does it accept any string 
+L? 
+ 
+Formal definition of NFA : 
+ 
+Formally, an NFA is a quituple 
+where Q, 
+, 
+, and F bear 
+the same meaning as for a DFA, but 
+, the transition function is redefined as follows: 
+ 
+ 
+ 
+ 
+where P(Q) is the power set of Q i.e. 
+. 
+ 
+The Langauge of an NFA : 
+ 
+From the discussion of the acceptance by an NFA, we can give the formal definition of a 
+language accepted by an NFA as follows : 
+ 
+If 
+is an NFA, then the langauge accepted by N is writtten as L(N) 
+is given by 
+. 
+ 
+That is, L(N) is the set of all strings w in 
+such that 
+contains at least 
+one accepting state. 
+www.indiansbrain.com
+Removing ϵ-transition: 
+ 
+- transitions do not increase the power of an NFA . That is, any 
+- NFA ( NFA with 
+transition), we can always construct an equivalent NFA without 
+-transitions. The 
+ 
+equivalent NFA must keep track where the 
+NFA goes at every step during 
+computation. This can be done by adding extra transitions for removal of every 
+- 
+transitions from the - NFA as follows. 
+ 
+If we removed the 
+- transition 
+from the - NFA , then we need to moves 
+ 
+from state p to all the state on input symbol 
+which are reachable from state q 
+(in the - NFA ) on same input symbol q. This will allow the modified NFA to move 
+from state p to all states on some input symbols which were possible in case of 
+-NFA 
+on the same input symbol. This process is stated formally in the following theories. 
+ 
+Theorem if L is accepted by an - NFA N , then there is some 
+equivalent 
+without transitions accepting the same language L 
+Proof: 
+ 
+Let 
+be the given 
+with 
+ 
+ 
+We construct 
+ 
+Where, 
+for all 
+and 
+and 
+ 
+ 
+ 
+ 
+ 
+Other elements of N' and N 
+ 
+We can show that 
+i.e. N' and N are equivalent. 
+ 
+We need to prove that 
+ 
+ 
+ i.e. 
+ 
+ 
+ 
+ 
+ 
+We will show something more, that is, 
+www.indiansbrain.com
+We will show something more, that is, 
+ 
+ 
+Basis : 
+, then 
+ 
+ 
+But 
+by definition of 
+. 
+ 
+Induction hypothesis Let the statement hold for all 
+with 
+. 
+ 
+ 
+By definition of extension of 
+ 
+ 
+By inductions hypothesis. 
+ 
+Assuming that 
+ 
+ 
+ 
+ 
+By definition of 
+ 
+ 
+Since 
+ 
+ 
+ 
+To complete the proof we consider the case 
+ 
+When 
+i.e. 
+then 
+www.indiansbrain.com
+ 
+and by the construction of 
+wherever 
+constrains a state in F. 
+ 
+If 
+(and thus 
+is not in F ), then 
+with 
+leads to an accepting state in N' iff it 
+lead to an accepting state in N ( by the construction of N' and N ). 
+ 
+Also, if (
+ , thus w is accepted by N' iff w is accepted by N (iff 
+) 
+ 
+If 
+(and, thus in M we load 
+in F ), thus is accepted by both N' and N . 
+ 
+Let 
+. If w cannot lead to 
+in N , then 
+. (Since can add transitions to get an accept 
+state). So there is no harm in making 
+an accept state in N'. 
+ 
+Ex: Consider the following NFA with 
+- transition. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Transition Diagram 
+ 
+ 
+0 
+1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Transition diagram for 
+' for the equivalent NFA without - moves 
+www.indiansbrain.com
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+0 
+          1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Since 
+the start state q0 must be final state in the equivalent NFA . 
+ 
+Since 
+and 
+and 
+we add moves 
+and 
+in the equivalent NFA . Other moves are also constructed accordingly. 
+ 
+-closures: 
+ 
+The concept used in the above construction can be made more formal by defining the 
+-closure for a state (or a set of states). The idea of 
+-closure is that, when moving 
+ 
+from a state p to a state q (or from a set of states Si to a set of states Sj ) an input 
+, we need to take account of all 
+-moves that could be made after the transition. 
+Formally, for a given state q, 
+ 
+ 
+-closures: 
+ 
+Similarly, for a given set 
+ 
+ 
+-closures: 
+ 
+ 
+ 
+So, in the construction of equivalent NFA N' without -transition from any NFA with 
+ 
+moves. the first rule can now be written as 
+www.indiansbrain.com
+Equivalence of NFA and DFA 
+ 
+It is worth noting that a DFA is a special type of NFA and hence the class of languages 
+accepted by DFA s is a subset of the class of languages accepted by NFA s. 
+Surprisingly, these two classes are in fact equal. NFA s appeared to have more power 
+than DFA s because of generality enjoyed in terms of 
+-transition and multiple next 
+states. But they are no more powerful than DFA s in terms of the languages they 
+accept. 
+ 
+Converting DFA to NFA 
+ 
+ 
+ 
+ 
+Theorem: Every DFA has as equivalent NFA 
+ 
+Proof: A DFA is just a special type of an NFA . In a DFA , the transition functions is 
+defined from 
+whereas in case of an NFA it is defined from 
+and 
+be a DFA . We construct an equivalent NFA 
+as follows. 
+ 
+ 
+ 
+ 
+i. e 
+ 
+If 
+and 
+ 
+All other elements of N are as in D. 
+ 
+If 
+then there is a sequence of states 
+such that 
+ 
+ 
+ 
+Then it is clear from the above construction of N that there is a sequence of states (in N) 
+such that 
+and 
+and hence 
+ 
+ 
+Similarly we can show the converse. 
+ 
+Hence , 
+ 
+ 
+Given any NFA we need to construct as equivalent DFA i.e. the DFA need to simulate 
+the behaviour of the NFA . For this, the DFA have to keep track of all the states where 
+the NFA could be in at every step during processing a given input string. 
+www.indiansbrain.com
+There are 
+possible subsets of states for any NFA with n states. Every subset 
+corresponds to one of the possibilities that the equivalent DFA must keep track of. Thus, 
+ 
+the equivalent DFA will have 
+states. 
+ 
+The formal constructions of an equivalent DFA for any NFA is given below. We 
+first consider an NFA without 
+transitions and then we incorporate the affects of 
+transitions later. 
+ 
+Formal construction of an equivalent DFA for a given NFA without transitions. 
+ 
+Given an 
+without - moves, we construct an equivalent DFA 
+ 
+ 
+as follows 
+ 
+i.e. 
+ 
+ 
+ 
+ 
+ 
+(i.e. every subset of Q which as an element in F is considered as a final stat
+in DFA D ) 
+ 
+ 
+ 
+ 
+for all 
+and 
+ 
+ 
+where 
+ 
+ 
+That is, 
+ 
+ 
+To show that this construction works we need to show that L(D)=L(N) i.e. 
+ 
+ 
+ 
+ 
+ 
+ 
+Or,
+ 
+ 
+We will prove the following which is a stranger statement thus required. 
+www.indiansbrain.com
+ 
+ 
+Proof : We will show by inductions on 
+ 
+ 
+Basis If 
+=0, then w =  
+ 
+So, 
+by definition. 
+ 
+Inductions hypothesis : Assume inductively that the statement holds 
+of 
+length less than or equal to n. 
+ 
+Inductive step 
+ 
+Let 
+, then 
+with 
+ 
+ 
+Now, 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Now, given any NFA with -transition, we can first construct an equivalent NFA without 
+-transition and then use the above construction process to construct an equivalent 
+DFA , thus, proving the equivalence of NFA s and DFA s.. 
+ 
+It is also possible to construct an equivalent DFA directly from any given NFA with 
+- transition by integrating the concept of 
+-closure in the above construction. 
+ 
+Recall that, for any 
+ 
+ 
+- closure : 
+www.indiansbrain.com
+In the equivalent DFA , at every step, we need to modify the transition functions 
+to 
+keep track of all the states where the NFA can go on 
+-transitions. This is done by 
+replacing 
+by 
+-closure 
+, i.e. we now compute 
+at every step as 
+follows: 
+ 
+ 
+ 
+Besides this the initial state of the DFA D has to be modified to keep track of all the 
+states that can be reached from the initial state of NFA on zero or more -transitions. 
+This can be done by changing the initial state 
+to -closure (
+ ) . 
+ 
+It is clear that, at every step in the processing of an input string by the DFA D , it enters 
+a state that corresponds to the subset of states that the NFA N could be in at that 
+particular point. This has been proved in the constructions of an equivalent NFA for any 
+-NFA 
+If the number of states in the NFA is n , then there are 
+states in the DFA . That is, 
+each state in the DFA is a subset of state of the NFA . 
+ 
+But, it is important to note that most of these 
+states are inaccessible from the start state 
+and hence can be removed from the DFA without changing the accepted language. Thus, 
+in fact, the number of states in the equivalent DFA would be much less 
+ 
+than 
+. 
+Example : Consider the NFA given below. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+0 
+1 
+ 
+ 
+{
+} 
+ 
+ 
+ 
+ 
+Since there are 3 states in the NFA 
+www.indiansbrain.com
+There will be 
+states (representing all possible subset of states) in the 
+equivalent DFA . The transition table of the DFA constructed by using the subset 
+constructions process is produced here. 
+ 
+0 
+ 
+1 The start state of the DFA is   - closures 
+ 
+ 
+ 
+ 
+ The final states are all those subsets that contains 
+(since 
+in the NFA). 
+ 
+{   } 
+Let us compute one entry, 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Similarly, all other transitions can be computed 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+0 
+1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Corresponding Transition fig. for DFA.Note that states 
+ 
+are not accessible and hence can be removed. 
+This gives us the following simplified DFA with only 3 states. 
+www.indiansbrain.com
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+It is interesting to note that we can avoid encountering all those inaccessible 
+or unnecessary states in the equivalent DFA by performing the following two 
+steps inductively. 
+ 
+1. If 
+is the start state of the NFA, then make 
+- closure ( 
+) the start state of the 
+equivalent DFA . This is definitely the only accessible state. 
+ 
+2. If we have already computed a set 
+of states which are accessible. Then 
+. 
+compute 
+because these set of states will also be accessible. 
+ 
+Following these steps in the above example, we get the transition table given below 
+www.indiansbrain.com
+UNIT-II 
+ 
+ 
+ 
+Regular Expressions: Formal Definition 
+ 
+We construct REs from primitive constituents (basic elements) by repeatedly applying certain recursive rules 
+as given below. (In the definition) 
+ 
+Definition : Let S be an alphabet. The regular expressions are defined recursively as follows. 
+ 
+Basis : 
+ 
+i) 
+is a RE 
+ 
+ii) 
+is a RE 
+ 
+iii) 
+, a is RE. 
+ 
+These are called primitive regular expression i.e. Primitive Constituents 
+ 
+Recursive Step : 
+ 
+If 
+and 
+are REs over, then so are 
+ 
+i) 
+ 
+ 
+ii) 
+ 
+ 
+iii) 
+ 
+ 
+iv) 
+ 
+ 
+ 
+ 
+ 
+Closure : r is RE over only if it can be obtained from the basis elements (Primitive REs) by a finite no of 
+applications of the recursive step (given in 2). 
+ 
+Example : Let 
+= { 0,1,2 }. Then (0+21)*(1+ F ) is a RE, because we can construct this expression by 
+applying the above rules as given in the following step. 
+ 
+Steps 
+RE Constructed 
+Rule Used 
+1 
+1 
+Rule 1(iii) 
+2 
+ 
+Rule 1(i) 
+3 
+1+ 
+Rule 2(i) & Results of Step 1, 2 
+ 
+ 
+www.indiansbrain.com
+4 
+(1+   ) 
+Rule 2(iv) & Step 3 
+ 
+ 
+5 
+2 
+1(iii) 
+6 
+1 
+1(iii) 
+7 
+21 
+2(ii), 5, 6 
+8 
+0 
+1(iii) 
+9 
+0+21 
+2(i), 7, 8 
+10 
+(0+21) 
+2(iv), 9 
+11 
+(0+21)* 
+2(iii), 10 
+12 
+(0+21)* 
+2(ii), 4, 11 
+ 
+Language described by REs : Each describes a language (or a language is associated with every RE). 
+We will see later that REs are used to attribute regular languages. 
+ 
+Notation : If r is a RE over some alphabet then L(r) is the language associate with r . We can define the 
+language L(r) associated with (or described by) a REs as follows. 
+ 
+1. 
+is the RE describing the empty language i.e. L(
+) = 
+. 
+ 
+2. 
+is a RE describing the language {
+} i.e. L(
+) = {
+} . 
+ 
+3. 
+, a is a RE denoting the language {a} i.e . L(a) = {a} . 
+ 
+4. If 
+and 
+are REs denoting language L(
+) and L(
+) respectively, then 
+ 
+i) 
+is a regular expression denoting the language L(
+) = L(
+) ∪ L(
+) 
+ 
+ii) 
+is a regular expression denoting the language L(
+)=L(
+) L(
+) 
+ 
+iii) 
+is a regular expression denoting the language 
+ 
+ 
+iv) (
+) is a regular expression denoting the language L((
+)) = L(
+) 
+ 
+Example : Consider the RE (0*(0+1)). Thus the language denoted by the RE is 
+ 
+L(0*(0+1)) = L(0*) L(0+1) .......................by 4(ii) 
+ 
+= L(0)*L(0) ∪ L(1) 
+ 
+= {
+ , 0,00,000,........} {0} 
+{1} 
+ 
+= {
+ , 0,00,000,........} {0,1} 
+ 
+= {0, 00, 000, 0000,..........,1, 01, 001, 0001,...............} 
+ 
+Precedence Rule 
+www.indiansbrain.com
+Consider the RE ab + c. The language described by the RE can be thought of either L(a)L(b+c) or 
+ 
+L(ab)
+L(c) as provided by the rules (of languages described by REs) given already. But these two 
+represents two different languages lending to ambiguity. To remove this ambiguity we can either 
+ 
+ 
+ 
+1) Use fully parenthesized expression- (cumbersome) or 
+ 
+2) Use a set of precedence rules to evaluate the options of REs in some order. Like other algebras mod in 
+mathematics. 
+ 
+For REs, the order of precedence for the operators is as follows: 
+ 
+i) The star operator precedes concatenation and concatenation precedes union (+) operator. 
+ 
+ii) It is also important to note that concatenation & union (+) operators are associative and union operation 
+is commutative. 
+ 
+Using these precedence rule, we find that the RE ab+c represents the language L(ab) 
+L(c) i.e. it should be 
+grouped as ((ab)+c). 
+ 
+We can, of course change the order of precedence by using parentheses. For example, the 
+language represented by the RE a(b+c) is L(a)L(b+c). 
+ 
+ 
+ 
+Example : The RE ab*+b is grouped as ((a(b*))+b) which describes the language L(a)(L(b))*
+L(b) 
+ 
+Example : The RE (ab)*+b represents the language (L(a)L(b))* 
+L(b). 
+ 
+Example : It is easy to see that the RE (0+1)*(0+11) represents the language of all strings over {0,1} which 
+are either ended with 0 or 11. 
+ 
+Example : The regular expression r =(00)*(11)*1 denotes the set of all strings with an even number of 0's 
+ 
+followed by an odd number of 1's i.e. 
+ 
+Note : The notation 
+is used to represent the RE rr*. Similarly, 
+represents the RE rr, 
+denotes 
+r, 
+and so on. 
+ 
+An arbitrary string over 
+= {0,1} is denoted as (0+1)*. 
+ 
+Exercise : Give a RE r over {0,1} s.t. L(r)={
+ has at least one pair of consecutive 1's} 
+ 
+Solution : Every string in L(r) must contain 00 somewhere, but what comes before and what goes before is 
+completely arbitrary. Considering these observations we can write the REs as (0+1)*11(0+1)*. 
+ 
+Example : Considering the above example it becomes clean that the RE (0+1)*11(0+1)*+(0+1)*00(0+1)* 
+represents the set of string over {0,1} that contains the substring 11 or 00. 
+www.indiansbrain.com
+Example : Consider the RE 0*10*10*. It is not difficult to see that this RE describes the set of strings over {0,1} 
+that contains exactly two 1's. The presence of two 1's in the RE and any no of 0's before, between and after the 
+1's ensure it. 
+ 
+Example : Consider the language of strings over {0,1} containing two or more 1's. 
+ 
+Solution : There must be at least two 1's in the RE somewhere and what comes before, between, and after is 
+completely arbitrary. Hence we can write the RE as (0+1)*1(0+1)*1(0+1)*. But following two REs also 
+represent the same language, each ensuring presence of least two 1's somewhere in the string 
+ 
+ 
+ 
+i) 0*10*1(0+1)* 
+ 
+ii) (0+1)*10*10* 
+ 
+Example : Consider a RE r over {0,1} such that 
+ 
+L(r) = {
+ has no pair of consecutive 1's} 
+ 
+Solution : Though it looks similar to ex ……., it is harder to construct to construct. We observer that, whenever 
+a 1 occurs, it must be immediately followed by a 0. This substring may be preceded & followed by any no of 
+0's. So the final RE must be a repetition of strings of the form: 00…0100….00 i.e. 0*100*. So it looks like the 
+RE is (0*100*)*. But in this case the strings ending in 1 or consisting of all 0's are not accounted for. Taking 
+these observations into consideration, the final RE is  r = (0*100*)(1+ 
+)+0*(1+
+). 
+ 
+Alternative Solution : 
+The language can be viewed as repetitions of the strings 0 and 01. Hence get the RE as r = (0+10)*(1+
+).This 
+is a shorter expression but represents the same language. 
+ 
+Regular Expression: 
+ 
+FA to regular expressions: 
+ 
+FA to RE (REs for Regular Languages) : 
+ 
+Lemma : If a language is regular, then there is a RE to describe it. i.e. if L = L(M) for some DFA M, then there is a 
+RE r such that L = L(r). 
+ 
+Proof : We need to construct a RE r such that 
+. Since M is a DFA, it has a finite no 
+of states. Let the set of states of M is Q = {1, 2, 3,..., n} for some integer n. [ Note : if the n states of M were 
+denoted by some other symbols, we can always rename those to indicate as 1, 2, 3,..., n ]. The required RE is 
+constructed inductively. 
+ 
+Notations : 
+is a RE denoting the language which is the set of all strings w such that w is the label of a 
+path from state i to state j 
+in M, and that path has no intermediate state whose number is 
+greater then k. ( i & j (begining and end pts) are not considered to be "intermediate" so i and /or j can be 
+www.indiansbrain.com
+greater than k ) 
+ 
+We now construct 
+inductively, for all i, j 
+Q starting at k = 0 and finally reaching k = n. 
+ 
+Basis : k = 0, 
+i.e. the paths must not have any intermediate state ( since all states are numbered 1 or 
+above). There are only two possible paths meeting the above condition : 
+ 
+1. A direct transition from state i to state j. 
+o 
+= a if then is a transition from state i to state j on symbol the single symbol a. 
+ 
+o 
+= 
+if there are multiple transitions from state i to state j on symbols 
+ 
+. 
+o 
+= f if there is no transition at all from state i to state j. 
+ 
+2. All paths consisting of only one node i.e. when i = j. This gives the path of length 0 (i.e. the RE 
+denoting the string 
+) and all self loops. By simply adding Î to various cases above we get 
+the corresponding REs i.e. 
+o 
+= 
++ a if there is a self loop on symbol a in state i . 
+ 
+o 
+= 
++ 
+if there are self loops in state i as multiple symbols 
+ 
+. 
+ 
+o 
+= 
+if there is no self loop on state i. 
+ 
+Induction : 
+ 
+Assume that there exists a path from state i to state j such that there is no intermediate state whose number is 
+ 
+greater than k. The corresponding Re for the label of the path is 
+. There are only two possible cases : 
+ 
+1. The path dose not go through the state k at all i.e. number of all the intermediate states are less 
+than k. So, the label of the path from state i to state j is tha language described by the RE 
+. 
+ 
+2. The path goes through the state k at least once. The path may go from i to j and k may appear more 
+than once. We can break the into pieces as shown in the figure 7. 
+www.indiansbrain.com
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 7 
+ 
+1. The first part from the state i to the state k which is the first recurence. In this path, all 
+intermediate states are less than k and it starts at iand ends at k. So the RE 
+denotes the 
+language of the label of path. 
+ 
+2. The last part from the last occurence of the state k in the path to state j. In this path also, no 
+intermediate state is numbered greater than k. Hence the RE 
+denoting the language of the 
+label of the path. 
+ 
+3. In the middle, for the first occurence of k to the last occurence of k , represents a loop which may be 
+taken zero times, once or any no of times. And all states between two consecutive k's are 
+numbered less than k. 
+ 
+Hence the label of the path of the part is denoted by the RE 
+.The label of the path from state i to state 
+j is the concatenation of these 3 parts which is 
+ 
+ 
+ 
+Since either case 1 or case 2 may happen the labels of all paths from state i to j is denoted by the following RE 
+ 
+ 
+ 
+ 
+We can construct 
+for all i, j 
+{1,2,..., n} in increasing order of k starting with the basis k = 0 upto k = n since 
+depends only on expressions with a small superscript (and hence will be available). WLOG, assume 
+ 
+that state 1 is the start state and 
+are the m final states where ji 
+{1, 2, ... , n }, 
+and 
+ 
+. According to the convention used, the language of the automatacan be denoted by the RE 
+www.indiansbrain.com
+ 
+ 
+Since 
+is the set of all strings that starts at start state 1 and finishes at final state 
+following the transition of 
+the FA with any value of the intermediate state (1, 2, ... , n) and hence accepted by the automata. 
+ 
+Regular Grammar: 
+ 
+A grammar 
+is right-linear if each production has one of the following three forms: 
+ 
+ 
+A
+cB ,
+
+ 
+A
+c,
+ 
+A
+
+ 
+Where A, B 
+( with A = B allowed) and 
+. A grammar G is left-linear if each production has once of 
+the following three forms. 
+ 
+A
+Bc , A
+c, A
+ 
+ 
+A right or left-linear grammar is called a regular grammar. 
+ 
+Regular grammar and Finite Automata are equivalent as stated in the following theorem. 
+ 
+Theorem : A language L is regular iff it has a regular grammar. We use the following two lemmas to prove the 
+above theorem. 
+ 
+Lemma 1 : If L is a regular language, then L is generated by some right-linear grammar. 
+ 
+Proof : Let 
+be a DFA that accepts L. 
+ 
+Let 
+and 
+. 
+ 
+We construct the right-linear grammar 
+by letting 
+ 
+N = Q , 
+and 
+ 
+[ Note: If 
+, then 
+] 
+ 
+Let 
+. For M to accept w, there must be a sequence of states 
+such that 
+www.indiansbrain.com
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+and 
+ 
+By construction, the grammar G will have one production for each of the above transitions. Therefore, we have 
+the corresponding derivation. 
+ 
+ 
+ 
+ 
+Hence w 
+L(g). 
+ 
+Conversely, if 
+, then the derivation of w in G must have the form as given above. 
+But, then the construction of G from M implies that 
+ 
+, where 
+, completing the proof. 
+ 
+Lemma 2 : Let 
+be a right-linear grammar. Then L(G) is a regular 
+language. Proof: To prove it, we construct a FA M from G to accept the same language. 
+ 
+is constructed as follows: 
+ 
+( 
+is a special sumbol not in N ) 
+ 
+, 
+ 
+For any 
+and 
+and 
+is defined as 
+ 
+ 
+if 
+ 
+and 
+, if 
+. 
+We now show that this construction works. 
+ 
+Let 
+. Then there is a derivation of w in G of the form 
+www.indiansbrain.com
+ 
+ 
+By contradiction of M, there must be a sequence of transitions 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+implying that 
+i.e. w is accepted by M. 
+ 
+Conversely, if 
+is accepted by M, then because 
+is the only accepting state of M, the transitions 
+causing w to be accepted by M will be of the form given above. These transitions corresponds to a 
+ 
+derivationof w in the grammar G. Hence 
+, completing the proof of the lemma. 
+ 
+Given any left-linear grammar G with production of the form 
+, we can construct from it a 
+right-linear grammar 
+by replacing every production of G of the form 
+with 
+ 
+ 
+It is easy to prove that 
+. Since 
+is right-linear, 
+is regular. But then so are 
+i.e. 
+because regular languages are closed under reversal. 
+ 
+Putting the two lemmas and the discussions in the above paragraph together we get the proof of the theorem- 
+ 
+A language L is regular iff it has a regular grammar 
+ 
+Example : Consider the grammar 
+ 
+ 
+ 
+It is easy to see that G generates the language denoted by the regular expression 
+(01)*0. The construction of lemma 2 for this grammar produces the follwoing FA. 
+ 
+This FA accepts exactly (01)*1. 
+ 
+Decisions Algorithms for CFL 
+ 
+In this section, we examine some questions about CFLs we can answer. A CFL may be represented using a 
+CFG or PDA. But an algorithm that uses one representation can be made to work for the others, since we can 
+construct one from the other. 
+www.indiansbrain.com
+Testing Emptiness : 
+ 
+Theorem : There are algorithms to test emptiness of a CFL. 
+ 
+Proof : Given any CFL L, there is a CFG G to generate it. We can determine, using the construction described 
+ 
+in the context of elimination of useless symbols, whether the start symbol is useless. If so, then 
+; 
+otherwise not. 
+ 
+Testing Membership : 
+ 
+Given a CFL L and a string x, the membership, problem is to determine whether 
+? 
+ 
+Given a PDA P for L, simulating the PDA on input string x doesnot quite work, because the PDA can grow 
+its stack indefinitely on 
+input, and the process may never terminate, even if the PDA is deterministic. 
+ 
+So, we assume that a CFG 
+is given such that L = L(G). 
+ 
+Let us first present a simple but inefficient algorithm. 
+ 
+Convert G to 
+in CNF generating 
+. If the input string 
+, then we need to 
+ 
+determine whether 
+and it can easily be done using the technique given in the context of elimination of 
+ 
+-production. If , 
+then 
+iff 
+. Consider a derivation under a grammar in CNF. At 
+every step, a production in CNF in used, and hence it adds exactly one terminal symbol to the sentential form. 
+ 
+Hence, if the length of the input string x is n, then it takes exactly n steps to derive x ( provided x is in 
+). 
+ 
+Let the maximum number of productions for any nonterminal in 
+is K. So at every step in derivation, there are 
+atmost k choices. We may try out all these choices, systematically., to derive the string x in 
+. Since 
+ 
+there are atmost 
+i.e. 
+choices. This algorithms is of exponential time complexity. We now present an 
+efficient (polynomial time) membership algorithm. 
+ 
+Pumping Lemma: 
+ 
+Limitations of Finite Automata and Non regular Languages : 
+ 
+The class of languages recognized by FA s is strictly the regular set. There are certain languages which are 
+non regular i.e. cannot be recognized by any FA 
+ 
+Consider the language 
+ 
+ 
+In order to accept is language, we find that, an automaton seems to need to remember when passing the 
+center point between a's and b's how many a's it has seen so far. Because it would have to compare that 
+with the number of b's to either accept (when the two numbers are same) or reject (when they are not same) 
+the input string. 
+www.indiansbrain.com
+But the number of a's is not limited and may be much larger than the number of states since the string may 
+be arbitrarily long. So, the amount of information the automaton need to remember is unbounded. 
+ 
+A finite automaton cannot remember this with only finite memory (i.e. finite number of states). The fact that 
+FA s have finite memory imposes some limitations on the structure of the languages recognized. Inductively, we 
+can say that a language is regular only if in processing any string in this language, the information that has to 
+be remembered at any point is strictly limited. The argument given above to show that 
+is non regular is 
+informal. We now present a formal method for showing that certain languages such as 
+are non regular 
+ 
+Properties of CFL’s 
+ 
+Closure properties of CFL: 
+ 
+We consider some important closure properties of CFLs. 
+ 
+Theorem : If 
+and 
+are CFLs then so is 
+ 
+ 
+Proof : Let 
+and 
+be CFGs generating. Without loss of generality, we 
+can assume that 
+. Let 
+is a nonterminal not in 
+or 
+. We construct the grammar 
+ 
+from 
+and 
+, where 
+ 
+, 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+We now show that 
+ 
+ 
+Thus proving the theorem. 
+ 
+Let 
+. Then 
+. All productions applied in their derivation are also in 
+. Hence 
+i.e. 
+ 
+ 
+ 
+Similarly, if 
+, then 
+ 
+ 
+Thus 
+. 
+www.indiansbrain.com
+Conversely, let 
+. Then 
+and the first step in this derivation must be either 
+or 
+. Considering the former case, we have 
+ 
+ 
+Since 
+and 
+are disjoint, the derivation 
+must use the productions of 
+only ( which are also in 
+ 
+) Since 
+is the start symbol of 
+. Hence, 
+giving 
+. 
+ 
+Using similar reasoning, in the latter case, we get 
+. Thus 
+. 
+ 
+So, 
+, as claimed 
+ 
+ 
+Theorem : If 
+and 
+are CFLs, then so is 
+. 
+ 
+Proof : Let 
+and 
+be the CFGs generating 
+and 
+respectively. 
+Again, we assume that 
+and 
+are disjoint, and 
+is a nonterminal not in 
+or 
+. we construct the CFG 
+from 
+and 
+, where 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+We claim that 
+ 
+ 
+ 
+To prove it, we first assume that 
+and 
+. Then 
+and 
+. We can derive the string xy 
+in 
+as shown below. 
+ 
+ 
+ 
+ 
+ 
+since 
+and 
+. Hence 
+. 
+www.indiansbrain.com
+For the converse, let 
+. Then the derivation of w in 
+will be of the form 
+ 
+i.e. the first step in the derivation must see the rule 
+. Again, since 
+and 
+are 
+disjoint and 
+and 
+, some string x will be generated from 
+using productions in 
+( which 
+are also in 
+) and such that 
+. 
+ 
+Thus 
+ 
+Hence 
+and 
+. 
+ 
+This means that w can be divided into two parts x, y such that 
+and 
+. Thus 
+.This 
+ 
+completes the proof 
+Theorem : If L is a CFL, then so is 
+. 
+Proof : Let 
+be the CFG generating L. Let us construct the CFG 
+ 
+ 
+where 
+. 
+ 
+We now prove that 
+, which prove the theorem. 
+ 
+can generate 
+in one step by using the production 
+since 
+, 
+ Let 
+for any n >1 we can 
+write 
+where 
+for 
+ 
+ 
+ 
+ 
+using following steps. 
+ 
+ 
+ 
+ 
+ 
+First (n-1)-steps uses the production S
+SS producing the sentential form of n numbers of S 's. The 
+nonterminal S in the i-th position then generates 
+using production in P ( which are also in 
+) 
+ 
+It is also easy to see that G can generate the empty string, any string in L and any string 
+for n >1 
+and none other. 
+ 
+Hence 
+ 
+ 
+Theorem : CFLs are not closed under intersection 
+ 
+Proof : We prove it by giving a counter example. Consider the language 
+.The following 
+CFG generates L1 and hence a CFL 
+ 
+can generate any string in L. 
+. w can be generated by 
+ 
+from G 
+www.indiansbrain.com
+ 
+ 
+ 
+ 
+ 
+The nonterminal X generates strings of the form 
+and C generates strings of the form 
+, 
+. These are the only types of strings generated by X and C. Hence, S generates 
+. 
+ 
+Using similar reasoning, it can be shown that the following grammar 
+and hence it is 
+also a CFL. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+But, 
+and is already shown to be not context-free. 
+ 
+Hence proof. 
+ 
+Theorem : A CFL's are not closed under complementations 
+ 
+Proof : Assume, for contradiction, that CFL's are closed under complementation. SInce, CFL's are also closed 
+under union, the language 
+, where 
+and 
+are CFL's must be CFL. But by DeMorgan's law 
+ 
+ 
+ 
+ 
+This contradicts the already proved fact that CFL's are not closed under intersection. 
+But it can be shown that the CFL's are closed under intersection with a regular set. 
+ 
+Theorem : If L is a CFL and R is a regular language, then 
+is a CFL. 
+ 
+Proof : Let 
+be a PDA for L and let 
+be a DFA for 
+R. We construct a PDA M from P and D as follows 
+ 
+ 
+where 
+is defined as 
+ 
+contains 
+iff 
+www.indiansbrain.com
+and 
+contains 
+ 
+ 
+The idea is that M simulates the moves of P and D parallely on input w, and accepts w iff both P and 
+D accepts. That means, we want to show that 
+ 
+ 
+ 
+ 
+We apply induction on n, the number of moves, to show that 
+ 
+iff 
+ 
+and 
+ 
+Basic Case is n=0. Hence 
+, 
+and 
+. For this case it is trivially true 
+ 
+Inductive hypothesis : Assume that the statement is true for n -1. 
+ 
+Inductive Step : Let w = xa and 
+ 
+ 
+ 
+Let 
+ 
+By inductive hypothesis, 
+and 
+ 
+ 
+From the definition of 
+and considering the n-th move of the PDA M above, we have 
+ 
+and 
+ 
+ 
+Hence 
+and 
+ 
+ 
+If 
+and 
+, then 
+and we got that if M accepts w, then both P and D accepts it. 
+ 
+We can show that converse, in a similar way. Hence 
+is a CFL ( since it is accepted by a PDA M ) 
+This property is useful in showing that certain languages are not context-free. 
+ 
+Example : Consider the language 
+ 
+ 
+Intersecting L with the regular set 
+, we get 
+www.indiansbrain.com
+ 
+ 
+ 
+Which is already known to be not context-free. Hence L is not context-free 
+Theorem : CFL's are closed under reversal. That is if L is a CFL, then so is 
+ 
+ 
+Proof : Let the CFG 
+generates L. We construct a CFG 
+where 
+ 
+. We now show that 
+, thus proving the theorem. 
+We need to prove that 
+iff 
+. 
+ 
+The proof is by induction on n, the number of steps taken by the derivation. We assume, for simplicity (and 
+of course without loss of generality), that G and hence 
+are in CNF. 
+ 
+The basis is n=1 in which case it is trivial. Because 
+must be either 
+or BC with 
+. 
+ 
+Hence 
+iff 
+ 
+ 
+Assume that it is true for (n-1)-steps. Let 
+. Then the first step must apply a rule of the 
+form 
+and it gives 
+ 
+where 
+and 
+ 
+ 
+By constructing of G', 
+ 
+Hence 
+ 
+ 
+The converse case is exactly similar 
+Substitution : 
+ 
+, let 
+be a language (over any alphabet). This defines a function S, called substitution, on 
+which is 
+ 
+denoted as 
+- for all 
+ 
+ 
+This definition of substitution can be extended further to apply strings and langauge as well. 
+If 
+, where 
+, is a string in 
+, then 
+ 
+. 
+Similarly, for any language L, 
+ 
+The following theorem shows that CFLs are closed under substitution. 
+ 
+Thereom : Let 
+is a CFL, and s is a substitution on 
+such that 
+is a CFL for all 
+, 
+thus s(L) is a CFL 
+ 
+Proof : Let L = L(G) for a CFG 
+and for every 
+, 
+for some 
+. Without loss of generality, assume that the sets of nonterminals N and 
+'s 
+are disjoint. 
+www.indiansbrain.com
+Now, we construct a grammar 
+, generating s(L), from G and 
+'s as follows : 
+ 
+
+ 
+
+ 
+
+ 
+ 
+consists of
+
+1. 
+and 
+ 
+2. The production of P but with each terminal a in the right hand side of a production replaced 
+by 
+everywhere. 
+We now want to prove that this construction works i.e. 
+iff 
+. 
+ 
+If Part : Let 
+then according to the definition there is some string 
+and 
+for 
+such that 
+ 
+We will show that 
+. 
+ 
+From the construction of 
+, we find that, there is a derivation 
+corresponding to the string 
+ 
+(since 
+contains all productions of G but every ai replaced with 
+in the RHS of any 
+production). 
+ 
+Every 
+is the start symbol of 
+and all productions of 
+are also included in 
+. 
+Hence 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Therefore, 
+ 
+ 
+(Only-if Part) Let 
+. Then there must be a derivative as follows : 
+ 
+(using the production of G include in 
+as modified by (step 2) of the construction of 
+.) 
+ 
+Each 
+(
+) can only generate a string 
+, since each 
+'s and N are disjoin. 
+Therefore, we get 
+ 
+ 
+since 
+ 
+www.indiansbrain.com
+since 
+ 
+ 
+ 
+ 
+ 
+The string 
+is formed by substituting strings 
+for each 
+and hence 
+. 
+ 
+Theorem : CFL's are closed under homomorphism 
+ 
+Proof : Let 
+be a CFL, and h is a homomorphism on 
+i.e 
+for some alphabets 
+. consider the 
+following substitution S:Replace each symbol 
+by the language consisting of the only string h(a), i.e. 
+ 
+for all 
+. Then, it is clear that, h(L) = s(L). Hence, CFL's being closed under 
+substitution must also be closed under homomorphism. 
+www.indiansbrain.com
+ 
+ 
+UNIT- III 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Grammar 
+ 
+A grammar is a mechanism used for describing languages. This is one of the most simple but yet powerful 
+mechanism. There are other notions to do the same, of course. 
+ 
+In everyday language, like English, we have a set of symbols (alphabet), a set of words constructed from 
+these symbols, and a set of rules using which we can group the words to construct meaningful sentences. The 
+grammar for English tells us what are the words in it and the rules to construct sentences. It also tells us 
+whether a particular sentence is well-formed (as per the grammar) or not. But even if one follows the rules of 
+the english grammar it may lead to some sentences which are not meaningful at all, because of impreciseness 
+and ambiguities involved in the language. In english grammar we use many other higher level constructs like 
+noun-phrase, verb-phrase, article, noun, predicate, verb etc. A typical rule can be defined as 
+ 
+< sentence >
+< noun-phrase > < predicate > 
+ 
+meaning that "a sentence can be constructed using a 'noun-phrase' followed by a predicate". 
+ 
+Some more rules are as follows: 
+ 
+< noun-phrase >
+< article >< noun > 
+ 
+< predicate > 
+< verb > 
+ 
+with similar kind of interpretation given above. 
+ 
+If we take {a, an, the} to be <article>; cow, bird, boy, Ram, pen to be examples of <noun>; and eats, runs, 
+swims, walks, are associated with <verb>, then we can construct the sentence- a cow runs, the boy eats, an 
+pen walks- using the above rules. Even though all sentences are well-formed, the last one is not meaningful. 
+We observe that we start with the higher level construct <sentence> and then reduce it to <noun-phrase>, 
+<article>, <noun>, <verb> successively, eventually leading to a group of words associated with these 
+constructs. 
+ 
+These concepts are generalized in formal language leading to formal grammars. The word 'formal' here refers 
+to the fact that the specified rules for the language are explicitly stated in terms of what strings or symbols can 
+occur. There can be no ambiguity in it. 
+ 
+Formal definitions of a Grammar 
+www.indiansbrain.com
+A grammar G is defined as a quadruple. 
+ 
+ 
+ 
+ 
+N is a non-empty finite set of non-terminals or variables, 
+ 
+is a non-empty finite set of terminal symbols such that 
+ 
+ 
+, is a special non-terminal (or variable) called the start symbol, and 
+is a 
+finite set of production rules. 
+ 
+The binary relation defined by the set of production rules is denoted by 
+, i.e. 
+iff 
+. 
+ 
+In other words, P is a finite set of production rules of the form 
+, where 
+and 
+ 
+ 
+ 
+Production rules: 
+ 
+The production rules specify how the grammar transforms one string to another. Given a string 
+, we say that 
+the production rule 
+is applicable to this string, since it is possible to use the rule 
+to rewrite the 
+(in 
+) to 
+obtaining a new string 
+. We say that 
+derives 
+and is denoted as 
+ 
+ 
+ 
+ 
+Successive strings are dervied by applying the productions rules of the grammar in any arbitrary order. 
+A particular rule can be used if it is applicable, and it can be applied as many times as described. 
+ 
+We write 
+if the string 
+can be derived from the string 
+in zero or more steps; 
+if 
+can be 
+derived from 
+in one or more steps. 
+ 
+By applying the production rules in arbitrary order, any given grammar can generate many strings of terminal 
+symbols starting with the special start symbol, S, of the grammar. The set of all such terminal strings is 
+called the language generated (or defined) by the grammar. 
+ 
+Formaly, for a given grammar 
+the language generated by G is 
+ 
+ 
+ 
+ 
+ 
+ 
+That is 
+iff 
+. 
+www.indiansbrain.com
+If 
+, we must have for some 
+, 
+, denoted as a 
+derivation sequence of w, The strings 
+ 
+are denoted as sentential forms of the 
+derivation.  
+ 
+ 
+Example : Consider the grammar 
+ 
+, where N = {S},={a, b} and P is the set of the following 
+production rules 
+ 
+ 
+ 
+ 
+{ S 
+ab, SaSb} 
+ 
+Some terminal strings generated by this grammar together with their derivation is given below. 
+ 
+S 
+ab 
+ 
+S 
+aSb
+aabb 
+ 
+S 
+aSb
+aaSbb
+aaabbb 
+ 
+It is easy to prove that the language generated by this grammar is 
+ 
+ 
+ 
+ 
+By using the first production, it generates the string ab ( for i =1 ). 
+ 
+To generate any other string, it needs to start with the production S
+aSb and then the non-terminal S in the RHS can be 
+replaced either by ab (in which we get the string aabb) or the same production S
+aSb can be used one or more 
+times. Every time it adds an 'a' to the left and a 'b' to the right of S, thus giving the sentential 
+ 
+form 
+. When the non-terminal is replaced by ab (which is then only possibility for generating 
+a terminal string) we get a terminal string of the form 
+. 
+ 
+There is no general rule for finding a grammar for a given language. For many languages we can devise 
+grammars and there are many languages for which we cannot find any grammar. 
+ 
+Example: Find a grammar for the language 
+. 
+ 
+It is possible to find a grammar for L by modifying the previous grammar since we need to generate an extra b 
+at the end of the string 
+. We can do this by adding a production S
+Bb where the non-terminal B 
+generates 
+as given in the previous example. 
+ 
+Using the above concept we devise the follwoing grammar for L. 
+ 
+ 
+where, N = { S, B }, P = { S
+Bb, B
+ab, B
+aBb } 
+ 
+Parse Trees: 
+www.indiansbrain.com
+ 
+ 
+ 
+ 
+ 
+ 
+Construction of a Parse tree: 
+www.indiansbrain.com
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Yield of a Parse tree: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Ambiguity in languages and grammars: 
+www.indiansbrain.com
+www.indiansbrain.com
+ 
+ 
+ 
+ 
+UNIT-IV 
+ 
+ 
+ 
+ 
+ 
+ 
+Push down automata: 
+ 
+Regular language can be charaterized as the language accepted by finite automata. Similarly, we can 
+characterize the context-free language as the langauge accepted by a class of machines called 
+"Pushdown Automata" (PDA). A pushdown automation is an extension of the NFA. 
+ 
+It is observed that FA have limited capability. (in the sense that the class of languages accepted or characterized by 
+them is small). This is due to the "finite memory" (number of states) and "no external memory" involved with them. A 
+PDA is simply an NFA augmented with an "external stack memory". The addition of a stack provides the PDA with a 
+last-in, first-out memory management cpapability. This "Stack" or "pushdown store" can be used to record a 
+potentially unbounded information. It is due to this memory management capability with the help of the stack that a 
+PDA can overcome the memory limitations that prevents a FA to 
+ 
+accept many interesting languages like 
+. Although, a PDA can store an unbounded amount of 
+information on the stack, its access to the information on the stack is limited. It can push an element onto the 
+top of the stack and pop off an element from the top of the stack. To read down into the stack the top elements 
+must be popped off and are lost. Due to this limited access to the information on the stack, a PDA still has 
+some limitations and cannot accept some other interesting languages. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+As shown in figure, a PDA has three components: an input tape with read only head, a finite control and 
+a pushdown store. 
+ 
+The input head is read-only and may only move from left to right, one symbol (or cell) at a time. In each step, the 
+PDA pops the top symbol off the stack; based on this symbol, the input symbol it is currently reading, and 
+www.indiansbrain.com
+its present state, it can push a sequence of symbols onto the stack, move its read-only head one cell 
+(or symbol) to the right, and enter a new state, as defined by the transition rules of the PDA. 
+ 
+PDA are nondeterministic, by default. That is, 
+- transitions are also allowed in which the PDA can pop and 
+push, and change state without reading the next input symbol or moving its read-only head. Besides this, 
+there may be multiple options for possible next moves. 
+ 
+Formal Definitions : Formally, a PDA M is a 7-tuple M =
+ 
+where, 
+ 
+ 
+is a finite set of states,
+ 
+is a finite set of input symbols (input alphabets),
+
+ 
+is a finite set of stack symbols (stack alphabets),
+
+ 
+is a transition function from 
+to subset of 
+
+
+ 
+is the start state
+ 
+, is the initial stack symbol, and
+
+ 
+, is the final or accept states.
+ 
+Explanation of the transition function, 
+: 
+ 
+If, for any 
+, 
+. This means intitutively that whenever 
+the PDA is in state q reading input symbol a and z on top of the stack, it can nondeterministically for any i, 
+ 
+ 
+ 
+go to state 
+
+
+ 
+pop z off the stack
+
+ 
+push 
+onto the stack (where 
+) (The usual convention is that if 
+, 
+then 
+will be at the top and 
+at the bottom.)
+ 
+move read head right one cell past the current symbol a.
+ 
+If a = 
+, then 
+means intitutively that whenver the PDA is in state 
+q with z on the top of the stack regardless of the current input symbol, it can nondeterministically for any 
+ 
+i, 
+, 
+ 
+ 
+go to state 
+
+ 
+pop z off the stack
+
+ 
+push 
+onto the stack, and
+ 
+leave its read-only head where it is.
+www.indiansbrain.com
+State transition diagram : A PDA can also be depicted by a state transition diagram. The labels on the arcs 
+indicate both the input and the stack operation. The transition 
+ 
+for 
+and 
+is depicted by 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Final states are indicated by double circles and the start state is indicated by an arrow to it from nowhere. 
+ 
+ 
+Configuration or Instantaneous Description (ID) : 
+ 
+A configuration or an instantaneous description (ID) of PDA at any moment during its computation is an 
+element of 
+describing the current state, the portion of the input remaining to be read (i.e. 
+under and to the right of the read head), and the current stack contents. Only these three elements 
+can affect the computation from that point on and, hence, are parts of the ID. 
+ 
+The start or inital configuartion (or ID) on input 
+is 
+. That is, the PDA always starts in its 
+start state, 
+with its read head pointing to the leftmost input symbol and the stack containing only 
+the start/initial stack symbol, 
+. 
+ 
+The "next move relation" one figure describes how the PDA can move from one configuration to 
+another in one step. 
+ 
+Formally, 
+ 
+ 
+ 
+ 
+iff 
+'a' may be 
+or an input symbol. 
+ 
+Let I, J, K be IDs of a PDA. We define we write I
+K, if ID I can become K after exactly i moves. The 
+relations 
+and 
+define as follows 
+ 
+I 
+K 
+ 
+I 
+J if 
+such that I 
+K and K
+ J 
+ 
+I 
+J if 
+such that I 
+J. 
+www.indiansbrain.com
+That is, 
+is the reflexive, transitive closure of 
+. We say that I 
+J if the ID J follows from the ID I in 
+zero or more moves. 
+ 
+( Note : subscript M can be dropped when the particular PDA M is understood. ) 
+ 
+Language accepted by a PDA M 
+ 
+There are two alternative definiton of acceptance as given below. 
+ 
+1. Acceptance by final state : 
+ 
+Consider the PDA 
+. Informally, the PDA M is said to accept its input 
+by 
+final state if it enters any final state in zero or more moves after reading its entire input, starting in the start 
+configuration on input 
+. 
+ 
+Formally, we define L(M), the language accepted by final state to be 
+ 
+{ 
+| 
+for some 
+and 
+} 
+ 
+ 
+ 
+ 
+2. Acceptance by empty stack (or Null stack) : The PDA M accepts its input 
+by empty stack if starting in the 
+ 
+start configuration on input 
+, it ever empties the stack w/o pushing anything back on after reading the 
+entire input. Formally, we define N(M), the language accepted by empty stack, to be 
+ 
+{ 
+| 
+for some 
+} 
+ 
+Note that the set of final states, F is irrelevant in this case and we usually let the F to be the empty set i.e. F = 
+Q . 
+ 
+Example 1 : Here is a PDA that accepts the language 
+. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+, and 
+consists of the following transitions 
+www.indiansbrain.com
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The PDA can also be described by the adjacent transition diagram. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Informally, whenever the PDA M sees an input a in the start state 
+with the start symbol z on the top of the stack 
+it pushes a onto the stack and changes state to 
+. (to remember that it has seen the first 'a'). On state 
+if it 
+sees anymore a, it simply pushes it onto the stack. Note that when M is on state 
+, the symbol on the 
+ 
+top of the stack can only be a. On state 
+if it sees the first b with a on the top of the stack, then it needs to 
+start comparison of numbers of a's and b's, since all the a's at the begining of the input have already been 
+pushed onto the stack. It start this process by popping off the a from the top of the stack and enters in state q3 
+ 
+(to remember that the comparison process has begun). On state 
+, it expects only b's in the input (if it sees 
+any more a in the input thus the input will not be in the proper form of anbn). Hence there is no more on input a 
+when it is in state 
+. On state 
+it pops off an a from the top of the stack for every b in the input. When it sees 
+the last b on state q3 (i.e. when the input is exaushted), then the last a from the stack will be popped off and the 
+start symbol z is exposed. This is the only possible case when the input (i.e. on 
+-input ) the PDA M 
+ 
+will move to state 
+which is an accept state. 
+ 
+we can show the computation of the PDA on a given input using the IDs and next move relations. For example, 
+following are the computation on two input strings. 
+ 
+Let the input be aabb. we start with the start configuration and proceed to the subsequent IDs using 
+the transition function defined 
+ 
+( using transition 1 ) 
+ 
+( using transition 2 ) 
+ 
+( using transition 3 ) 
+www.indiansbrain.com
+( using transition 4 ), 
+( using transition 5 ) , 
+is final state. Hence , accept. So 
+the string aabb is rightly accepted by M 
+ 
+we can show the computation of the PDA on a given input using the IDs and next move relations. For example, 
+following are the computation on two input strings. 
+ 
+i) Let the input be aabab. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+No further move is defined at this point. 
+ 
+Hence the PDA gets stuck and the string aabab is not accepted. 
+ 
+Example 2 : We give an example of a PDA M that accepts the set of balanced strings of parentheses [] by 
+empty stack. 
+The PDA M is given below. 
+ 
+ 
+where 
+is defined as 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Informally, whenever it sees a [, it will push the ] onto the stack. (first two transitions), and whenever it sees a ] 
+and the top of the stack symbol is [, it will pop the symbol [ off the stack. (The third transition). The fourth 
+transition is used when the input is exhausted in order to pop z off the stack ( to empty the stack) and accept. 
+Note that there is only one state and no final state. The following is a sequence of configurations leading to the 
+acceptance of the string [ [ ] [ ] ] [ ]. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Equivalence of acceptance by final state and empty stack. 
+ 
+It turns out that the two definitions of acceptance of a language by a PDA - accpetance by final state and empty 
+stack- are equivalent in the sense that if a language can be accepted by empty stack by some PDA, it can also 
+be accepted by final state by some other PDA and vice versa. Hence it doesn't matter which one we use, since 
+www.indiansbrain.com
+each kind of machine can simulate the other.Given any arbitrary PDA M that accpets the language L by final 
+state or empty stack, we can always construct an equivalent PDA M with a single final state that accpets 
+exactly the same language L. The construction process of M' from M and the proof of equivalence of M & M' 
+are given below. 
+ 
+There are two cases to be considered. 
+ 
+CASE I : PDA M accepts by final state, Let 
+Let qf be a new state not in Q. 
+Consider the PDA 
+where 
+as well as the following transition. 
+ 
+contains 
+and 
+. It is easy to show that M and M' are equivalent i.e. 
+ 
+L(M) = L(
+) 
+ 
+Let 
+L(M) . Then 
+for some 
+and 
+ 
+ 
+Then 
+ 
+ 
+Thus 
+accepts 
+ 
+ 
+Conversely, let 
+accepts 
+i.e. 
+L(
+), then 
+for 
+inherits all other moves except the last one from M. Hence 
+for some 
+ 
+. 
+ 
+Thus M accepts 
+. Informally, on any input 
+simulate all the moves of M and enters in its own final 
+state 
+whenever M enters in any one of its final status in F. Thus 
+accepts a string 
+iff M accepts it. 
+ 
+CASE II : PDA M accepts by empty stack. 
+ 
+We will construct 
+from M in such a way that 
+simulates M and detects when M empties its stack. 
+ 
+enters its final state 
+when and only when M empties its stack.Thus 
+will accept a string 
+iff M 
+accepts. 
+ 
+Let 
+where 
+and X
+and 
+contains all 
+the transition of 
+, as well as the following two transitions. 
+ 
+ 
+and 
+www.indiansbrain.com
+Transitions 1 causes 
+to enter the initial configuration of M except that 
+will have its own bottom-of-stack 
+marker X which is below the symbols of M's stack. From this point onward 
+will simulate every move of M 
+since all the transitions of M are also in 
+ 
+ 
+If M ever empties its stack, then 
+when simulating M will empty its stack except the symbol X at the bottom. 
+ 
+At this point, 
+will enter its final state 
+by using transition rule 2, thereby (correctly) accepting the 
+input. We will prove that M and 
+are equivalent. 
+ 
+Let M accepts 
+. Then 
+ 
+for some 
+. But then 
+ 
+ 
+( by transition rule 1) 
+ 
+( Since 
+includes all the moves of M ) 
+ 
+ 
+( by transition rule 2 ) 
+ 
+Hence, 
+also accepts 
+. Conversely, let 
+accepts 
+. 
+ 
+Then 
+for some 
+ 
+ 
+Every move in the sequence, 
+were taken from M. 
+ 
+Hence, M starting with its initial configuration will eventually empty its stack and accept the input i.e. 
+ 
+ 
+ 
+ 
+Equivalence of PDA’s and CFG’s: 
+We will now show that pushdown automata and context-free grammars are equivalent in expressive power, 
+that is, the language accepted by PDAs are exactly the context-free languages. To show this, we have to 
+prove each of the following: 
+ 
+i) 
+Given any arbitrary CFG G there exists some PDA M that accepts exactly the same 
+language generated by G. 
+ 
+ii) 
+Given any arbitrary PDA M there exists a CFG G that generates exactly the same 
+language accpeted by M. 
+ 
+(i) CFA to PDA 
+ 
+We will first prove that the first part i.e. we want to show to convert a given CFG to an equivalent PDA. 
+www.indiansbrain.com
+Let the given CFG is 
+. Without loss of generality we can assume that G is in 
+Greibach Normal Form i.e. all productions of G are of the form . 
+ 
+ where 
+and 
+. 
+ 
+From the given CFG G we now construct an equivalent PDA M that accepts by empty stack. Note that there 
+is only one state in M. Let 
+ 
+, where 
+ 
+ 
+q is the only state
+
+ 
+is the input alphabet,
+ 
+N is the stack alphabet ,
+
+ 
+q is the start state.
+ 
+S is the start/initial stack symbol, and 
+, the transition relation is defined as follows
+ 
+For each production 
+, 
+. We now want to show 
+that M and G are equivalent i.e. L(G)=N(M). i.e. for any 
+. 
+iff 
+. 
+ 
+If 
+, then by definition of L(G), there must be a leftmost derivation starting with S and deriving w. 
+ 
+i.e. 
+ 
+ 
+Again if 
+, then one sysmbol. Therefore we need to show that for any 
+. 
+ 
+iff 
+. 
+ 
+But we will prove a more general result as given in the following lemma. Replacing A by S (the start 
+symbol) and 
+by 
+gives the required proof. 
+ 
+Lemma For any 
+, 
+and 
+, 
+via a leftmost derivative iff 
+. 
+ 
+Proof : The proof is by induction on n. 
+ 
+Basis : n = 0 
+www.indiansbrain.com
+ 
+iff 
+i.e. 
+and 
+ 
+ 
+ 
+iff 
+ 
+iff 
+ 
+ 
+Induction Step : 
+ 
+First, assume that 
+via a leftmost derivation. Let the last production applied in their derivation is 
+for some 
+and 
+. 
+ 
+Then, for some 
+, 
+ 
+ 
+ 
+ 
+ 
+ 
+where 
+and 
+ 
+ 
+Now by the indirection hypothesis, we get, 
+ 
+.............................................................................(1) 
+Again by the construction of M, we get 
+ 
+ 
+so, from (1), we get 
+ 
+ 
+ 
+ 
+since 
+and 
+, we get 
+ 
+ 
+That is, if 
+, then 
+. Conversely, assume that 
+and let 
+www.indiansbrain.com
+be the transition used in the last move. Then for some 
+, 
+and 
+ 
+ 
+ 
+where 
+and 
+. 
+ 
+Now, by the induction hypothesis, we get 
+ 
+via a leftmost derivation. 
+ 
+Again, by the construction of M, 
+must be a production of G. [ Since 
+]. Applying the production to the sentential form 
+we get 
+ 
+ 
+ 
+ 
+ 
+i.e. 
+ 
+ 
+via a leftmost derivation. 
+ 
+Hence the proof. 
+ 
+Example : Consider the CFG G in GNF 
+ 
+S
+aAB 
+ 
+A
+a / aA 
+B
+a / bB 
+ 
+The one state PDA M equivalent to G is shown below. For convenience, a production of G and 
+the corresponding transition in M are marked by the same encircled number. 
+ 
+(1) S
+aAB 
+ 
+(2) A 
+a 
+ 
+(3) A
+aA 
+ 
+(4) B 
+a 
+ 
+(5) B 
+bB 
+ 
+ 
+. We have used the same construction discussed earlier 
+ 
+Some Useful Explanations : 
+Consider the moves of M on input aaaba leading to acceptance of the string. 
+ 
+Steps 
+www.indiansbrain.com
+ 
+1. (q, aaaba, s) 
+( q, aaba, AB ) 
+2. 
+( q, aba, AB ) 
+3. 
+( q, ba, B ) 
+4. 
+( q, a, B ) 
+5. 
+( q,   ,   )    Accept by empty stack. 
+ 
+Note : encircled numbers here shows the transitions rule applied at every step. 
+ 
+Now consider the derivation of the same string under grammar G. Once again, the production used at 
+every step is shown with encircled number. 
+ 
+S 
+aAB 
+aaAB 
+aaaB 
+aaabB 
+aaaba 
+ 
+Steps 
+1 
+2 
+3 
+4 
+5
+ 
+Observations: 
+ 
+There is an one-to-one correspondence of the sequence of moves of the PDA M and the derivation
+
+sequence under the CFG G for the same input string in the sense that - number of steps in both 
+the cases are same and transition rule corresponding to the same production is used at every step 
+(as shown by encircled number). 
+
+ 
+considering the moves of the PDA and derivation under G together, it is also observed that at 
+every step the input read so far and the stack content together is exactly identical to the 
+corresponding sentential form i.e.
+
+<what is Read><stack> = <sentential form> 
+ 
+Say, at step 2, Read so far = 
+a stack = AB 
+Sentential form = aAB From this property we claim that 
+iff 
+. If the claim is 
+ 
+true, then apply with 
+and we get 
+iff 
+ or 
+iff 
+( 
+by definition ) 
+ 
+Thus N(M) = L(G) as desired. Note that we have already proved a more general version of the 
+claim PDA and CFG: 
+We now want to show that for every PDA M that accpets by empty stack, there is a CFG G such that L(G) = 
+N(M) 
+ 
+we first see whether the "reverse of the construction" that was used in part (i) can be used here to construct 
+an equivalent CFG from any PDA M. 
+ 
+It can be show that this reverse construction works only for single state PDAs. 
+www.indiansbrain.com
+ 
+That is, for every one-state PDA M there is CFG G such that L(G) = N(M). For every move of the 
+PDA M 
+we introduce a production 
+in the 
+grammar 
+where N = T and 
+.
+ 
+we can now apply the proof in part (i) in the reverse direction to show that L(G) = N(M). 
+ 
+But the reverse construction does not work for PDAs with more than one state. For example, consider the PDA 
+M produced here to accept the langauge 
+ 
+ 
+ 
+ 
+ 
+Now let us construct CFG 
+using the "reverse" construction. 
+ 
+( Note 
+). 
+ 
+Transitions in M 
+Corresponding Production in G 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+We can drive strings like aabaa which is in the language. 
+ 
+ 
+ 
+ 
+But under this grammar we can also derive some strings which are not in the language. e.g 
+ 
+ 
+ 
+ 
+and 
+. But 
+ 
+ 
+Therefore, to complete the proof of part (ii) we need to prove the following claim also. 
+ 
+Claim: For every PDA M there is some one-state PDA 
+such that 
+. 
+ 
+It is quite possible to prove the above claim. But here we will adopt a different approach. We start with 
+any arbitrary PDA M that accepts by empty stack and directly construct an equivalent CFG G. 
+www.indiansbrain.com
+PDA to CFG 
+ 
+We want to construct a CFG G to simulate any arbitrary PDA M with one or more states. Without loss 
+of generality we can assume that the PDA M accepts by empty stack. 
+ 
+The idea is to use nonterminal of the form <PAq> whenever PDA M in state P with A on top of the stack goes 
+ 
+to state 
+. That is, for example, for a given transition of the PDA corresponding production in the grammar as 
+shown below, 
+And, we would like to show, in general, that 
+iff the PDA M, when started from state P with A on 
+ 
+the top of the stack will finish processing 
+, arrive at state q and remove A from the stack. 
+ 
+we are now ready to give the construction of an equivalent CFG G from a given PDA M. we need to introduce 
+two kinds of producitons in the grammar as given below. The reason for introduction of the first kind of 
+production will be justified at a later point. Introduction of the second type of production has been justified in 
+the above discussion. 
+ 
+Let 
+be a PDA. We construct from M a equivalent CFG 
+ 
+ 
+Where 
+ 
+ 
+N is the set of nonterminals of the form <PAq> for 
+and 
+and P contains the follwoing
+ 
+two kind of production 
+ 
+1.  
+ 
+ 
+2. If 
+, then for every choice of the sequence 
+,
+ 
+, 
+. 
+ 
+ 
+Include the follwoing production 
+ 
+ 
+ 
+ 
+If n = 0, then the production is 
+.For the whole exercise to be meaningful we want 
+means there is a sequence of transitions ( for PDA M ), starting in state q, ending in 
+, 
+ 
+during which the PDA M consumes the input string 
+and removes A from the stack (and, of course, all 
+other symbols pushed onto stack in A's place, and so on.) 
+ 
+That is we want to claim that 
+ 
+iff 
+ 
+ 
+If this claim is true, then let 
+to get 
+iff 
+for some 
+ 
+. But for all 
+we have 
+as production in G. Therefore, 
+www.indiansbrain.com
+iff 
+i.e. 
+iff PDA M accepts w by empty stack or L(G) = N(M) 
+ 
+Now, to show that the above construction of CFG G from any PDA M works, we need to prove the 
+proposed claim. 
+ 
+Note: At this point, the justification for introduction of the first type of production (of the form 
+) in 
+the CFG G, is quite clear. This helps use deriving a string from the start symbol of the grammar. 
+ 
+Proof : Of the claim 
+iff 
+for some 
+, 
+and 
+ 
+ 
+The proof is by induction on the number of steps in a derivation of G (which of course is equal to the number 
+of moves taken by M). Let the number of steps taken is n. 
+ 
+The proof consists of two parts: ' if ' part and ' only if ' part. First, consider the ' if ' part 
+ 
+If 
+then 
+. 
+ 
+Basis is n =1 
+ 
+Then 
+. In this case, it is clear that 
+. Hence, by construction 
+is a production of G. 
+ 
+Then 
+ 
+Inductive Hypothesis : 
+ 
+ 
+ 
+ 
+ 
+Inductive Step : 
+ 
+ 
+For n >1, let w = ax for some 
+and 
+consider the first move of the PDA M which uses 
+the general transition 
+= 
+ 
+. Now M must remove 
+from stack 
+while consuming x in the remaining n-1 moves. 
+ 
+Let 
+, where 
+is the prefix of x that M has consumed when 
+first appears at top 
+of the stack. Then there must exist a sequence of states in M (as per construction) 
+(with 
+ 
+), such that 
+www.indiansbrain.com
+ 
+ [ This step implies 
+] 
+ [ This step implies 
+] 
+ 
+... 
+ 
+ 
+=
+ 
+ 
+[ Note: Each step takes less than or equal to n -1 moves because the total number of moves required 
+assumed to be n-1.] 
+ 
+That is, in general 
+ 
+ 
+, 
+. 
+ 
+So, applying inductive hypothesis we get 
+ 
+, 
+. But corresponding to the original move 
+ 
+in M we have added the following production in G. 
+ 
+We can show the computation of the PDA on a given input using the IDs and next move relations. For example, 
+following are the computation on two input strings. 
+ 
+i) Let the input be aabb. we start with the start configuration and proceed to the subsequent IDs using 
+the transition function defined 
+ 
+( using transition 1 ) , 
+( using transition 2 ) 
+ 
+( using transition 3 ), 
+( using transition 4 ) 
+ 
+( using transition 5 ) , 
+is final state. Hence, accept. 
+ 
+So the string aabb is rightly accepted by M. 
+ 
+we can show the computation of the PDA on a given input using the IDs and next move relations. For example, 
+following are the computation on two input strings. 
+ 
+i) Let the input be aabab. 
+www.indiansbrain.com
+ 
+ 
+No further move is defined at this point. 
+ 
+Hence the PDA gets stuck and the string aabab is not accepted. 
+ 
+The following is a sequence of configurations leading to the acceptance of the string [ [ ] [ ] ] [ ]. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Equivalence of acceptance by final state and empty stack. 
+ 
+It turns out that the two definitions of acceptance of a language by a PDA - accpetance by final state and empty 
+stack- are equivalent in the sense that if a language can be accepted by empty stack by some PDA, it can also 
+be accepted by final state by some other PDA and vice versa. Hence it doesn't matter which one we use, since 
+each kind of machine can simulate the other.Given any arbitrary PDA M that accpets the language L by final 
+ 
+state or empty stack, we can always construct an equivalent PDA M with a single final state that accpets 
+exactly the same language L. The construction process of M' from M and the proof of equivalence of M & M' 
+are given below 
+ 
+There are two cases to be considered. 
+ 
+CASE 1 : PDA M accepts by final state, Let 
+. Let 
+be a new state not in Q. 
+Consider the PDA 
+where 
+as well as the following transition. 
+ 
+contains 
+and 
+. It is easy to show that M and 
+are equivalent i.e. 
+ 
+ 
+. 
+ 
+Let 
+. Then 
+for some 
+and 
+ 
+ 
+Then 
+. 
+ 
+Thus 
+accepts 
+. 
+www.indiansbrain.com
+Conversely, let 
+accepts 
+i.e. 
+, then 
+for some 
+. 
+inherits all other moves except the last one from M. Hence 
+for some 
+. 
+ 
+Thus M accepts 
+. Informally, on any input 
+simulate all the moves of M and enters in its own final 
+state 
+whenever M enters in any one of its final status in F. Thus 
+accepts a string 
+iff M accepts it. 
+ 
+CASE 2 : PDA M accepts by empty stack. 
+ 
+we will construct 
+from M in such a way that 
+simulates M and detects when M empties its stack. 
+ 
+enters its final state 
+when and only when M empties its stack.Thus 
+will accept a string 
+iff M 
+accepts. 
+ 
+Let 
+where 
+and 
+and 
+contains all 
+the transition of 
+, as well as the following two transitions. 
+ 
+and 
+ 
+ 
+ 
+ 
+ 
+Transitions 1 causes 
+to enter the initial configuration of M except that 
+will have its own bottom-of-stack 
+marker X which is below the symbols of M's stack. From this point onward M' will simulate every move of M 
+ 
+since all the transitions of M are also in 
+. 
+ 
+If M ever empties its stack, then 
+when simulating M will empty its stack except the symbol X at the bottom. 
+ 
+At this point
+, will enter its final state 
+by using transition rule 2, thereby (correctly) accepting the 
+input. we will prove that M and 
+are equivalent. 
+ 
+Let M accepts 
+. 
+ 
+Then 
+ 
+for some 
+. But then, 
+ 
+ 
+( by transition rule 1 ) 
+ 
+( since 
+include all the moves of M ) 
+www.indiansbrain.com
+ 
+( by transition rule 2 ) 
+ 
+Hence, 
+also accepts 
+.Conversely, let 
+accepts 
+. 
+ 
+Then 
+for some Q . 
+ 
+Every move in the sequence 
+ 
+were taken from M. 
+ 
+Hence, M starting with its initial configuration will eventually empty its stack and accept the input i.e. 
+ 
+ 
+. 
+ 
+Deterministic PDA: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Regular Languages and DPDA’s The DPDA’s accepts a class of languages that is in between the regular 
+languages and CFL’s. 
+www.indiansbrain.com
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Deterministic Pushdown Automata (DPDA) and Deterministic Context-free Languages (DCFLs) 
+ 
+Pushdown automata that we have already defined and discussed are nondeterministic by default, that is , there may be two or 
+more moves involving the same combinations of state, input symbol, and top of the stock, and again, for some state and 
+top of the stock the machine may either read and input symbol or make an 
+- transition (without consuming any input). 
+ 
+In deterministic PDA , there is never a choice of move in any situation. This is handled by preventing the above mentioned two 
+cases as described in the definition below. 
+ 
+Defnition : Let 
+be a PDA . Then M is deterministic if and only if both the following conditions are 
+satisfied. 
+ 
+1. 
+has at most one element for any 
+and 
+(this condition prevents multiple choice f 
+any combination of 
+) 
+2. 
+If 
+and 
+for every 
+ 
+ 
+(This condition prevents the possibility of a choice between a move with or without an input symbol). 
+www.indiansbrain.com
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Empty Production Removal 
+ 
+The productions of context-free grammars can be coerced into a variety of forms without 
+affecting the expressive power of the grammars. If the empty string does not belong to a language, 
+then there is a way to eliminate the productions of the form A→ λ from the grammar. 
+ 
+If the empty string belongs to a language, then we can eliminate λ from all productions 
+ 
+save for the single production S → λ. In this case we can also eliminate any occurrences of S 
+from the right-hand side of productions. 
+ 
+Procedure to find CFG with out empty Productions 
+www.indiansbrain.com
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Unit production removal 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Left Recursion Removal 
+www.indiansbrain.com
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+NORMAL FORMS 
+ 
+Two kinds of normal forms viz., Chomsky Normal Form and Greibach Normal Form (GNF) 
+are considered here. 
+ 
+Chomsky Normal Form (CNF) 
+ 
+Any context-free language L without any λ-production is generated by a grammar is 
+which productions are of the form A → BC or A→ a, where A, B ∈VN , and a ∈ V Τ. 
+ 
+Procedure to find Equivalent Grammar in CNF 
+ 
+(i) Eliminate the unit productions, and λ-productions if any, 
+ 
+(ii) Eliminate the terminals on the right hand side of length two or more. 
+ 
+(iii) Restrict the number of variables on the right hand side of productions to two. 
+Proof: 
+ 
+For Step (i): Apply the following theorem: “Every context free language can be generated by 
+a grammar with no useless symbols and no unit productions”. 
+ 
+At the end of this step the RHS of any production has a single terminal or two or more symbols. 
+ 
+Let us assume the equivalent resulting grammar as G = (VN ,VT ,P ,S ). 
+For Step (ii): Consider any production of the form 
+www.indiansbrain.com
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Example 
+ 
+Obtain a grammar in Chomsky Normal Form (CNF) equivalent to the grammar G 
+with productions P given 
+ 
+ 
+ 
+ 
+ 
+ 
+Solution 
+www.indiansbrain.com
+www.indiansbrain.com
+Pumping Lemma for CFG 
+A “Pumping Lemma” is a theorem used to show that, if certain strings belong to a 
+ 
+language, then certain other strings must also belong to the language. Let us discuss a Pumping 
+Lemma for CFL. We will show that , if L is a context-free language, then strings of L that are at 
+least ‘m’ symbols long can be “pumped” to produce additional strings in L. The value of ‘m’ 
+depends on the particular language. Let L be an infinite context-free language. Then there is some 
+positive integer ‘m’ such that, if S is a string of L of Length at least ‘m’, then 
+ 
+(i) S = uvwxy (for some u, v, w, x, y) 
+ 
+(ii) | vwx|  m 
+(iii) | vx| 1 
+(iv) uv iwx i y∈L. 
+ 
+for all non-negative values of i. 
+It should be understood that 
+ 
+(i) If S is sufficiently long string, then there are two substrings, v and x, somewhere in 
+S. There is stuff (u) before v, stuff (w) between v and x, and stuff (y), after x. 
+ 
+(ii) The stuff between v and x won’t be too long, because | vwx | can’t be larger than m. 
+(iii) Substrings v and x won’t both be empty, though either one could be. 
+ 
+(iv) If we duplicate substring v, some number (i) of times, and duplicate x the same 
+number of times, the resultant string will also be in L. 
+ 
+Definitions 
+A variable is useful if it occurs in the derivation of some string. This requires that 
+ 
+(a) the variable occurs in some sentential form (you can get to the variable if you start from S), and 
+ 
+(b) a string of terminals can be derived from the sentential form (the variable is not a “dead end”). 
+A variable is “recursive” if it can generate a string containing itself. For example, variable A is 
+recursive if 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Proof of Pumping Lemma 
+ 
+(a) Suppose we have a CFL given by L. Then there is some context-free Grammar G that 
+generates L. Suppose 
+(i) L is infinite, hence there is no proper upper bound on the length of strings belonging to L. 
+ 
+(ii) L does not contain l. 
+(iii) G has no productions or l-productions. 
+www.indiansbrain.com
+There are only a finite number of variables in a grammar and the productions for each 
+ 
+variable have finite lengths. The only way that a grammar can generate arbitrarily long strings is if 
+one or more variables is both useful and recursive. Suppose no variable is recursive. Since the start 
+symbol is non recursive, it must be defined only in terms of terminals and other variables. Then 
+since those variables are non recursive, they have to be defined in terms of terminals and still other 
+variables and so on. 
+ 
+After a while we run out of “other variables” while the generated string is still finite. Therefore 
+there is an upper bond on the length of the string which can be generated from the start 
+symbol. This contradicts our statement that the language is finite. 
+Hence, our assumption that no variable is recursive must be incorrect. 
+ 
+(b) Let us consider a string X belonging to L. If X is sufficiently long, then the derivation of X 
+must have involved recursive use of some variable A. Since A was used in the derivation, the 
+derivation should have started as 
+www.indiansbrain.com
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Usage of Pumping Lemma 
+www.indiansbrain.com
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Hence our original assumption, that L is context free should be false. Hence the language L is not 
+con text-free. 
+ 
+Example 
+ 
+Check whether the language given by L  {a mbmcn : m  n  2m} is a CFL or not. 
+Solution 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Closure properties of CFL – Substitution 
+www.indiansbrain.com
+www.indiansbrain.com
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Applications of substitution theorem 
+www.indiansbrain.com
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Reversal 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Inverse Homomorphism: 
+www.indiansbrain.com
+www.indiansbrain.com
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+UNIT-V 
+Turing machine: 
+ 
+Informal Definition: 
+ 
+We consider here a basic model of TM which is deterministic and have one-tape. There are many variations, 
+all are equally powerfull. 
+ 
+The basic model of TM has a finite set of states, a semi-infinite tape that has a leftmost cell but is infinite to 
+the right and a tape head that can move left and right over the tape, reading and writing symbols. 
+ 
+For any input w with |w|=n, initially it is written on the n leftmost (continguous) tape cells. The infinitely many 
+cells to the right of the input all contain a blank symbol, B whcih is a special tape symbol that is not an input 
+symbol. The machine starts in its start state with its head scanning the leftmost symbol of the input w. De-
+pending upon the symbol scanned by the tape head and the current state the machine makes a move which 
+consists of the following: 
+ 
+ 
+writes a new symbol on that tape cell,  
+
+moves its head one cell either to the left or to the right and 
+ 
+(possibly) enters a new state.
+ 
+The action it takes in each step is determined by a transition functions. The machine continues computing (i.e. 
+making moves) until 
+ 
+ 
+it decides to "accept" its input by entering a special state called accept or final state or
+ 
+halts without accepting i.e. rejecting the input when there is no move defined.
+ 
+On some inputs the TM many keep on computing forever without ever accepting or rejecting the input, in 
+which case it is said to "loop" on that input 
+ 
+Formal Definition : 
+ 
+Formally, a deterministic turing machine (DTM) is a 7-tuple 
+, where 
+ 
+ 
+Q is a finite nonempty set of states.
+ 
+is a finite non-empty set of tape symbols, callled the tape alphabet of M.
+
+ 
+is a finite non-empty set of input symbols, called the input alphabet of M.
+ 
+is the transition function of M,
+www.indiansbrain.com
+ 
+is the initial or start state.
+ 
+is the blank symbol
+
+ 
+is the set of final state.
+ 
+So, given the current state and tape symbol being read, the transition function describes the next state, symbol 
+to be written on the tape, and the direction in which to move the tape head ( L and R denote left and right, 
+respectively ). 
+ 
+Transition function :
+ 
+ 
+ 
+The heart of the TM is the transition function, 
+because it tells us how the machine gets one step 
+to the next.
+
+ 
+when the machine is in a certain state q
+Q and the head is currently scanning the tape symbol 
+, and if 
+, then the machine
+ 
+1. replaces the symbol X by Y on the tape 
+ 
+2. goes to state p, and 
+3. the tape head moves one cell ( i.e. one tape symbol ) to the left ( or right ) if D is L ( or R ). 
+ 
+The ID (instantaneous description) of a TM capture what is going out at any moment i.e. it contains all the 
+information to exactly capture the "current state of the computations". 
+ 
+It contains the following: 
+ 
+ 
+The current state, q
+ 
+The position of the tape head,
+
+ 
+The constants of the tape up to the rightmost nonblank symbol or the symbol to the left of the head, 
+whichever is rightmost.
+ 
+Note that, although there is no limit on how far right the head may move and write nonblank symbols on the 
+tape, at any finite 
+ 
+time, the TM has visited only a finite prefix of the infinite tape. 
+ 
+An ID (or configuration) of a TM M is denoted by 
+where 
+and 
+ 
+ 
+is the tape contents to the left of the head
+ 
+q is the current state.
+
+ 
+is the tape contents at or to the right of the tape head
+ 
+That is, the tape head is currently scanning the leftmost tape symbol of 
+. ( Note that if 
+, then the 
+tape head is scanning a blank symbol) 
+ 
+If 
+is the start state and w is the input to a TM M then the starting or initial configuration of M is onviously 
+denoted by 
+ 
+www.indiansbrain.com
+Moves of Turing Machines 
+ 
+To indicate one move we use the symbol 
+. Similarly, zero, one, or more moves will be represented by 
+. A 
+move of a TM 
+ 
+M is defined as follows. 
+ 
+Let 
+be an ID of M where 
+, 
+and 
+. 
+ 
+Let there exists a transition 
+of M. 
+ 
+Then we write 
+meaning that ID 
+yields 
+ 
+ 
+ 
+Alternatively 
+, 
+if 
+is 
+a 
+transition 
+of 
+M, 
+then 
+we 
+write 
+which means that the ID 
+yields 
+
+
+ 
+In other words, when two IDs are related by the relation 
+, we say that the first one yields the 
+second ( or the second is the result of the first) by one move.
+ 
+If IDj results from IDi by zero, one or more (finite) moves then we write 
+( If the TM M is understand, 
+then the subscript M can be dropped from 
+or 
+)
+ 
+Special Boundary Cases 
+ 
+ 
+Let 
+be an ID and 
+be an transition of M. Then 
+. That is, the head is not 
+allowed to fall off the left end of the tape.
+ 
+Let 
+be an ID and 
+then figure (Note that 
+is equivalent to 
+)
+
+ 
+Let 
+be an ID and 
+then figure
+
+ 
+Let 
+be an ID and 
+then figure
+ 
+The language accepted by a TM 
+, denoted as L(M) is 
+ 
+L(M) = { w | 
+and figure for some p
+F and 
+} 
+ 
+In other words the TM M accepts a string 
+that cause M to enter a final or accepting state when started 
+in its initial ID (i.e. 
+). That is a TM M accepts the string 
+if a sequence of IDs, 
+ 
+exists such that 
+ 
+ 
+is the initial or starting ID of M
+ 
+; 
+
+www.indiansbrain.com
+ 
+The representation of IDk contains an accepting state.
+ 
+The set of strings that M accepts is the language of M, denoted L(M), as defined 
+above More about configuration and acceptance 
+ 
+ 
+An ID 
+of M is called an accepting (or final) ID if 
+
+
+ 
+An ID 
+is called a blocking (or halting) ID if 
+is undefined i.e. the TM has no move at this 
+point.
+ 
+is called reactable from 
+if 
+
+
+ 
+is the initial (or starting) ID if 
+is the input to the TM and 
+is the initial (or start) state 
+of M.
+ 
+On any input string 
+ 
+ 
+either 
+ 
+ 
+M halts on w if there exists a blocking (configuration) ID, 
+such that 
+
+ 
+There are two cases to be considered 
+ 
+ 
+M accepts w if I is an accepting ID. The set of all 
+accepted by M is denoted as L(M) as
+already defined 
+ 
+ 
+M rejects w if 
+is a blocking configuration. Denote by reject (M), the set of all 
+rejected by M.
+ 
+or 
+ 
+ 
+M loops on w if it does not halt on w.
+ 
+Let loop(M) be the set of all 
+on which M loops for. 
+ 
+It is quite clear that 
+ 
+ 
+ 
+ 
+That is, we assume that a TM M halts 
+ 
+ 
+When it enters an accepting 
+or
+ 
+When it enters a blocking 
+i.e. when there is no next move.
+ 
+However, on some input string, , 
+, it is possible that the TM M loops for ever i.e. it never halts 
+www.indiansbrain.com
+ 
+The Halting Problem 
+ 
+The input to a Turing machine is a string. Turing machines themselves can be written as strings. 
+Since these strings can be used as input to other Turing machines. A “Universal Turing 
+machine” is one whose input consists of a description M of some arbitrary Turing machine, and 
+some input w to which machine M is to be applied, we write this combined input as M + w. 
+This produces the same output that would be produced by M. This is written as 
+ 
+Universal Turing Machine (M + w) = M (w). 
+ 
+As a Turing machine can be represented as a string, it is fully possible to supply a Turing 
+ 
+machine as input to itself, for example M (M). This is not even a particularly bizarre thing to do for 
+example, suppose you have written a C pretty printer in C, then used the Pretty printer on itself. 
+Another common usage is Bootstrapping—where some convenient languages used to write a 
+minimal compiler for some new language L, then used this minimal compiler for L to write a new, 
+improved compiler for language L. Each time a new feature is added to language L, you can 
+recompile and use this new feature in the next version of the compiler. Turing machines sometimes 
+halt, and sometimes they enter an infinite loop. 
+ 
+A Turing machine might halt for one input string, but go into an infinite loop when given 
+some other string. The halting problem asks: “It is possible to tell, in general, whether a given 
+ 
+machine will halt for some given input?” If it is possible, then there is an effective procedure to look 
+at a Turing machine and its input and determine whether the machine will halt with that input. If 
+there is an effective procedure, then we can build a Turing machine to implement it. Suppose we 
+have a Turing machine “WillHalt” which, given an input string M + w, will halt and accept the string 
+if Turing machine M halts on input w and will halt and reject the string if Turing machine M does 
+not halt on input w. When viewed as a Boolean function, “WillHalt (M, w)” halts and returns 
+“TRUE” in the first case, and (halts and) returns “FALSE” in the second. 
+ 
+Theorem 
+Turing Machine “WillHalt (M, w)” does not exist. 
+ 
+Proof: This theorem is proved by contradiction. Suppose we could build a machine “WillHalt”. 
+Then we can certainly build a second machine, “LoopIfHalts”, that will go into an infinite loop 
+if and only if “WillHalt” accepts its input: 
+ Function LoopIfHalts (M, 
+w): if WillHalt (M, w) then 
+while true do { } 
+else 
+return false; 
+ 
+We will also define a machine “LoopIfHaltOnItSelf” that, for any given input M, representing a 
+Turing machine, will determine what will happen if M is applied to itself, and loops if M will halt 
+in this case. 
+ Function LoopIfHaltsOnItself (M): 
+return LoopIfHalts (M, M): 
+ 
+Finally, we ask what happens if we try: 
+Func tion Impos sible: 
+return LoopIfHaltsOnItself (LoopIfHaltsOnItself): 
+ 
+This machine, when applied to itself, goes into an infinite loop if and only if it halts 
+when applied to itself. This is impossible. Hence the theorem is proved. 
+www.indiansbrain.com
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Implications of Halting Problem 
+ 
+Programming 
+The Theorem of “Halting Problem” does not say that we can never determine whether or not 
+ 
+a given program halts on a given input. Most of the times, for practical reasons, we could 
+eliminate infinite loops from programs. Sometimes a “meta-program” is used to check another 
+program for potential infinite loops, and get this meta-program to work most of the time. 
+ 
+The theorem says that we cannot ever write such a meta-program and have it work all of the 
+time. This result is also used to demonstrate that certain other programs are also impossible. 
+The basic outline is as follows: 
+ 
+(i) If we could solve a problem X, we could solve the Halting problem 
+(ii) We cannot solve the Halting Problem 
+(iii) Therefore, we cannot solve problem X 
+ 
+ 
+ 
+ 
+ 
+ 
+A Turing machine can be "programmed," in much the same manner as a computer is 
+ 
+programmed. When one specifies the function which we usually call δ for a Tm, he is really 
+writing a program for the Tm. 
+ 
+1. Storage in finite Control 
+ 
+The finite control can be used to hold a finite amount of information. To do so, the state is written 
+as a pair of elements, one exercising control and the other storing a symbol. It should be 
+ 
+emphasized that this arrangement is for conceptual purposes only. No modification in the definition 
+of the Turing machine has been made. 
+ 
+Example 
+Consider the Turing machine 
+Solution 
+www.indiansbrain.com
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2. Multiple Tracks 
+ 
+We can imagine that the tape of the Turing machine is divided into k tracks, for any finite k. This 
+arrangement is shown in Fig., with k = 3. What is actually done is that the symbols on the tape 
+are considered as k-tuples. One component for each track. 
+ 
+Example 
+The tape in Fig. can be imagined to be that of a Turing machine which takes a binary input 
+ 
+greater than 2, written on the first track, and determines if it is a prime. The input is surrounded by 
+¢ and $ on the first track. 
+ 
+Thus, the allowable input symbols are [¢, B, B], [0, B, B ], [1, B, B ], and [$, B, B]. These 
+ 
+symbols can be identified with ¢, 0, 1, and $, respectively, when viewed as input symbols. The blank 
+www.indiansbrain.com
+symbol can be represented by [B, B, B ] 
+ 
+To test if its input is a prime, the Tm first writes the number two in binary on the second track 
+ 
+and copies the first track onto the third track. Then, the second track is subtracted, as many times 
+as possible, from the third track, effectively dividing the third track by the second and leaving the 
+remainder. If the remainder is zero, the number on the first track is not a prime. If the remainder is 
+nonzero, increase the number on the second track by one. 
+ 
+If now the second track equals the first, the number on the first track is a prime, because it cannot 
+be divided by any number between one and itself. If the second is less than the first, the whole 
+operation is repeated for the new number on the second track. In Fig., the Tm is testing to determine 
+if 47 is a prime. The Tm is dividing by 5; already 5 has been subtracted twice, so 37 appears on the 
+third track. 
+ 
+3. Subroutines 
+www.indiansbrain.com
+ 
+UNDECIDABILITY 
+ 
+ 
+Design a Turing machine to add two given integers. 
+ 
+Solution: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Some unsolvable Problems are as follows: 
+(i) Does a given Turing machine M halts on all input? 
+(ii) Does Turing machine M halt for any input? 
+(iii) Is the language L(M) finite? 
+ 
+(iv) Does L(M) contain a string of length k, for some given k? 
+ 
+(v) Do two Turing machines M1 and M2 accept the same language? 
+ 
+It is very obvious that if there is no algorithm that decides, for an arbitrary given Turing machine 
+M and input string w, whether or not M accepts w. These problems for which no algorithms exist 
+are called “UNDECIDABLE” or “UNSOLVABLE”. 
+ 
+Code for Turing Machine: 
+www.indiansbrain.com
+www.indiansbrain.com
+ 
+Diagonalization language: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+This table represents language acceptable by Turing machine 
+www.indiansbrain.com
+Proof that Ld is not recursively enumerable: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Recursive Languages: 
+www.indiansbrain.com
+www.indiansbrain.com
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Universal 
+ 
+Language: 
+www.indiansbrain.com
+ 
+Undecidability of Universal Language: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Problem -Reduction : 
+If P1 reduced to P2, 
+ 
+Then P2 is at least as hard as P1. 
+Theorem: If P1 reduces to P2 then, 
+ If P1 is undecidable the so is P2.
+ If P1 is Non-RE then so is P2.
+www.indiansbrain.com
+Post's Correspondence Problem (PCP) 
+ 
+A post correspondence system consists of a finite set of ordered pairs 
+where 
+for some alphabet 
+. 
+ 
+Any sequence of numbers 
+ 
+ 
+is called a solution to a Post Correspondence System. 
+ 
+The Post's Correspondence Problem is the problem of determining whether 
+a Post Correspondence system has a solutions. 
+ 
+Example 1 : Consider the post correspondence system 
+ 
+ The list 1,2,1,3 is a solution to it. 
+ 
+Because 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+i 
+             xi                                 yi 
+ 
+1 
+ 
+2 
+ 
+3 
+ 
+ 
+(A post correspondence system is also denoted as an instance of the 
+PCP) Example 2 : The following PCP instance has no solution 
+i 
+          xi                          yi 
+ 
+1 
+ 
+2 
+ 
+This can be proved as follows. 
+cannot be chosen at the start, since than the LHS and RHS would 
+differ in the first symbol ( 
+in LHS and 
+in RHS). So, we must start with 
+. The next pair must be 
+so that the 3 rd symbol in the RHS becomes identical to that of the LHS, which is a . After this step, 
+LHS and RHS are not matching. If 
+is selected next, then would be mismatched in the 7 th symbol 
+www.indiansbrain.com
+( 
+in LHS and 
+in RHS). If 
+is selected, instead, there will not be any choice to match the both side 
+in the next step. 
+ 
+Example3 : The list 1,3,2,3 is a solution to the following PCP instance. 
+ 
+ 
+i 
+   
+x
+i 
+   
+y
+i 
+ 
+ 
+ 
+   
+ 
+  
+  
+ 
+ 
+1 
+ 
+1 
+ 
+101 
+ 
+ 
+ 
+   
+ 
+  
+  
+ 
+ 
+2 
+ 
+10 
+ 
+00 
+ 
+ 
+ 
+   
+ 
+  
+  
+ 
+ 
+3 
+011 
+11 
+ 
+ 
+ 
+   
+ 
+  
+  
+ 
+ 
+The following properties can easily be proved. 
+ 
+Proposition The Post Correspondence System 
+ 
+ has solutions if and only if 
+ 
+ 
+ 
+ 
+ 
+ 
+Corollary : PCP over one-letter alphabet is decidable. 
+ 
+Proposition Any PCP instance over an alphabet 
+with 
+is equivalent to a PCP instance over 
+an alphabet 
+with 
+ 
+ 
+Proof : Let 
+ 
+ 
+Consider 
+We can now encode every 
+as 
+any PCP instance over 
+will now 
+have only two symbols, 0 and 1 and, hence, is equivalent to a PCP instance over 
+ 
+ 
+Theorem : PCP is undecidable. That is, there is no algorithm that determines whether an arbitrary Post 
+Correspondence System has a solution. 
+ 
+Proof: The halting problem of turning machine can be reduced to PCP to show the undecidability of PCP. Since 
+halting problem of TM is undecidable (already proved), This reduction shows that PCP is also undecidable. 
+The proof is little bit lengthy and left as an exercise. 
+ 
+Some undecidable problem in context-free languages 
+ 
+We can use the undecidability of PCP to show that many problem concerning the context-free languages 
+are undecidable. To prove this we reduce the PCP to each of these problem. The following discussion 
+makes it clear how PCP can be used to serve this purpose. 
+www.indiansbrain.com
+Let 
+be a Post Correspondence System over the alphabet 
+. We 
+construct two CFG's Gx and Gy from the ordered pairs x,y respectively as follows. 
+ 
+ and 
+ 
+ where 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+and 
+ 
+ 
+it is clear that the grammar 
+generates the strings that can appear in the LHS of a sequence while solving the 
+PCP followed by a sequence of numbers. The sequence of number at the end records the sequence of 
+ 
+strings from the PCP instance (in reverse order) that generates the string. Similarly, 
+generates the 
+strings that can be obtained from the RHS of a sequence and the corresponding sequence of numbers (in 
+reverse order). 
+ 
+Now, if the Post Correspondence System has a solution, then there must be a sequence 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+According to the construction of 
+and 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+In this case 
+www.indiansbrain.com
+ 
+ 
+Hence , 
+and 
+implying 
+ 
+ 
+ 
+ 
+ 
+Conversely, let 
+ 
+ 
+Hence, w must be in the form w1w2 where 
+and w2 in a sequence 
+(since, only that kind 
+of strings can be generated by each of 
+and 
+). 
+ 
+Now, the string 
+is a solution to the Post Correspondence System. 
+ 
+It is interesting to note that we have here reduced PCP to the language of pairs of CFG,s whose intersection is 
+nonempty. The following result is a direct conclusion of the above. 
+ 
+Theorem : Given any two CFG's G1 and G2 the question "Is 
+" is undecidable. 
+ 
+Proof: Assume for contradiction that there exists an algorithm A to decide this question. This would imply 
+that PCP is decidable as shown below. 
+ 
+For any Post Correspondence System, P construct grammars 
+and 
+by using the constructions 
+elaborated already. We can now use the algorithm A to decide whether and 
+Thus, PCP is decidable, a contradiction. So, such an algorithm does not exist. 
+ 
+If 
+and 
+are CFG's constructed from any arbitrary Post Correspondence System, than it is not difficult to 
+ 
+show that 
+and 
+are also context-free, even though the class of context-free languages are 
+not closed under complementation. 
+ 
+and their complements can be used in various ways to show that many other questions 
+related to CFL's are undecidable. We prove here some of those. 
+ 
+Theorem : Foe any two arbitrary CFG's 
+the following questions are undecidable 
+ 
+i. 
+Is 
+ 
+ 
+ii. 
+Is 
+ 
+www.indiansbrain.com
+iii. Is 
+ 
+Proof : 
+i. 
+If 
+then, 
+ 
+ 
+Hence, it suffice to show that the question “Is 
+" is undecidable. 
+ 
+Since, 
+and 
+are CFl's and CFL's are closed under union, 
+is also context-
+free. By DeMorgan's theorem, 
+ 
+ 
+If there is an algorithm to decide whether 
+we can use it to decide whether 
+or not. But this problem has already been proved to be undecidable. 
+ 
+ 
+Hence there is no such algorithm to decide or not. 
+ii. 
+ 
+Let P be any arbitrary Post correspondence system and 
+and 
+are CFg's constructed from the pairs of 
+strings. 
+ 
+must be a CFL and let G1generates L1. That is, 
+ 
+ 
+ 
+ 
+ 
+by De Morgan's theorem, as shown already, any string, 
+represents a solution to the 
+PCP. Hence, 
+contains all but those strings representing the solution to the PCP. 
+ 
+Let 
+for same CFG G2. 
+ 
+It is now obvious that 
+if and only if the PCP has no solutions, which is already proved to be 
+undecidable. Hence, the question “Is 
+?" is undecidable. 
+ 
+iii. 
+www.indiansbrain.com
+Let 
+be a CFG generating the language 
+and G2 be a CFG generating 
+where 
+and 
+are CFG.s constructed from same arbitrary instance of PCP. 
+ 
+iff 
+ 
+ 
+i.e. iff the PCP instance has no solutions as discussed in part (ii). 
+ 
+Hence the proof. 
+ 
+Theorem : It is undecidable whether an arbitrary CFG is ambiguous. 
+ 
+Proof : Consider an arbitrary instance of PCP and construct the CFG's 
+and 
+from the ordered pairs 
+of strings. 
+ 
+We construct a new grammar G from 
+and 
+as follows. 
+ 
+ where 
+ 
+ 
+ 
+ 
+ 
+is same as that of 
+and 
+. 
+ 
+ 
+ 
+ 
+ 
+This constructions gives a reduction of PCP to the -------- of whether a CFG is ambiguous, thus leading to 
+the undecidability of the given problem. That is, we will now show that the PCP has a solution if and only if G 
+is ambiguous. (where G is constructed from an arbitrary instance of PCP). 
+ 
+Only if Assume that 
+is a solution sequence to this instance of PCP. 
+ 
+Consider the following two derivation in 
+. 
+www.indiansbrain.com
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+But , 
+ 
+ 
+ 
+ 
+is a solution to the PCP. Hence the same string of terminals 
+has two derivations. Both these 
+derivations are, clearly, leftmost. Hence G is ambiguous. 
+ 
+If It is important to note that any string of terminals cannot have more than one derivation in 
+and 
+ 
+Because, every terminal string which are derivable under these grammars ends with a sequence of integers 
+This sequence uniquely determines which productions must be used at every step of the derivation. 
+ 
+Hence, if a terminal string, 
+, has two leftmost derivations, then one of them must begin with 
+the step. 
+ 
+then continues with derivations under 
+ 
+ 
+In both derivations the resulting string must end with a sequence 
+for same 
+The reverse 
+of this sequence must be a solution to the PCP, because the string that precede in one case is 
+ 
+and 
+in the other case. Since the string derived in both cases are identical, the 
+ 
+sequence 
+ 
+must be a solution to the PCP. 
+ 
+Hence the proof 
+www.indiansbrain.com
+Class p-problem solvable in polynomial time: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Non deterministic polynomial time: 
+ 
+A nondeterministic TM that never makes more than p(n) moves in any sequence of choices for 
+some polynomial p is said to be non polynomial time NTM. 
+ NP is the set of languags that are accepted by polynomial time NTM’s
+
+ Many problems are in NP but appear not to be in p.
+ One of the great mathematical questions of our age: is there anything in NP that is not in p?
+NP-complete problems: 
+
+If We cannot resolve the “p=np question, we can at least demonstrate that certain problems in NP 
+are the hardest , in the sense that if any one of them were in P , then P=NP. 
+
+ These are called NP-complete.
+
+ Intellectual leverage: Each NP-complete problem’s apparent difficulty reinforces the belief 
+that they are all hard.
+ 
+Methods for proving NP-Complete problems: 
+ 
+ Polynomial time reduction (PTR): Take time that is some polynomial in the input size to 
+convert instances of one problem to instances of another.
+
+ If P1 PTR to P2 and P2 is in P1 the so is P1.
+ Start by showing every problem in NP has a PTR to Satisfiability of Boolean formula.
+
+ Then, more problems can be proven NP complete by showing that SAT PTRs to them 
+directly or indirectly.
+www.indiansbrain.com
