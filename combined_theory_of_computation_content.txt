@@ -1,9 +1,364 @@
 Automata Tutorial | Theory of Computation - JavatpointTutorials×PythonPython Django Numpy Pandas Tkinter Pytorch Flask OpenCVAI, ML and Data ScienceArtificial Intelligence Machine Learning Data Science Deep Learning TensorFlow Artificial Neural Network Matplotlib Python ScipyJavaJava Servlet JSP Spring Boot Spring Framework Hibernate JavaFX Java Web ServicesB.Tech and MCADBMS Data Structures Operating System Computer Network DAA Computer Organization Software Engineering Data MiningWeb TechnologyHTML CSS JavaScript Jquery Angular-8 React JS React Native Node JSSoftware TestingSoftware Testing Selenium JIRA JMeter Postman TestNG SoapUI CucumberInterview×Technical InterviewC C++ Php Java Python JavaScript TypeScriptJava InterviewJDBC Servlet Maven Jenkins Spring Spring Boot JDB Hibernate JSFWeb InterviewHTML CSS JavaScript Jquery Angular Node-JS AJAXDatabase InterviewDBMS SQL PL/SQL Oracle MySQL MongoDB Redis MariaDBCompany InterviewsIBM Adobe Microsoft Amazon TCS HCL Wipro DXC Accenture Capgemini Space X Ericsson Infosy IGate EXL IndiaMART SapientCompilerPythonJavaPhpCC++RHtmlJavascriptTypescriptSwiftHome Python Java JavaScriptHTML SQL PHP C# C++ DS Aptitude Reasoning Selenium DBMS C Andriod Interview QAutomata TutorialAutomata TutorialTheory of AutomataFinite AutomataTransition DiagramTransition TableDFAExamples of DFANFAExamples of NFAEliminating ε TransitionsConversion from NFA to DFAConversion from NFA with ε to DFAMinimization of DFARegular ExpressionRegular ExpressionExamples of Regular ExpressionConversion of RE to FAArden's TheoremMoore MachineMealy MachineConversion from Mealy machine to Moore machineConversion from Moore machine to Mealy machineCFGContext-free GrammarDerivationDerivation TreeAmbiguity in GrammarUnambiguous GrammarSimplification of CFGChomsky's Normal Form (CNF)Greibach Normal Form (GNF)PDAPushdown AutomataPDA AcceptanceNon-deterministic Pushdown AutomataCFG to PDA ConversionTuring MachineApplication of Different Automata | Theory of ComputationIntroduction to Computational Complexity TheoryAutomata and Game TheoryRecursive Descent Parsernext →Automata TutorialTheory of automata is a theoretical branch of computer science and mathematical. It is the study of abstract machines and the computation problems that can be solved using these machines. The abstract machine is called the automata. An automaton with a finite number of states is called a Finite automaton.In this tutorial, we are going to learn how to construct deterministic finite automata, non-deterministic finite automata, Regular expression, context-free grammar, context-free language, Push down automata, Turning machines, etc.PrerequisiteBefore learning Automata, you should have a basic understanding of string, language, alphabets, symbols.AudienceOur Automata Tutorial is designed to help beginners and professionals.ProblemsWe assure that you will not find any problem in this Automata Tutorial. But if there is any mistake, please post the problem in contact form.Next TopicTheory of Automatanext →Latest CoursesWe provides tutorials and interview questions of all technology like java tutorial, android, java frameworksContact info G-13, 2nd Floor, Sec-3, Noida, UP, 201301, India[email protected].Follow usLatest PostPRIVACY POLICYTutorialsJava Data Structures C Programming C++ Tutorial C# Tutorial PHP Tutorial HTML Tutorial JavaScript Tutorial jQuery Tutorial Spring TutorialInterview QuestionsTcs Intuit Wipro Adobe Infosys Amazon Accenture Cognizant Capgemini MicrosoftOnline CompilerC R C++ Php Java Html Swift Python JavaScript TypeScript© Copyright 2024 Javatpoint. All Rights Reserved.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Introduction of Theory of Computation - GeeksforGeeks
-oursesDSA to DevelopmentNewly Launched!Android with KotlinGenerative AI & ChatGPTMaster Django FrameworkBecome AWS CertifiedFor Working ProfessionalsInterview 101: DSA & System DesignData Science Training ProgramJAVA Backend Development (Live)DevOps Engineering (LIVE)Software Testing & Automation (Live)Data Structures & Algorithms in PythonFor StudentsPlacement Preparation CourseData Science (Live)Data Structure & Algorithm-Self Paced (C++/JAVA)Master Competitive Programming (Live)Full Stack Development with React & Node JS (Live)GATE Exam CoursesGATE CS & IT (Self-Paced)GATE DS & AI (Self-Paced)All CoursesTutorialsData Structures & AlgorithmsDSA for BeginnersData StructuresArraysMatrixStringsLinked ListStackQueueTreeGeneric TreeBinary TreeBinary Search TreeAVL TreeB TreeB+ TreeRed Black TreeTree Data Structure TutorialHeapHashingGraphSet Data StructureMap Data StructureAdvanced Data StructureData Structures TutorialAlgorithmsAnalysis of AlgorithmsSearching AlgorithmsLinear SearchBinary SearchSearching Algorithms TutorialSorting AlgorithmsSelection SortBubble SortInsertion SortMerge SortQuick SortHeap SortCounting SortRadix SortBucket SortSorting Algorithms TutorialGreedy AlgorithmsDynamic ProgrammingGraph AlgorithmsPattern SearchingRecursionBacktrackingDivide and ConquerMathematical AlgorithmsGeometric AlgorithmsBitwise AlgorithmsRandomized AlgorithmsBranch and BoundAlgorithms TutorialComplete DSA TutorialCompetitive ProgrammingCompany Wise SDE SheetsFacebook SDE SheetAmazon SDE SheetApple SDE SheetNetflix SDE SheetGoogle SDE SheetWipro Coding SheetInfosys Coding SheetTCS Coding SheetCognizant Coding SheetHCL Coding SheetDSA Cheat SheetsDSA Sheet for BeginnersSDE SheetsFAANG Coding SheetLove Babbaar SheetMass Recruiter SheetProduct-Based Coding SheetCompany-Wise Preparation SheetTop 100 DSA Interview Questions Topic-wise100 Days of CodePythonPython TutorialPython ExercisesPython List ExercisePython String ExercisePython Tuple ExercisePython Dictionary ExercisePython Set ExercisePython Excercises Topic wisePython QuizPython ProgramsAdvanced Python TutorialPython API TutorialPython Database TutorialPython JSONPython Cheat SheetPython ProjectsPython Interview QuestionsML & Data ScienceMachine LearningMachine Learning TutorialMaths for MLML Projects100 Days of Machine LearningData Science TutorialData Science PackagesPandas TutorialNumPy TutorialData VisualizationData Visualization with PythonData Visualization with RTableauPower BIData AnalysisData Analysis with PythonData Analysis with R100 Days of Data AnalyticsDeep LearningNLP TutorialOpenCV TutorialInterview QuestionsMachine Learning Interview QuestionsDeep Learning Interview QuestionsR Interview QuestionsSystem DesignSystem Design TutorialSoftware Design PatternsSystem Design RoadmapTop 10 System Design Interview QuestionsInterview CornerCompany PreparationTop TopicsPractice Company QuestionsInterview ExperiencesExperienced InterviewsInternship InterviewsCompetitive ProgrammingMultiple Choice QuizzesAptitude for PlacementsPuzzles for InterviewsLanguagesCC++JavaPythonR TutorialC#SQLScalaPerlGo LanguageWeb DevelopmentHTMLHTML TutorialFree HTML CourseHTML Cheat SheetCSSCSS TutorialFree CSS CourseCSS Cheat SheetJavaScriptJavaScript TutorialJavaScript QuestionsJavaScript Cheat SheetDSA using JavaScriptFree JavaScript CourseJavaScript A to Z Complete GuideTypeScriptReactJSReactJS TutorialFree ReactJS CourseReactJS Cheat SheetNextJSNode.jsPHPAngularJSjQueryWeb Development Using PythonDjangoFlaskSeleniumPostmanGithubWeb Design100 Days of Web DevelopmentCS SubjectsOperating SystemDBMSComputer NetworksEngineering MathematicsComputer Organization and ArchitectureTheory of ComputationCompiler DesignDigital LogicSoftware EngineeringDevOps And LinuxDevOps TutorialGITAWSKubernetesDockerMicrosoft Azure TutorialGoogle Cloud PlatformDevOps RoadmapDevOps Interview QuestionsLinuxLinux TutorialLinux Commands A-ZLinux Commands CheatsheetFile Permissions in LinuxLinux System AdministrationLinux Shell ScriptingLinux NetworkingLinux Interview QuestionsSchool LearningClass 8 Study MaterialClass 9 Study MaterialClass 10 Study MaterialClass 11Study MaterialClass 12 Study MaterialEnglish GrammarGfG SchoolCommerceGATEGATE Computer Science NotesLast Minute NotesGATE CS Solved PapersGATE CS Original Papers and Official KeysGATE CS 2025 SyllabusGATE DA 2025 SyllabusOther CS ExamsISROUGC NETGeeksforGeeks VideosJobsGet Hired: Apply for JobsCorporate Hiring SolutionsFiltered JobsJobs for FreshersJobs for ExperiencedAll JobsPracticePractice Coding ProblemsAll DSA ProblemsProblem of the DayCompany Wise Coding PracticeAmazonMicrosoftFlipkartExplore AllGfG SDE SheetPractice Problems Difficulty WiseBasicEasyMediumHardLanguage Wise Coding PracticeCPPJavaPythonCurated DSA ListsBeginner's DSA SheetLove Babbar SheetTop 50 Array ProblemsTop 50 String ProblemsTop 50 DP ProblemsTop 50 Graph ProblemsTop 50 Tree ProblemsContestsJob-A-Thon Hiring ChallengeGfG Weekly [Rated Contest]All Contests and Events
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+
+
+
+
+
+
+
+
+
+CoursesDSA to DevelopmentNewly Launched!Android with KotlinGenerative AI & ChatGPTMaster Django FrameworkBecome AWS CertifiedFor Working ProfessionalsInterview 101: DSA & System DesignData Science Training ProgramJAVA Backend Development (Live)DevOps Engineering (LIVE)Software Testing & Automation (Live)Data Structures & Algorithms in PythonFor StudentsPlacement Preparation CourseData Science (Live)Data Structure & Algorithm-Self Paced (C++/JAVA)Master Competitive Programming (Live)Full Stack Development with React & Node JS (Live)GATE Exam CoursesGATE CS & IT (Self-Paced)GATE DS & AI (Self-Paced)All CoursesTutorialsData Structures & AlgorithmsDSA for BeginnersData StructuresArraysMatrixStringsLinked ListStackQueueTreeGeneric TreeBinary TreeBinary Search TreeAVL TreeB TreeB+ TreeRed Black TreeTree Data Structure TutorialHeapHashingGraphSet Data StructureMap Data StructureAdvanced Data StructureData Structures TutorialAlgorithmsAnalysis of AlgorithmsSearching AlgorithmsLinear SearchBinary SearchSearching Algorithms TutorialSorting AlgorithmsSelection SortBubble SortInsertion SortMerge SortQuick SortHeap SortCounting SortRadix SortBucket SortSorting Algorithms TutorialGreedy AlgorithmsDynamic ProgrammingGraph AlgorithmsPattern SearchingRecursionBacktrackingDivide and ConquerMathematical AlgorithmsGeometric AlgorithmsBitwise AlgorithmsRandomized AlgorithmsBranch and BoundAlgorithms TutorialComplete DSA TutorialCompetitive ProgrammingCompany Wise SDE SheetsFacebook SDE SheetAmazon SDE SheetApple SDE SheetNetflix SDE SheetGoogle SDE SheetWipro Coding SheetInfosys Coding SheetTCS Coding SheetCognizant Coding SheetHCL Coding SheetDSA Cheat SheetsDSA Sheet for BeginnersSDE SheetsFAANG Coding SheetLove Babbaar SheetMass Recruiter SheetProduct-Based Coding SheetCompany-Wise Preparation SheetTop 100 DSA Interview Questions Topic-wise100 Days of CodePythonPython TutorialPython ExercisesPython List ExercisePython String ExercisePython Tuple ExercisePython Dictionary ExercisePython Set ExercisePython Excercises Topic wisePython QuizPython ProgramsAdvanced Python TutorialPython API TutorialPython Database TutorialPython JSONPython Cheat SheetPython ProjectsPython Interview QuestionsML & Data ScienceMachine LearningMachine Learning TutorialMaths for MLML Projects100 Days of Machine LearningData Science TutorialData Science PackagesPandas TutorialNumPy TutorialData VisualizationData Visualization with PythonData Visualization with RTableauPower BIData AnalysisData Analysis with PythonData Analysis with R100 Days of Data AnalyticsDeep LearningNLP TutorialOpenCV TutorialInterview QuestionsMachine Learning Interview QuestionsDeep Learning Interview QuestionsR Interview QuestionsSystem DesignSystem Design TutorialSoftware Design PatternsSystem Design RoadmapTop 10 System Design Interview QuestionsInterview CornerCompany PreparationTop TopicsPractice Company QuestionsInterview ExperiencesExperienced InterviewsInternship InterviewsCompetitive ProgrammingMultiple Choice QuizzesAptitude for PlacementsPuzzles for InterviewsLanguagesCC++JavaPythonR TutorialC#SQLScalaPerlGo LanguageWeb DevelopmentHTMLHTML TutorialFree HTML CourseHTML Cheat SheetCSSCSS TutorialFree CSS CourseCSS Cheat SheetJavaScriptJavaScript TutorialJavaScript QuestionsJavaScript Cheat SheetDSA using JavaScriptFree JavaScript CourseJavaScript A to Z Complete GuideTypeScriptReactJSReactJS TutorialFree ReactJS CourseReactJS Cheat SheetNextJSNode.jsPHPAngularJSjQueryWeb Development Using PythonDjangoFlaskSeleniumPostmanGithubWeb Design100 Days of Web DevelopmentCS SubjectsOperating SystemDBMSComputer NetworksEngineering MathematicsComputer Organization and ArchitectureTheory of ComputationCompiler DesignDigital LogicSoftware EngineeringDevOps And LinuxDevOps TutorialGITAWSKubernetesDockerMicrosoft Azure TutorialGoogle Cloud PlatformDevOps RoadmapDevOps Interview QuestionsLinuxLinux TutorialLinux Commands A-ZLinux Commands CheatsheetFile Permissions in LinuxLinux System AdministrationLinux Shell ScriptingLinux NetworkingLinux Interview QuestionsSchool LearningClass 8 Study MaterialClass 9 Study MaterialClass 10 Study MaterialClass 11Study MaterialClass 12 Study MaterialEnglish GrammarGfG SchoolCommerceGATEGATE Computer Science NotesLast Minute NotesGATE CS Solved PapersGATE CS Original Papers and Official KeysGATE CS 2025 SyllabusGATE DA 2025 SyllabusOther CS ExamsISROUGC NETGeeksforGeeks VideosJobsGet Hired: Apply for JobsCorporate Hiring SolutionsFiltered JobsJobs for FreshersJobs for ExperiencedAll JobsPracticePractice Coding ProblemsAll DSA ProblemsProblem of the DayCompany Wise Coding PracticeAmazonMicrosoftFlipkartExplore AllGfG SDE SheetPractice Problems Difficulty WiseBasicEasyMediumHardLanguage Wise Coding PracticeCPPJavaPythonCurated DSA ListsBeginner's DSA SheetLove Babbar SheetTop 50 Array ProblemsTop 50 String ProblemsTop 50 DP ProblemsTop 50 Graph ProblemsTop 50 Tree ProblemsContestsJob-A-Thon Hiring ChallengeGfG Weekly [Rated Contest]All Contests and Events
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Notifications
+
+
+
+
+All
+
+
+
+
+
+ 
+
+View All
+
+
+
+
+
+
+
+
+
+Notifications
+
+
+
+Mark all as read
+
+
+
+
+
+
+All
+
+
+Unread
+
+
+Read
+
+
+
+
+
+                                        You're all caught up!!
+                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+AptitudeEngineering MathematicsDiscrete MathematicsOperating SystemDBMSComputer NetworksDigital Logic and DesignC ProgrammingData StructuresAlgorithmsTheory of ComputationCompiler DesignComputer Org and Architecture 
+
+
+
+
+▲
+
+
+
+
+
+
+
+
+
+
+
+
+Open In App
+
+
+
+
+
+
+
+
+
+
+
+
+Go PremiumShare Your ExperiencesAutomata TutorialAutomata _ IntroductionIntroduction of Theory of ComputationChomsky Hierarchy in Theory of ComputationApplications of various AutomataRegular Expression and Finite AutomataIntroduction of Finite AutomataArden's Theorem in Theory of ComputationArden's Theorem and Challenging Applications | Set 2L-graphs and what they represent in TOCHypothesis (language regularity) and algorithm (L-graph to NFA) in TOCRegular Expressions, Regular Grammar and Regular LanguagesHow to identify if a language is regular or notDesigning Finite Automata from Regular Expression (Set 1)Star Height of Regular Expression and Regular LanguageGenerating regular expression from Finite AutomataDesigning Deterministic Finite Automata (Set 1)Designing Deterministic Finite Automata (Set 2)DFA for Strings not ending with "THE"DFA of a string with at least two 0’s and at least two 1’sDFA for accepting the language L = {  anbm | n+m=even }DFA machines accepting odd number of 0’s or/and even number of 1’sDFA of a string in which 2nd symbol from RHS is 'a'Union process in DFAConcatenation process in DFADFA in LEX code which accepts even number of zeros and even number of onesConversion from NFA to DFAMinimization of DFAReversing Deterministic Finite AutomataComplementation process in DFAKleene's Theorem in TOC | Part-1Mealy and Moore Machines in TOCDifference Between Mealy Machine and Moore MachineCFGRelationship between grammar and language in Theory of ComputationSimplifying Context Free GrammarsClosure Properties of Context Free LanguagesUnion and Intersection of Regular languages with CFLConverting Context Free Grammar to Chomsky Normal FormConverting Context Free Grammar to Greibach Normal FormPumping Lemma in Theory of ComputationCheck if the language is Context Free or NotAmbiguity in Context free Grammar and Context free LanguagesOperator grammar and precedence parser in TOCContext-sensitive Grammar (CSG) and Language (CSL)PDA (Pushdown Automata)Introduction of Pushdown AutomataPushdown Automata Acceptance by Final StateConstruct Pushdown Automata for given languagesConstruct Pushdown Automata for all length palindromeDetailed Study of PushDown AutomataNPDA for accepting the language  L = {an bm cn | m,n>=1}NPDA for accepting the language L = {an bn cm | m,n>=1}NPDA for accepting the language  L = {an bn | n>=1}NPDA for accepting the language  L = {am b(2m) | m>=1}NPDA for accepting the language  L = {am bn cp dq | m+n=p+q ; m,n,p,q>=1}Construct Pushdown automata for L = {0n1m2m3n | m,n ≥ 0}Construct Pushdown automata for L = {0n1m2(n+m) | m,n ≥ 0}NPDA for accepting the language L = {ambnc(m+n) | m,n ≥ 1}NPDA for accepting the language L = {amb(m+n)cn | m,n ≥ 1}NPDA for accepting the language L = {a2mb3m | m ≥ 1}NPDA for accepting the language L = {amb(2m+1) | m ≥ 1}NPDA for accepting the language L = {aibjckdl | i==k or j==l,i>=1,j>=1}Construct Pushdown automata for L = {a(2*m)c(4*n)dnbm | m,n ≥ 0}NPDA for L =  {0i1j2k | i==j or j==k ; i , j , k >= 1}NPDA for accepting the language L = {anb(2n) | n>=1} U {anbn | n>=1}NPDA for the language L ={w∈ {a,b}*| w contains equal no. of a's and b's}Turing MachineRecursive and Recursive Enumerable Languages in TOCTuring Machine in TOCTuring Machine for additionTuring machine for subtraction | Set 1Turing machine for multiplicationTuring machine for copying dataConstruct a Turing Machine for language L = {0n1n2n | n≥1}Construct a Turing Machine for language L = {wwr | w ∈ {0, 1}}Construct a Turing Machine for language L = {ww | w ∈ {0,1}}Construct Turing machine for L = {an bm a(n+m) | n,m≥1}Construct a Turing machine for L = {aibjck | i*j = k; i, j, k ≥ 1}Turing machine for 1's and 2’s complementRecursive and Recursive Enumerable Languages in TOCTuring Machine for subtraction | Set 2Halting Problem in Theory of ComputationTuring Machine as ComparatorDecidabilityDecidable and Undecidable Problems in Theory of ComputationUndecidability and Reducibility in TOCComputable and non-computable problems in TOCTOC Interview preparationLast Minute Notes - Theory of ComputationTOC  Quiz and PYQ's in TOCTheory of Computation - GATE CSE Previous Year QuestionsRegular languages and finite automataContext free languages and Push-down automataRecursively enumerable sets and Turing machinesUndecidabilityDSA to Development Course 
+
+
+
+
+
+
+
+
+
+
+
+
 
 Introduction of Theory of Computation
+
+
+
+Last Updated : 
+27 Sep, 2024
+
+
+
+
+
+
+Summarize
+
+
+
+
+
+
+Comments
+
+
+
+
+
+
+
+Improve
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Suggest changes
+
+
+ 
+
+
+Like Article
+
+
+
+Like
+
+
+
+
+
+
+
+
+Save
+
+
+
+
+
+
+
+
+Share
+
+
+
+
+
+
+
+Report
+
+
+
+
+
+
+
+Follow
+
+
+
+
 
 Automata theory (also referred to as the Theory Of Computation) is a branch of Computer Science and Mathematics that studies how machines compute functions and solve problems. This field is mainly focused on mathematical structures called automata and is crucial for the purpose of studying processes occurring in discrete systems.
 What is Automata Theory?
@@ -51,70 +406,286 @@ Is it possible to implement automata theory into real life?
 
 Of course, automata theory has found its use in certain areas like compiler design, artificial intelligence, network security and natural language processing.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+abhishek1 
+
+
+
+
+
+ Follow 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+Improve
+
+
+
+
+
+
+
+
+Previous Article
+
+
+
+Automata Tutorial
+
+
+
+
 Next Article
 
+
+
+
 Chomsky Hierarchy in Theory of Computation
+
+
+
+
+
+
+Read More
+
+
+
+Similar Reads
+
+
 
 Introduction to Computation Complex Theory
 Broad Overview : Complexity theory, in a nutshell, a complexity word is a quite fancy word, literally, it sounds complex, but it is not an intimidating topic. What it really means is analyzing the program or we can say analyzing the efficiency of the program, figuring out whether the program is correct, figuring out whether one program is better th
 
+
+
+4 min read
+
+
+
+
 Introduction To Grammar in Theory of Computation
 Prerequisite - Theory of ComputationGrammar :It is a finite set of formal rules for generating syntactically correct sentences or meaningful correct sentences.Constitute Of Grammar :Grammar is basically composed of two basic elements - Terminal Symbols - Terminal symbols are those which are the components of the sentences generated using a grammar
+
+
+
+3 min read
+
+
+
 
 Theory of Computation - GATE CSE Previous Year Questions
 Solving GATE Previous Year's Questions (PYQs) not only clears the concepts but also helps to gain flexibility, speed, accuracy, and understanding of the level of questions generally asked in the GATE exam, and that eventually helps you to gain good marks in the examination. Previous Year Questions help a candidate practice and revise for GATE, whic
 
+
+
+5 min read
+
+
+
+
+
 Relationship between grammar and language in Theory of Computation
 A grammar is a set of production rules which are used to generate strings of a language. In this article, we have discussed how to find the language generated by a grammar and vice versa as well. Language generated by a grammar - Given a grammar G, its corresponding language L(G) represents the set of all strings generated from G. Consider the foll
+
+
+
+4 min read
+
+
+
 
 Theory of Computation | Regular languages and finite automata | Question 2
 What is the complement of the language accepted by the NFA shown below? (A) A (B) B (C) C (D) D Answer: (B) Explanation: Quiz of this QuestionPlease comment below if you find anything wrong in the above post
 
+
+
+1 min read
+
+
+
+
 Arden's Theorem in Theory of Computation
 Arden's theorem state that: "If P and Q are two regular expressions over "∑", and if P does not contain "∈" , then the following equation in R given by R = Q + RP has a unique solution i.e., R = QP*." That means, whenever we get any equation in the form of R = Q + RP, then we can directly replace it with R = QP*. So, here we will first prove that R
+
+
+
+4 min read
+
+
+
 
 Decidability Table in Theory of Computation
 Prerequisite - Undecidability, Decidable and undecidable problems Identifying languages (or problems*) as decidable, undecidable or partially decidable is a very common question in GATE. With correct knowledge and ample experience, this question becomes very easy to solve. A language is undecidable if it is not decidable. An undecidable language ma
 
+
+
+2 min read
+
+
+
+
+
 Chomsky Hierarchy in Theory of Computation
 According to Chomsky hierarchy, grammar is divided into 4 types as follows: Type 0 is known as unrestricted grammar.Type 1 is known as context-sensitive grammar.Type 2 is known as a context-free grammar.Type 3 Regular Grammar.Type 0: Unrestricted Grammar: Type-0 grammars include all formal grammar. Type 0 grammar languages are recognized by turing
+
+
+
+2 min read
+
+
+
 
 Pumping Lemma in Theory of Computation
 There are two Pumping Lemmas, which are defined for 1. Regular Languages, and 2. Context - Free Languages Pumping Lemma for Regular Languages For any regular language L, there exists an integer n, such that for all x ? L with |x| ? n, there exists u, v, w ? ?*, such that x = uvw, and (1) |uv| ? n (2) |v| ? 1 (3) for all i ? 0: uviw ? L In simple te
 
+
+
+4 min read
+
+
+
+
 Decidable and Undecidable Problems in Theory of Computation
 In the Theory of Computation, problems can be classified into decidable and undecidable categories based on whether they can be solved using an algorithm. A decidable problem is one for which a solution can be found in a finite amount of time, meaning there exists an algorithm that can always provide a correct answer. While an undecidable problem i
+
+
+
+6 min read
+
+
+
 
 Halting Problem in Theory of Computation
 To understand better the halting problem, we must know Decidability , Undecidability and Turing machine , decision problems and also a theory named as Computability theory and Computational complexity theory. Some important terms: Computability theory - The branch of theory of computation that studies which problems are computationally solvable usi
 
 
+
+4 min read
+
+
+
+
 Automata Theory | Set 2
 Following questions have been asked in GATE CS 2012 exam. 1) What is the complement of the language accepted by the NFA shown below? Assume ∑ = {a} and ε is the empty string (A) Φ (B) ε (C) a (D) {a, ε} Answer (B) The given alphabet ∑ contains only one symbol {a} and the given NFA accepts all strings with any number of occurrences of 'a'. In other
+
+
+
+3 min read
+
+
+
 
 Automata Theory | Set 3
 Following questions have been asked in GATE CS 2011 exam. 1) The lexical analysis for a modern language such as Java needs the power of which one of the following machine models in a necessary and sufficient sense? (A) Finite state automata (B) Deterministic pushdown automata (C) Non-deterministic pushdown automata (D) Turing machine Answer (A) Lex
 
+
+
+2 min read
+
+
+
+
+
 Automata Theory | Set 4
 Following questions have been asked in GATE CS 2011 exam. 1) Let P be a regular language and Q be context-free language such that Q ⊆ P. (For example, let P be the language represented by the regular expression p*q* and Q be {pnqn|n ∈ N}). Then which of the following is ALWAYS regular? (A) P ∩ Q (B) P - Q (C) ∑* - P (D) ∑* - Q
+
+
+
+2 min read
+
+
+
 
 Automata Theory | Set 5
 Following questions have been asked in GATE CS 2009 exam. 1) S --> aSa| bSb| a| b ;The language generated by the above grammar over the alphabet {a,b} is the set of (A) All palindromes. (B) All odd length palindromes. (C) Strings that begin and end with the same symbol (D) All even length palindromes. Answer (B) The strings accepted by language are
 
+
+
+3 min read
+
+
+
+
 Automata Theory | Set 7
 These questions for practice purpose for GATE CS Exam. Ques-1: Consider L= {(TM) | TM is the Turing machine that halts on all input and L(TM)= L' for some undecidable language L'}. Here, (TM) is the encoding of a Turing machine as a string over alphabet {0, 1} then L is: (A) decidable and recursively enumerable (B) decidable and recursive (C) decid
+
+
+
+3 min read
+
+
+
 
 Automata Theory | Set 8
 These questions for practice purpose for GATE CS Exam. Ques-1: Which one of the following language is Regular? (A) {wxwR | w,x ∈ (a+b)+} (B) {wxwR | w ∈ (a+b)*, x ∈ {a,b}} (C) {wwRx | w,x ∈ (a+b)+} (D) {wwR | w ∈ (a+b)*} Explanation: (A) It is correct, since this language can form regular expression which is {{ a(a + b)+a } + {b(a + b)+b}}, i.e., s
 
+
+
+2 min read
+
+
+
+
+
 Automata Theory | Set 9
 These questions for practice purpose for GATE CS Exam. Ques-1: Consider the following two statements with respect to Countability: Statement-1: If X union of 'Y' is uncountable, then both set 'X' and set 'Y' must be uncountable. Statement-2: The Cartesian product of two countable sets 'X' and 'Y' is countable. Which of the following option is true
+
+
+
+3 min read
+
+
+
 
 Automata Theory | Set 10
 These questions for practice purpose of GATE CS Exam. Ques-1: Consider the following statements: X: For any language either a language L or its complement L' must be finite.Y: DFA for language which contains epsilon must have initial state as final state.Z: Non-deterministic finite automata is more powerful than deterministic finite automata. Which
 
+
+
+3 min read
+
+
+
+
 Regular Graph in Graph Theory
 Prerequisite: Graph Theory Basics – Set 1, Set 2 Regular Graph: A graph is called regular graph if degree of each vertex is equal. A graph is called K regular if degree of each vertex in the graph is K. Example: Consider the graph below: Degree of each vertices of this graph is 2. So, the graph is 2 Regular. Similarly, below graphs are 3 Regular an
+
+
+
+2 min read
+
+
 
 
 5 Color Theorem in Graph Theory
@@ -435,8 +1006,7 @@ Explore More
 
 
 
-
-
+
                       Corporate & Communications Address:- A-143, 9th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305) | Registered Address:- K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305                    
 
 
@@ -482,20 +1052,14 @@ CompanyAbout UsLegalCareersIn MediaContact UsAdvertise with usGFG Corporate Solu
 
 
 
-
-
-        We use cookies to ensure you have the best browsing experience on our website. By using our site, you
-
-        acknowledge that you have read and understood our
-
-        Cookie Policy &
-
+
+        We use cookies to ensure you have the best browsing experience on our website. By using our site, you
+        acknowledge that you have read and understood our
+        Cookie Policy &
         Privacy Policy
 
-
-
-        Got It !
-
+
+        Got It !
     
 
 
@@ -519,10 +1083,8 @@ Improvement
 
 Please go through our recently updated Improvement Guidelines before submitting any improvements.
 This improvement is locked by another user right now. You can suggest the changes for now and it will be under 'My Suggestions' Tab on Write.
-You will be notified via email once the article is available for improvement.
-
-                        Thank you for your valuable feedback!
-
+You will be notified via email once the article is available for improvement.
+                        Thank you for your valuable feedback!
                     
 
 Suggest changes
@@ -697,9 +1259,336 @@ Competitive Exam Experiences
 
 
 
+
+
+
+
+
+
+
+
+
+
+Theory Of Computation Notes PDF, Syllabus ✅ [2021] B Tech
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+
+
+
+
+
+
+
+
+
+
+HomeBest Courses
+
+Google Professional Certificates
+Human Resource
+
+Human Resource Human Resource Management Human Resource Planning Organizational Culture Organization Development Organizational Behavior
+Learning DealsAll Blog PostManagement
+
+Business Statistics Lean Six Sigma Management Operation Management Research Methodology Operations Research Procurement Management Production Management Supply Chain Strategic Management
+Marketing
+
+Economics Brand Management Business Business Communication Business Law Entrepreneurship Consumer Behaviour Marketing Essentials Marketing Management Sales Management Shark Tank India
+Business Tech
+
+Project Management Business Analytics Management Information System Enterprise Resource Planning Technologies Cloud Computing
+About
+
+About Us Cookie Policy DMCA Policy Disclaimer Contact Us
+Toggle website search
+
+
+
+
+
+
+
+
+
+All Category
+Close
+
+
+
+
+
+
+Home
+Best Courses
+
+Google Professional Certificates
+
+
+Human Resource
+
+Human Resource
+Human Resource Management
+Human Resource Planning
+Organizational Culture
+Organization Development
+Organizational Behavior
+
+
+Learning Deals
+All Blog Post
+Management
+
+Business Statistics
+Lean Six Sigma
+Management
+Operation Management
+Research Methodology
+Operations Research
+Procurement Management
+Production Management
+Supply Chain
+Strategic Management
+
+
+Marketing
+
+Economics
+Brand Management
+Business
+Business Communication
+Business Law
+Entrepreneurship
+Consumer Behaviour
+Marketing Essentials
+Marketing Management
+Sales Management
+Shark Tank India
+
+
+Business Tech
+
+Project Management
+Business Analytics
+Management Information System
+Enterprise Resource Planning
+Technologies
+Cloud Computing
+
+
+About
+
+About Us
+Cookie Policy
+DMCA Policy
+Disclaimer
+Contact Us
+
+
+
+
+
+
+
+
  
 
-www.geektonight.com | 524: A timeout occurred
+
+
+
+
+
+
+
+Theory of Computation Notes | PDF, Syllabus | B Tech 2021
+Home>B Tech Study Material>Theory of Computation Notes | PDF, Syllabus | B Tech 2021
+
+
+
+
+
+
+
+Theory of Computation Notes | PDF, Syllabus | B Tech 2021
+
+
+Post last modified:30 March 2021
+Reading time:27 mins read
+Post category:B Tech Study Material
 
 
 
@@ -712,87 +1601,881 @@ www.geektonight.com | 524: A timeout occurred
 
 
 
-A timeout occurred
-Error code 524
+Download Theory of Computation Notes PDF, syllabus for B Tech, BCA, MCA 2021. We provide a complete theory of computation pdf. Theory of Computation lecture notes includes a theory of computation notes, theory of computation book, theory of computation courses, theory of computation syllabus, theory of computation question paper, MCQ, case study, theory of computation interview questions and available in theory of computation pdf form.
+Theory of Computation Notes
+Theory of Computation subject is included in B Tech CSE, BCA, MCA, M Tech. So, students can able to download theory of computation notes pdf.
 
+Table of Content1 Theory of Computation Syllabus2 Theory of Computation PDF3 Theory of Computation Notes3.1 What is Theory of Computation?3.2 Theory of Computation Handwritten Notes4 Theory of Computation Interview Questions5 Theory of Computation Question Paper6 Theory of Computation Book
 
-               Visit cloudflare.com for more information.
-            
-2024-10-19 09:10:03 UTC
+Theory of Computation Notes can be downloaded in theory of computation pdf from the below article
 
-
-
-
-
-
-
-
-
-You
-
-    
-    Browser
-    
-  
-Working
+Theory of Computation Syllabus
+A detailed theory of computation syllabus as prescribed by various Universities and colleges in India are as under. You can download the syllabus in the theory of computation pdf form.
+Unit I
 
 
 
 
 
 
-
-
-Singapore
-
-
-    Cloudflare
-    
-
-Working
-
+Introduction to Automata: The Methods Introduction to Finite Automata, Structural Representations, Automata and Complexity. Proving Equivalences about Sets, The Contrapositive, Proof by Contradiction, Inductive Proofs: General Concepts of Automata Theory: Alphabets Strings, Languages, Applications of Automata Theory. 
+Finite Automata: The Ground Rules, The Protocol, Deterministic Finite Automata: Definition of a Deterministic Finite Automata, How a DFA Processes Strings, Simpler Notations for DFA’s, Extending the Transition Function to Strings, The Language of a DFA 
+Nondeterministic Finite Automata: An Informal View. The Extended Transition Function, The Languages of an NFA, Equivalence of Deterministic and Nondeterministic Finite Automata. Finite Automata With Epsilon-Transitions: Uses of Î-Transitions, The Formal Notation for an Î-NFA, Epsilon-Closures, Extended Transitions and Languages for Î-NFA’s, Eliminating Î- Transitions.
+ Unit II
+Regular Expressions and Languages: Regular Expressions: The Operators of regular Expressions, Building Regular Expressions, Precedence of Regular-Expression Operators, Precedence of Regular-Expression Operators Finite Automata and Regular Expressions: From DFA’s to Regular Expressions, Converting DFA’s to Regular Expressions, Converting DFA’s to Regular Expressions by Eliminating States, Converting Regular Expressions to Automata. 
+Algebraic Laws for Regular Expressions: Properties of Regular Languages: The Pumping Lemma for Regular Languages, Applications of the Pumping Lemma Closure Properties of Regular Languages, Decision Properties of Regular Languages, Equivalence and Minimization of Automata, 
+Context-Free Grammars and Languages: Definition of Context-Free Grammars, Derivations Using a Grammars Leftmost and Rightmost Derivations, The Languages of a Grammar, Parse Trees: Constructing Parse Trees, The Yield of a Parse Tree, Inference Derivations, and Parse Trees, From Inferences to Trees, From Trees to Derivations, From Derivation to Recursive Inferences, Applications of Context-Free Grammars: Parsers, Ambiguity in Grammars and Languages: Ambiguous Grammars, Removing Ambiguity.
 
 
 
 
 
-www.geektonight.com
+Unit III 
+Pushdown Automata: Definition Formal Definition of Pushdown Automata, A Graphical Notation for PDA’s, Instantaneous Descriptions of a PDA, 
+Languages of PDA: Acceptance by Final State, Acceptance by Empty Stack, From Empty Stack to Final State, From Final State to Empty Stack Equivalence of PDA’s and CFG’s: From Grammars to Pushdown Automata, From PDA’s to Grammars 
+Deterministic Pushdown Automata: Definition of a Deterministic PDA, Regular Languages and Deterministic PDA’s, DPDA’s and Context-Free Languages, DPDA’s and Ambiguous Grammars 
+Properties of Context-Free Languages: Normal Forms for Context-Free Grammars, The Pumping Lemma for Context-Free Languages, Closure Properties of Context-Free Languages, Decision Properties of CFL’s
+Unit IV
+Introduction to Turing Machines: The Turing Machine: The Instantaneous Descriptions for Turing Machines, Transition Diagrams for Turing Machines, The Language of a Turing Machine, Turing Machines and Halting Programming Techniques for Turing Machines, Extensions to the Basic Turing Machine, Restricted Turing Machines, Turing Machines and Computers
+UNIT V
+Recursive And Recursively Enumerable Languages: Properties of recursive and recursively enumerable languages, Universal Turing machine, The Halting problem, Undecidable problems about TMs. Context-sensitive language and linear bounded automata (LBA), Chomsky hierarchy, Decidability, Post’s correspondence problem (PCP), undecidability of PCP.
 
-    
-    Host
-    
-  
-Error
-
-
-
-
-
-
-
-What happened?
-The origin web server timed out responding to this request.
-
-
-What can I do?
-If you're a visitor of this website:
-Please try again in a few minutes.
-If you're the owner of this website:
-The connection to the origin web server was made, but the origin web server timed out before responding. The likely cause is an overloaded background task, database or application, stressing the resources on your web server. To resolve, please work with your hosting provider or web development team to free up resources for your database or overloaded application. Additional troubleshooting information here.
+Theory of Computation PDF
 
 
 
 
 
-Cloudflare Ray ID: 8d4f9f8dedf344c5
-•
+ Theory of Computation Notes PDF(How to download) Theory of Computation Notes Download  Theory of Computation Book Download Theory of Computation Syllabus Download  Theory of Computation Question Paper Download  Theory of Computation Interview Questions Download 
 
-      Your IP:
-      Click to reveal
-49.248.249.94
-•
+Theory of Computation Notes
+What is Theory of Computation?
 
-Performance & security by Cloudflare
+
+
+
+
+ Download PDF
+
+
+
+
+
+
+Theory of computation is the branch that deals with how efficiently problems can be solved on a model of computation, using an algorithm. The field is divided into three major branches: automata theory and languages, computability theory, and computational complexity theory.
+Theory of Computation Handwritten Notes
+
+
+
+ Download PDF
+
+Theory of Computation Interview Questions
+Some of the theory of computation interview questions are mentioned below. You can download the QnA in theory of computation pdf form.
+What is TOC?What is Automata Theory in TOC?What is Regular Language in TOC?What is Grammer and Language in TOC?What is Null String in TOC?What is Grammer and Language in TOC?What is Regular Expression in TOC?What is Linear Bound Automata in TOC?What is Context-Free Language(CFL) in TOC?What is Recursive Language in TOC?What is the use of Lexical Analysis in TOC?What is Chomsky Classification of Languages in TOC?Define Kleene Star Closure in TOC?What is the Productions in TOC? Explain Production Rules.
+
+Theory of Computation Question Paper
+If you have already studied the theory of computation notes, now it’s time to move ahead and go through previous year theory of computation question paper. 
+ Download PDF Fill Before Download
+It will help you to understand question paper pattern and type of theory of computation questions and answers asked in B Tech, BCA, MCA, M Tech theory of computation exam. You can download the syllabus in theory of computation pdf form.
+
+Theory of Computation Book
+Below is the list of theory of computation book recommended by the top university in India.
+Introduction to Automata Theory Languages, and Computation, by J.E.Hopcroft, R.Motwani & J.D.Ullman (3rd Edition) – Pearson EducationTheory of Computer Science (Automata Language & Computations), by K.L.Mishra & N. Chandrashekhar, PHI
+
+Download B Tech (CS) Study Material
+
+
+
+Computer Networks Notes ✅ [2020] PDF – Download 
+
+Computer Networks Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper(Download Computer Networks Notes) 
+
+
+
+Computer Graphics Notes ✅ [2020] PDF – Download 
+
+Computer Graphics Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper(Download Computer Graphics Notes)
+
+
+
+Operating System Notes ✅ [2020] PDF – Download  
+
+Operating System Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper (Download Operating System Notes)
+
+
+
+Compiler Design Notes ✅ [2020] PDF – Download
+
+Compiler Design Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper(Download Compiler Design Notes)
+
+
+
+Data Structures Notes ✅ [2020] PDF – Download 
+
+Data Structures Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper (Download Data Structures Notes)
+
+
+
+Digital Image Processing Notes ✅ [2020] PDF – Download 
+
+Digital Image Processing Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper (Download Digital Image Processing Notes) 
+
+
+
+Theory of Computation Notes ✅ [2020] PDF – Download 
+
+Theory of Computation Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper (Download Theory of Computation Notes) 
+
+
+
+Computer Organization and Architecture Notes ✅ [2020] PDF – Download 
+
+Computer Organization and Architecture Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper (Download Computer Organization and Architecture Notes) 
+
+
+
+Cloud Computing Notes ✅ [2020] PDF – Download 
+
+Cloud Computing Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper (Download Cloud Computing Notes) 
+
+
+
+Data Communication and Networking Notes ✅ [2020] PDF – Download 
+
+Data Communication and Networking Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper (Download Data Communication and Networking Notes) 
+
+
+
+ Software Engineering Notes ✅ [2020] PDF – Download 
+
+Software Engineering Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper (Download Software Engineering Notes) 
+
+
+
+Web Technologies Notes ✅ [2020] PDF – Download 
+
+Web Technologies Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper (Download Web Technologies Notes) 
+
+
+
+Microprocessor and Microcontrollers Notes ✅ [2020] PDF – Download 
+
+Microprocessor and Microcontrollers Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper (Download Microprocessor and Microcontrollers Notes) 
+
+
+
+Design and Analysis of Algorithm Notes ✅ [2020] PDF – Download 
+
+Design and Analysis of Algorithm Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper (Download Design and Analysis of Algorithm Notes) 
+
+
+
+Operation Research Notes ✅ [2020] PDF – Download 
+
+Operation Research Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper (Download Operation Research Notes) 
+
+
+
+Database Management Systems Notes ✅ [2020] PDF – Download 
+
+Database Management Systems Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper (Download Database Management Systems Notes)
+
+
+
+Compiler Design Notes ✅ [2020] PDF – Download 
+
+Compiler Design Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper (Download Compiler Design Notes)
+
+
+
+
+
+In the above article, a student can download theory of computation notes for B Tech, BCA, MCA, M Tech. Theory of Computation lecture notes and study material includes theory of computation notes, theory of computation books, theory of computation syllabus, theory of computation question paper, theory of computation case study, theory of computation interview questions, theory of computation courses in theory of computation pdf form.
+
+Go On, Share & Help your Friend
+ Did we miss something in B.Tech Computer Science Notes or You want something More? Come on! Tell us what you think about our post on Theory of Computation Notes | PDF, Syllabus, Book | B Tech 2020 in the comments section and Share this post with your friends.
+
+
+
+
+
+
+
+
+
+
+
+Read more articles
+ Previous PostWeb Technologies Notes | PDF, Syllabus, Book | B Tech 2021 Next PostDigital Image Processing Notes | PDF, Syllabus | B Tech 2021
+
+
+Tags: B Tech, B Tech CS Books, B Tech CS Syllabus, B Tech CSE Books, B Tech CSE Notes, B Tech CSE Syllabus, B Tech Notes, B Tech Study Material, Computer Science Notes PDF, CS Notes, CSE Notes, Theory of Computation Book, Theory of Computation Course, Theory of Computation Interview Questions, Theory of Computation Notes, Theory of Computation PDF, Theory of Computation PPT, Theory of Computation Question Paper, Theory of Computation Syllabus, Theory of Computation Tutorial
+
+
+You Might Also Like
+
+
+
+
+Digital Signal Processing Notes | PDF, Syllabus | B Tech 2021
+
+3 July 2020
+
+
+
+
+ 
+
+
+Operation Research Notes | PDF, Syllabus | MBA, B Tech 2024
+
+18 March 2020
+
+
+
+
+ 
+
+
+Database Management Systems Notes | PDF | B Tech 2021
+
+22 March 2020
+
+
+
+Advanced Java Programming Notes | PDF | B Tech (2024)
+
+23 November 2020
+
+
+
+
+ 
+
+
+Computer Networks Notes | PDF, Syllabus, Books | B Tech (2024)
+
+21 March 2020
+
+
+
+
+ 
+
+
+Software Engineering Notes | PDF, Syllabus | B Tech 2021
+
+21 March 2020
+
+
+
+
+ 
+
+
+Design and Analysis of Algorithm Notes PDF | B Tech (2024)
+
+20 March 2020
+
+
+
+Digital Communication Notes | PDF, Syllabus | B Tech 2021
+
+3 July 2020
+
+
+
+Analog Communication PDF | Notes, Syllabus B Tech 2021
+
+3 July 2020
+
+
+
+Business Intelligence Notes | PDF, Syllabus | B Tech 2021
+
+3 July 2020
+
+
+
+How to Download Notes on Geektonight
+
+27 June 2020
+
+
+
+Wireless Networks Notes | PDF, Syllabus | B Tech 2021
+
+3 July 2020
+
+
+
+
+
+Leave a Reply Cancel replyYou must be logged in to post a comment. 
+
+
+
+
+
+
+All CategoryAll Category
+Select Category
+Accounting
+B Tech Study Material
+BBA Study Material
+BCOM Study Material
+Best Online Course
+Best Online Deal
+Best Software Review
+Brand Management
+Business
+Business Analytics
+Business Communication
+Business Ethics
+Business Law
+Business Statistics
+Certification Answers
+Cloud Computing
+Computer Network
+Consumer Behaviour
+Corporate Finance
+Corporate Social Responsibility
+Customer Relationship Management
+Digital Marketing
+E-Business
+Economics
+Enterprise Resource Planning
+Entrepreneurship
+Finance
+Financial Accounting
+Financial Institutions & Markets
+Financial Management
+Google Career Certificates
+Google Certification
+Hotel Management
+HubSpot Certification
+Human Resource
+Human Resource Development
+Human Resource Management
+Human Resource Planning
+Insurance and Risk Management
+International Banking
+Lean Six Sigma
+LinkedIn Certification
+Management
+Management Accounting
+Management Information System
+Marketing Essentials
+Marketing Management
+MBA Study Material
+MCOM Study Material
+Microsoft Certification
+Operation Management
+Operations Research
+Organization Development
+Organizational Behavior
+Organizational Culture
+Performance Management
+Portfolio Management
+Procurement Management
+Production Management
+Project Management
+Puzzle
+Research Methodology
+Sales Management
+SEMrush Certification
+Service Operations Management
+Shark Tank India
+Shipping and Insurance
+Software Engineering
+Strategic Management
+Strategy Tools
+Supply Chain
+Technologies
+Treasury Management in Banking
+Twitter Certification
+Uncategorized
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+World's Best Online Courses at One Place 
+
+
+
+We’ve spent the time in finding, so you can spend your time in learning 
+
+
+
+
+
+
+
+
+
+
+
+Digital Marketing 
+
+
+
+Google Ads CourseFacebook Ads CourseSEO CourseInstagram Marketing CourseSEM CourseSocial Media CourseEmail Marketing CoursePinterest CourseChatbot CourseBlogging CourseContent Marketing CourseWooCommerce CourseClickbank Affiliate Marketing CourseAffiliate Marketing CourseAmazon Affiliate Marketing CourseShopify, eCommerce & Dropshipping CourseExcel Data Analysis CourseWordPress CourseGoogle Tag Manager CourseGoogle Analytics CourseDigital Marketing CourseYoutube Marketing CourseBing Ads CourseSocial Media Analytics Course 
+
+
+
+
+
+
+
+Business 
+
+
+
+Product Strategy CourseSales CourseBrand Strategy CourseBusiness Law CourseStrategic Management CourseMarketing Analytics CourseBusiness Strategy CourseMarketing Management CourseHuman Resource CourseProduct Management CourseProduct Marketing CourseB2B Marketing CourseGrowth Hacking CoursePeople HR Analytics CourseEntrepreneurship CourseBusiness Statistics CourseProject Management CourseNegotiation CourseTime Management CourseLeadership CourseCareer Development CourseStress Management CourseAnxiety Management CourseDesign Thinking CourseEmotional Intelligence CourseTeam Building CourseBusiness Analytics CourseDigital Transformation Course 
+
+
+
+
+
+
+
+Personal Growth 
+
+
+
+English Grammar CourseVocabulary CourseSoft Skills CoursePublic Speaking CoursePhotography CourseBody Language CourseCommunication Skills CourseInterview Preparation CourseProductivity CourseMindfulness CourseMemory CourseSelf DisciplineSpeed ReadingAcademic WritingCopywriting CourseScientific Writing CourseNovel Writing CourseAcademic Writing CourseTravel Writer CourseCreative Writing CourseInterior Design CourseGraphic Design CourseDrawing CourseDigital Art CourseUI UX Designer Course 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+Finance 
+
+
+
+Mutual Fund CourseFinancial Analysis CoursePersonal Finance CourseCost Accounting CourseAudit CourseFintech CourseValue Investing CourseTrading CourseFinancial Modeling CourseInvestment CourseProject Finance CourseStock Trading CourseFinancial & Capital Markets CourseAccounting CourseFinancial Engineering Course 
+
+
+
+
+
+
+
+FinTech 
+
+
+
+NFT CourseMongoDB CoursejQuery CourseBlockchain CourseCryptocurrency CourseSwift CourseAWS CourseRedux CourseGo CourseDeFi CourseSolidity CourseMetaverse CourseDjango CourseJIRA CourseConversion Rate Optimization (CRO) CourseAnalytics CourseCustomer Loyalty Course 
+
+
+
+
+
+
+
+Language 
+
+
+
+English SpeakingKorean LanguageGerman LanguageSpanish LanguageFrench Language Italian Language Russian Language Japanese Language Arabic LanguageSwedish LanguageHindi LanguagePortuguese LanguageDutch LanguageLatin LanguageTurkish LanguageHungarian LanguageVietnameseAmerican AccentPronunciationSpelling Courses 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+Tech 
+
+
+
+Data Science CourseR Programming CourseBig Data CourseSQL CourseData Analytics CourseMachine Learning CoursePython CourseSQL Data Science CourseArtificial Intelligence CourseCloud Computing CourseData Warehouse CourseNLP Course 
+
+
+
+
+
+
+
+Development 
+
+
+
+React JS CoursesFront End Development CourseFull Stack Web Developer CourseC++ CourseData Engineering CourseHTML & CSS3 CourseMicrosoft SQL CourseMySQL CourseJava CourseJavaScript CourseTypeScript CourseBack End Development CourseDatabase CourseGraphQL Course 
+
+
+
+
+
+
+
+Exam Prep 
+
+
+
+GRE PrepGMAT PrepMCAT PrepIELTS PrepDAT PrepPSAT PrepCFA PrepOAT PrepACT PrepLSAT PrepFRM PrepSSAT PrepCPA PrepTESOL PrepSAT PrepSSAT Prep 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+Python 
+
+
+
+Python CourseDeep Learning Python CoursePython Data Science CoursePython for Marketing CoursePython for Finance CoursePython Pandas CoursePython Data Visualization CoursePython Machine Learning CoursePython Data Processing CoursePython Scripting CoursePython for Data Analysis CoursePython Data Structure CourseNLP Python CourseMatplotlib CourseData Cleaning CourseStatistical Modeling CourseKeras CoursePytorch CourseMachine Learning Finance Course 
+
+
+
+
+
+
+
+Tech 
+
+
+
+SCADA CourseASP.net CourseScrum CourseSpring Boot and MVC CourseIT Support & Help Desk CourseRuby on Rails CourseKubernetes CourseDocker CourseNodeJs CourseAngular CoursePHP CourseAPI CourseAlteryx CoursePower BI CourseTableau CourseData Visualization CourseDAX CourseData Streaming CourseRegex CourseQlik Sense CoursePlotly Dash CourseData Modeling Course 
+
+
+
+
+
+
+
+Development 
+
+
+
+Android CourseiOS Development CourseFlutter CourseKotlin CourseIonic CourseXamarin CourseVirtual Reality CourseMatlab CourseGit & GitHub CourseSelenium CourseShell Scripting CourseARKit CourseGame Design CourseUnity CourseUnreal Engine CourseGame Development CourseBlender CourseDreamweaver CourseVisual Studio CourseC# (C-Sharp) CourseBootstrap Course 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+Child Care 
+
+
+
+Child Nutrition CourseBaby Massage CourseChildcare & Early Education CourseBaby Sign Language CourseKids Art & Drawing CourseKids Coding CourseChild Development Course 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ Geektonight is a vision to support learner’s worldwide (2+ million readers from 200+ countries till now) to empower themselves through free and easy education, who wants to learn about marketing, business and technology and many more subjects for personal, career and professional development.
+
+ 
+
+Connect With Us
+
+Opens in a new tabOpens in a new tabOpens in a new tabOpens in a new tabOpens in a new tabOpens in a new tab 
+
+ 
+
+MoreAbout UsOpens in a new tabDisclaimerOpens in a new tabCookie PolicyOpens in a new tabPrivacy PolicyOpens in a new tabDMCA PolicyOpens in a new tab 
+
+CategoriesCategories
+Select Category
+Accounting
+B Tech Study Material
+BBA Study Material
+BCOM Study Material
+Best Online Course
+Best Online Deal
+Best Software Review
+Brand Management
+Business
+Business Analytics
+Business Communication
+Business Ethics
+Business Law
+Business Statistics
+Certification Answers
+Cloud Computing
+Computer Network
+Consumer Behaviour
+Corporate Finance
+Corporate Social Responsibility
+Customer Relationship Management
+Digital Marketing
+E-Business
+Economics
+Enterprise Resource Planning
+Entrepreneurship
+Finance
+Financial Accounting
+Financial Institutions & Markets
+Financial Management
+Google Career Certificates
+Google Certification
+Hotel Management
+HubSpot Certification
+Human Resource
+Human Resource Development
+Human Resource Management
+Human Resource Planning
+Insurance and Risk Management
+International Banking
+Lean Six Sigma
+LinkedIn Certification
+Management
+Management Accounting
+Management Information System
+Marketing Essentials
+Marketing Management
+MBA Study Material
+MCOM Study Material
+Microsoft Certification
+Operation Management
+Operations Research
+Organization Development
+Organizational Behavior
+Organizational Culture
+Performance Management
+Portfolio Management
+Procurement Management
+Production Management
+Project Management
+Puzzle
+Research Methodology
+Sales Management
+SEMrush Certification
+Service Operations Management
+Shark Tank India
+Shipping and Insurance
+Software Engineering
+Strategic Management
+Strategy Tools
+Supply Chain
+Technologies
+Treasury Management in Banking
+Twitter Certification
+Uncategorized
+
+
+ 
+
+
+
+
+
+Copyright 2023 Geektonight  
+
+
+
+
+
+
+
+
+
+
+
+Search this website
+
+Type then hit enter to search
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
