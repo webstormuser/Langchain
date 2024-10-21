@@ -1,10 +1,364 @@
 Automata Tutorial | Theory of Computation - JavatpointTutorials×PythonPython Django Numpy Pandas Tkinter Pytorch Flask OpenCVAI, ML and Data ScienceArtificial Intelligence Machine Learning Data Science Deep Learning TensorFlow Artificial Neural Network Matplotlib Python ScipyJavaJava Servlet JSP Spring Boot Spring Framework Hibernate JavaFX Java Web ServicesB.Tech and MCADBMS Data Structures Operating System Computer Network DAA Computer Organization Software Engineering Data MiningWeb TechnologyHTML CSS JavaScript Jquery Angular-8 React JS React Native Node JSSoftware TestingSoftware Testing Selenium JIRA JMeter Postman TestNG SoapUI CucumberInterview×Technical InterviewC C++ Php Java Python JavaScript TypeScriptJava InterviewJDBC Servlet Maven Jenkins Spring Spring Boot JDB Hibernate JSFWeb InterviewHTML CSS JavaScript Jquery Angular Node-JS AJAXDatabase InterviewDBMS SQL PL/SQL Oracle MySQL MongoDB Redis MariaDBCompany InterviewsIBM Adobe Microsoft Amazon TCS HCL Wipro DXC Accenture Capgemini Space X Ericsson Infosy IGate EXL IndiaMART SapientCompilerPythonJavaPhpCC++RHtmlJavascriptTypescriptSwiftHome Python Java JavaScriptHTML SQL PHP C# C++ DS Aptitude Reasoning Selenium DBMS C Andriod Interview QAutomata TutorialAutomata TutorialTheory of AutomataFinite AutomataTransition DiagramTransition TableDFAExamples of DFANFAExamples of NFAEliminating ε TransitionsConversion from NFA to DFAConversion from NFA with ε to DFAMinimization of DFARegular ExpressionRegular ExpressionExamples of Regular ExpressionConversion of RE to FAArden's TheoremMoore MachineMealy MachineConversion from Mealy machine to Moore machineConversion from Moore machine to Mealy machineCFGContext-free GrammarDerivationDerivation TreeAmbiguity in GrammarUnambiguous GrammarSimplification of CFGChomsky's Normal Form (CNF)Greibach Normal Form (GNF)PDAPushdown AutomataPDA AcceptanceNon-deterministic Pushdown AutomataCFG to PDA ConversionTuring MachineApplication of Different Automata | Theory of ComputationIntroduction to Computational Complexity TheoryAutomata and Game TheoryRecursive Descent Parsernext →Automata TutorialTheory of automata is a theoretical branch of computer science and mathematical. It is the study of abstract machines and the computation problems that can be solved using these machines. The abstract machine is called the automata. An automaton with a finite number of states is called a Finite automaton.In this tutorial, we are going to learn how to construct deterministic finite automata, non-deterministic finite automata, Regular expression, context-free grammar, context-free language, Push down automata, Turning machines, etc.PrerequisiteBefore learning Automata, you should have a basic understanding of string, language, alphabets, symbols.AudienceOur Automata Tutorial is designed to help beginners and professionals.ProblemsWe assure that you will not find any problem in this Automata Tutorial. But if there is any mistake, please post the problem in contact form.Next TopicTheory of Automatanext →Latest CoursesWe provides tutorials and interview questions of all technology like java tutorial, android, java frameworksContact info G-13, 2nd Floor, Sec-3, Noida, UP, 201301, India[email protected].Follow usLatest PostPRIVACY POLICYTutorialsJava Data Structures C Programming C++ Tutorial C# Tutorial PHP Tutorial HTML Tutorial JavaScript Tutorial jQuery Tutorial Spring TutorialInterview QuestionsTcs Intuit Wipro Adobe Infosys Amazon Accenture Cognizant Capgemini MicrosoftOnline CompilerC R C++ Php Java Html Swift Python JavaScript TypeScript© Copyright 2024 Javatpoint. All Rights Reserved.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Introduction of Theory of Computation - GeeksforGeeks
 
-IntroductionIntroduction of Theory of ComputationChomsky Hierarchy in Theory of ComputationApplications of various AutomataRegular Expression and Finite AutomataIntroduction of Finite AutomataArden's Theorem in Theory of ComputationArden's Theorem and Challenging Applications | Set 2L-graphs and what they represent in TOCHypothesis (language regularity) and algorithm (L-graph to NFA) in TOCRegular Expressions, Regular Grammar and Regular LanguagesHow to identify if a language is regular or notDesigning Finite Automata from Regular Expression (Set 1)Star Height of Regular Expression and Regular LanguageGenerating regular expression from Finite AutomataDesigning Deterministic Finite Automata (Set 1)Designing Deterministic Finite Automata (Set 2)DFA for Strings not ending with "THE"DFA of a string with at least two 0’s and at least two 1’sDFA for accepting the language L = {  anbm | n+m=even }DFA machines accepting odd number of 0’s or/and even number of 1’sDFA of a string in which 2nd symbol from RHS is 'a'Union process in DFAConcatenation process in DFADFA in LEX code which accepts even number of zeros and even number of onesConversion from NFA to DFAMinimization of DFAReversing Deterministic Finite AutomataComplementation process in DFAKleene's Theorem in TOC | Part-1Mealy and Moore Machines in TOCDifference Between Mealy Machine and Moore MachineCFGRelationship between grammar and language in Theory of ComputationSimplifying Context Free GrammarsClosure Properties of Context Free LanguagesUnion and Intersection of Regular languages with CFLConverting Context Free Grammar to Chomsky Normal FormConverting Context Free Grammar to Greibach Normal FormPumping Lemma in Theory of ComputationCheck if the language is Context Free or NotAmbiguity in Context free Grammar and Context free LanguagesOperator grammar and precedence parser in TOCContext-sensitive Grammar (CSG) and Language (CSL)PDA (Pushdown Automata)Introduction of Pushdown AutomataPushdown Automata Acceptance by Final StateConstruct Pushdown Automata for given languagesConstruct Pushdown Automata for all length palindromeDetailed Study of PushDown AutomataNPDA for accepting the language  L = {an bm cn | m,n>=1}NPDA for accepting the language L = {an bn cm | m,n>=1}NPDA for accepting the language  L = {an bn | n>=1}NPDA for accepting the language  L = {am b(2m) | m>=1}NPDA for accepting the language  L = {am bn cp dq | m+n=p+q ; m,n,p,q>=1}Construct Pushdown automata for L = {0n1m2m3n | m,n ≥ 0}Construct Pushdown automata for L = {0n1m2(n+m) | m,n ≥ 0}NPDA for accepting the language L = {ambnc(m+n) | m,n ≥ 1}NPDA for accepting the language L = {amb(m+n)cn | m,n ≥ 1}NPDA for accepting the language L = {a2mb3m | m ≥ 1}NPDA for accepting the language L = {amb(2m+1) | m ≥ 1}NPDA for accepting the language L = {aibjckdl | i==k or j==l,i>=1,j>=1}Construct Pushdown automata for L = {a(2*m)c(4*n)dnbm | m,n ≥ 0}NPDA for L =  {0i1j2k | i==j or j==k ; i , j , k >= 1}NPDA for accepting the language L = {anb(2n) | n>=1} U {anbn | n>=1}NPDA for the language L ={w∈ {a,b}*| w contains equal no. of a's and b's}Turing MachineRecursive and Recursive Enumerable Languages in TOCTuring Machine in TOCTuring Machine for additionTuring machine for subtraction | Set 1Turing machine for multiplicationTuring machine for copying dataConstruct a Turing Machine for language L = {0n1n2n | n≥1}Construct a Turing Machine for language L = {wwr | w ∈ {0, 1}}Construct a Turing Machine for language L = {ww | w ∈ {0,1}}Construct Turing machine for L = {an bm a(n+m) | n,m≥1}Construct a Turing machine for L = {aibjck | i*j = k; i, j, k ≥ 1}Turing machine for 1's and 2’s complementRecursive and Recursive Enumerable Languages in TOCTuring Machine for subtraction | Set 2Halting Problem in Theory of ComputationTuring Machine as ComparatorDecidabilityDecidable and Undecidable Problems in Theory of ComputationUndecidability and Reducibility in TOCComputable and non-computable problems in TOCTOC Interview preparationLast Minute Notes - Theory of ComputationTOC  Quiz and PYQ's in TOCTheory of Computation - GATE CSE Previous Year QuestionsRegular languages and finite automataContext free languages and Push-down automataRecursively enumerable sets and Turing machinesUndecidabilityDSA to Development Course 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+
+
+
+
+
+
+
+
+
+CoursesDSA to DevelopmentNewly Launched!Android with KotlinGenerative AI & ChatGPTMaster Django FrameworkBecome AWS CertifiedFor Working ProfessionalsInterview 101: DSA & System DesignData Science Training ProgramJAVA Backend Development (Live)DevOps Engineering (LIVE)Software Testing & Automation (Live)Data Structures & Algorithms in PythonFor StudentsPlacement Preparation CourseData Science (Live)Data Structure & Algorithm-Self Paced (C++/JAVA)Master Competitive Programming (Live)Full Stack Development with React & Node JS (Live)GATE Exam CoursesGATE CS & IT (Self-Paced)GATE DS & AI (Self-Paced)All CoursesTutorialsData Structures & AlgorithmsDSA for BeginnersData StructuresArraysMatrixStringsLinked ListStackQueueTreeGeneric TreeBinary TreeBinary Search TreeAVL TreeB TreeB+ TreeRed Black TreeTree Data Structure TutorialHeapHashingGraphSet Data StructureMap Data StructureAdvanced Data StructureData Structures TutorialAlgorithmsAnalysis of AlgorithmsSearching AlgorithmsLinear SearchBinary SearchSearching Algorithms TutorialSorting AlgorithmsSelection SortBubble SortInsertion SortMerge SortQuick SortHeap SortCounting SortRadix SortBucket SortSorting Algorithms TutorialGreedy AlgorithmsDynamic ProgrammingGraph AlgorithmsPattern SearchingRecursionBacktrackingDivide and ConquerMathematical AlgorithmsGeometric AlgorithmsBitwise AlgorithmsRandomized AlgorithmsBranch and BoundAlgorithms TutorialComplete DSA TutorialCompetitive ProgrammingCompany Wise SDE SheetsFacebook SDE SheetAmazon SDE SheetApple SDE SheetNetflix SDE SheetGoogle SDE SheetWipro Coding SheetInfosys Coding SheetTCS Coding SheetCognizant Coding SheetHCL Coding SheetDSA Cheat SheetsDSA Sheet for BeginnersSDE SheetsFAANG Coding SheetLove Babbaar SheetMass Recruiter SheetProduct-Based Coding SheetCompany-Wise Preparation SheetTop 100 DSA Interview Questions Topic-wise100 Days of CodePythonPython TutorialPython ExercisesPython List ExercisePython String ExercisePython Tuple ExercisePython Dictionary ExercisePython Set ExercisePython Excercises Topic wisePython QuizPython ProgramsAdvanced Python TutorialPython API TutorialPython Database TutorialPython JSONPython Cheat SheetPython ProjectsPython Interview QuestionsML & Data ScienceMachine LearningMachine Learning TutorialMaths for MLML Projects100 Days of Machine LearningData Science TutorialData Science PackagesPandas TutorialNumPy TutorialData VisualizationData Visualization with PythonData Visualization with RTableauPower BIData AnalysisData Analysis with PythonData Analysis with R100 Days of Data AnalyticsDeep LearningNLP TutorialOpenCV TutorialInterview QuestionsMachine Learning Interview QuestionsDeep Learning Interview QuestionsR Interview QuestionsSystem DesignSystem Design TutorialSoftware Design PatternsSystem Design RoadmapTop 10 System Design Interview QuestionsInterview CornerCompany PreparationTop TopicsPractice Company QuestionsInterview ExperiencesExperienced InterviewsInternship InterviewsCompetitive ProgrammingMultiple Choice QuizzesAptitude for PlacementsPuzzles for InterviewsLanguagesCC++JavaPythonR TutorialC#SQLScalaPerlGo LanguageWeb DevelopmentHTMLHTML TutorialFree HTML CourseHTML Cheat SheetCSSCSS TutorialFree CSS CourseCSS Cheat SheetJavaScriptJavaScript TutorialJavaScript QuestionsJavaScript Cheat SheetDSA using JavaScriptFree JavaScript CourseJavaScript A to Z Complete GuideTypeScriptReactJSReactJS TutorialFree ReactJS CourseReactJS Cheat SheetNextJSNode.jsPHPAngularJSjQueryWeb Development Using PythonDjangoFlaskSeleniumPostmanGithubWeb Design100 Days of Web DevelopmentCS SubjectsOperating SystemDBMSComputer NetworksEngineering MathematicsComputer Organization and ArchitectureTheory of ComputationCompiler DesignDigital LogicSoftware EngineeringDevOps And LinuxDevOps TutorialGITAWSKubernetesDockerMicrosoft Azure TutorialGoogle Cloud PlatformDevOps RoadmapDevOps Interview QuestionsLinuxLinux TutorialLinux Commands A-ZLinux Commands CheatsheetFile Permissions in LinuxLinux System AdministrationLinux Shell ScriptingLinux NetworkingLinux Interview QuestionsSchool LearningClass 8 Study MaterialClass 9 Study MaterialClass 10 Study MaterialClass 11Study MaterialClass 12 Study MaterialEnglish GrammarGfG SchoolCommerceGATEGATE Computer Science NotesLast Minute NotesGATE CS Solved PapersGATE CS Original Papers and Official KeysGATE CS 2025 SyllabusGATE DA 2025 SyllabusOther CS ExamsISROUGC NETGeeksforGeeks VideosJobsGet Hired: Apply for JobsCorporate Hiring SolutionsFiltered JobsJobs for FreshersJobs for ExperiencedAll JobsPracticePractice Coding ProblemsAll DSA ProblemsProblem of the DayCompany Wise Coding PracticeAmazonMicrosoftFlipkartExplore AllGfG SDE SheetPractice Problems Difficulty WiseBasicEasyMediumHardLanguage Wise Coding PracticeCPPJavaPythonCurated DSA ListsBeginner's DSA SheetLove Babbar SheetTop 50 Array ProblemsTop 50 String ProblemsTop 50 DP ProblemsTop 50 Graph ProblemsTop 50 Tree ProblemsContestsJob-A-Thon Hiring ChallengeGfG Weekly [Rated Contest]All Contests and Events
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Notifications
+
+
+
+
+All
+
+
+
+
+
+ 
+
+View All
+
+
+
+
+
+
+
+
+
+Notifications
+
+
+
+Mark all as read
+
+
+
+
+
+
+All
+
+
+Unread
+
+
+Read
+
+
+
+
+
+                                        You're all caught up!!
+                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+AptitudeEngineering MathematicsDiscrete MathematicsOperating SystemDBMSComputer NetworksDigital Logic and DesignC ProgrammingData StructuresAlgorithmsTheory of ComputationCompiler DesignComputer Org and Architecture 
+
+
+
+
+▲
+
+
+
+
+
+
+
+
+
+
+
+
+Open In App
+
+
+
+
+
+
+
+
+
+
+
+
+Go PremiumShare Your ExperiencesAutomata TutorialAutomata _ IntroductionIntroduction of Theory of ComputationChomsky Hierarchy in Theory of ComputationApplications of various AutomataRegular Expression and Finite AutomataIntroduction of Finite AutomataArden's Theorem in Theory of ComputationArden's Theorem and Challenging Applications | Set 2L-graphs and what they represent in TOCHypothesis (language regularity) and algorithm (L-graph to NFA) in TOCRegular Expressions, Regular Grammar and Regular LanguagesHow to identify if a language is regular or notDesigning Finite Automata from Regular Expression (Set 1)Star Height of Regular Expression and Regular LanguageGenerating regular expression from Finite AutomataDesigning Deterministic Finite Automata (Set 1)Designing Deterministic Finite Automata (Set 2)DFA for Strings not ending with "THE"DFA of a string with at least two 0’s and at least two 1’sDFA for accepting the language L = {  anbm | n+m=even }DFA machines accepting odd number of 0’s or/and even number of 1’sDFA of a string in which 2nd symbol from RHS is 'a'Union process in DFAConcatenation process in DFADFA in LEX code which accepts even number of zeros and even number of onesConversion from NFA to DFAMinimization of DFAReversing Deterministic Finite AutomataComplementation process in DFAKleene's Theorem in TOC | Part-1Mealy and Moore Machines in TOCDifference Between Mealy Machine and Moore MachineCFGRelationship between grammar and language in Theory of ComputationSimplifying Context Free GrammarsClosure Properties of Context Free LanguagesUnion and Intersection of Regular languages with CFLConverting Context Free Grammar to Chomsky Normal FormConverting Context Free Grammar to Greibach Normal FormPumping Lemma in Theory of ComputationCheck if the language is Context Free or NotAmbiguity in Context free Grammar and Context free LanguagesOperator grammar and precedence parser in TOCContext-sensitive Grammar (CSG) and Language (CSL)PDA (Pushdown Automata)Introduction of Pushdown AutomataPushdown Automata Acceptance by Final StateConstruct Pushdown Automata for given languagesConstruct Pushdown Automata for all length palindromeDetailed Study of PushDown AutomataNPDA for accepting the language  L = {an bm cn | m,n>=1}NPDA for accepting the language L = {an bn cm | m,n>=1}NPDA for accepting the language  L = {an bn | n>=1}NPDA for accepting the language  L = {am b(2m) | m>=1}NPDA for accepting the language  L = {am bn cp dq | m+n=p+q ; m,n,p,q>=1}Construct Pushdown automata for L = {0n1m2m3n | m,n ≥ 0}Construct Pushdown automata for L = {0n1m2(n+m) | m,n ≥ 0}NPDA for accepting the language L = {ambnc(m+n) | m,n ≥ 1}NPDA for accepting the language L = {amb(m+n)cn | m,n ≥ 1}NPDA for accepting the language L = {a2mb3m | m ≥ 1}NPDA for accepting the language L = {amb(2m+1) | m ≥ 1}NPDA for accepting the language L = {aibjckdl | i==k or j==l,i>=1,j>=1}Construct Pushdown automata for L = {a(2*m)c(4*n)dnbm | m,n ≥ 0}NPDA for L =  {0i1j2k | i==j or j==k ; i , j , k >= 1}NPDA for accepting the language L = {anb(2n) | n>=1} U {anbn | n>=1}NPDA for the language L ={w∈ {a,b}*| w contains equal no. of a's and b's}Turing MachineRecursive and Recursive Enumerable Languages in TOCTuring Machine in TOCTuring Machine for additionTuring machine for subtraction | Set 1Turing machine for multiplicationTuring machine for copying dataConstruct a Turing Machine for language L = {0n1n2n | n≥1}Construct a Turing Machine for language L = {wwr | w ∈ {0, 1}}Construct a Turing Machine for language L = {ww | w ∈ {0,1}}Construct Turing machine for L = {an bm a(n+m) | n,m≥1}Construct a Turing machine for L = {aibjck | i*j = k; i, j, k ≥ 1}Turing machine for 1's and 2’s complementRecursive and Recursive Enumerable Languages in TOCTuring Machine for subtraction | Set 2Halting Problem in Theory of ComputationTuring Machine as ComparatorDecidabilityDecidable and Undecidable Problems in Theory of ComputationUndecidability and Reducibility in TOCComputable and non-computable problems in TOCTOC Interview preparationLast Minute Notes - Theory of ComputationTOC  Quiz and PYQ's in TOCTheory of Computation - GATE CSE Previous Year QuestionsRegular languages and finite automataContext free languages and Push-down automataRecursively enumerable sets and Turing machinesUndecidabilityDSA to Development Course 
+
+
+
+
+
+
+
+
+
+
+
+
 
 Introduction of Theory of Computation
+
+
+
+Last Updated : 
+27 Sep, 2024
+
+
+
+
+
+
+Summarize
+
+
+
+
+
+
+Comments
+
+
+
+
+
+
+
+Improve
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Suggest changes
+
+
+ 
+
+
+Like Article
+
+
+
+Like
+
+
+
+
+
+
+
+
+Save
+
+
+
+
+
+
+
+
+Share
+
+
+
+
+
+
+
+Report
+
+
+
+
+
+
+
+Follow
+
+
+
+
 
 Automata theory (also referred to as the Theory Of Computation) is a branch of Computer Science and Mathematics that studies how machines compute functions and solve problems. This field is mainly focused on mathematical structures called automata and is crucial for the purpose of studying processes occurring in discrete systems.
 What is Automata Theory?
@@ -52,85 +406,1217 @@ Is it possible to implement automata theory into real life?
 
 Of course, automata theory has found its use in certain areas like compiler design, artificial intelligence, network security and natural language processing.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+abhishek1 
+
+
+
+
+
+ Follow 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+Improve
+
+
+
+
+
+
+
+
+Previous Article
+
+
+
 Automata Tutorial
 
+
+
+
+Next Article
+
+
+
+
 Chomsky Hierarchy in Theory of Computation
+
+
+
+
+
+
+Read More
+
+
+
+Similar Reads
+
+
 
 Introduction to Computation Complex Theory
 Broad Overview : Complexity theory, in a nutshell, a complexity word is a quite fancy word, literally, it sounds complex, but it is not an intimidating topic. What it really means is analyzing the program or we can say analyzing the efficiency of the program, figuring out whether the program is correct, figuring out whether one program is better th
 
+
+
+4 min read
+
+
+
+
 Introduction To Grammar in Theory of Computation
 In the context of the Theory of Computation, grammar refers to a formal system that defines how strings in a language are structured. It plays a crucial role in determining the syntactic correctness of languages and serves as a foundation for parsing and interpreting programming languages, natural languages, and various formal systems. This article
 
+
+
+5 min read
+
+
+
+
 Theory of Computation - GATE CSE Previous Year Questions
 Solving GATE Previous Year's Questions (PYQs) not only clears the concepts but also helps to gain flexibility, speed, accuracy, and understanding of the level of questions generally asked in the GATE exam, and that eventually helps you to gain good marks in the examination. Previous Year Questions help a candidate practice and revise for GATE, whic
+
+
+
+5 min read
+
+
+
 
 
 Relationship between grammar and language in Theory of Computation
 A grammar is a set of production rules which are used to generate strings of a language. In this article, we have discussed how to find the language generated by a grammar and vice versa as well. Language generated by a grammar - Given a grammar G, its corresponding language L(G) represents the set of all strings generated from G. Consider the foll
 
 
+
+4 min read
+
+
+
+
 Theory of Computation | Regular languages and finite automata | Question 2
 What is the complement of the language accepted by the NFA shown below? (A) A (B) B (C) C (D) D Answer: (B) Explanation: Quiz of this QuestionPlease comment below if you find anything wrong in the above post
+
+
+
+1 min read
+
+
+
 
 Arden's Theorem in Theory of Computation
 Arden's theorem state that: "If P and Q are two regular expressions over "∑", and if P does not contain "∈" , then the following equation in R given by R = Q + RP has a unique solution i.e., R = QP*." That means, whenever we get any equation in the form of R = Q + RP, then we can directly replace it with R = QP*. So, here we will first prove that R
 
+
+
+4 min read
+
+
+
+
 Decidability Table in Theory of Computation
 Prerequisite - Undecidability, Decidable and undecidable problems Identifying languages (or problems*) as decidable, undecidable or partially decidable is a very common question in GATE. With correct knowledge and ample experience, this question becomes very easy to solve. A language is undecidable if it is not decidable. An undecidable language ma
+
+
+
+2 min read
+
+
+
+
 
 Pumping Lemma in Theory of Computation
 There are two Pumping Lemmas, which are defined for 1. Regular Languages, and 2. Context - Free Languages Pumping Lemma for Regular Languages For any regular language L, there exists an integer n, such that for all x ? L with |x| ? n, there exists u, v, w ? ?*, such that x = uvw, and (1) |uv| ? n (2) |v| ? 1 (3) for all i ? 0: uviw ? L In simple te
 
+
+
+4 min read
+
+
+
+
 Decidable and Undecidable Problems in Theory of Computation
 In the Theory of Computation, problems can be classified into decidable and undecidable categories based on whether they can be solved using an algorithm. A decidable problem is one for which a solution can be found in a finite amount of time, meaning there exists an algorithm that can always provide a correct answer. While an undecidable problem i
+
+
+
+6 min read
+
+
+
 
 Halting Problem in Theory of Computation
 To understand better the halting problem, we must know Decidability , Undecidability and Turing machine , decision problems and also a theory named as Computability theory and Computational complexity theory. Some important terms: Computability theory - The branch of theory of computation that studies which problems are computationally solvable usi
 
+
+
+4 min read
+
+
+
+
 Chomsky Hierarchy in Theory of Computation
 According to Chomsky hierarchy, grammar is divided into 4 types as follows: Type 0 is known as unrestricted grammar.Type 1 is known as context-sensitive grammar.Type 2 is known as a context-free grammar.Type 3 Regular Grammar.Type 0: Unrestricted Grammar: Type-0 grammars include all formal grammar. Type 0 grammar languages are recognized by turing
+
+
+
+2 min read
+
+
+
 
 Automata Theory | Set 3
 Following questions have been asked in GATE CS 2011 exam. 1) The lexical analysis for a modern language such as Java needs the power of which one of the following machine models in a necessary and sufficient sense? (A) Finite state automata (B) Deterministic pushdown automata (C) Non-deterministic pushdown automata (D) Turing machine Answer (A) Lex
 
+
+
+2 min read
+
+
+
+
 Automata Theory | Set 4
 Following questions have been asked in GATE CS 2011 exam. 1) Let P be a regular language and Q be context-free language such that Q ⊆ P. (For example, let P be the language represented by the regular expression p*q* and Q be {pnqn|n ∈ N}). Then which of the following is ALWAYS regular? (A) P ∩ Q (B) P - Q (C) ∑* - P (D) ∑* - Q
+
+
+
+2 min read
+
+
+
+
 
 Automata Theory | Set 5
 Following questions have been asked in GATE CS 2009 exam. 1) S --> aSa| bSb| a| b ;The language generated by the above grammar over the alphabet {a,b} is the set of (A) All palindromes. (B) All odd length palindromes. (C) Strings that begin and end with the same symbol (D) All even length palindromes. Answer (B) The strings accepted by language are
 
+
+
+3 min read
+
+
+
+
 Automata Theory | Set 7
 These questions for practice purpose for GATE CS Exam. Ques-1: Consider L= {(TM) | TM is the Turing machine that halts on all input and L(TM)= L' for some undecidable language L'}. Here, (TM) is the encoding of a Turing machine as a string over alphabet {0, 1} then L is: (A) decidable and recursively enumerable (B) decidable and recursive (C) decid
+
+
+
+3 min read
+
+
+
 
 Automata Theory | Set 8
 These questions for practice purpose for GATE CS Exam. Ques-1: Which one of the following language is Regular? (A) {wxwR | w,x ∈ (a+b)+} (B) {wxwR | w ∈ (a+b)*, x ∈ {a,b}} (C) {wwRx | w,x ∈ (a+b)+} (D) {wwR | w ∈ (a+b)*} Explanation: (A) It is correct, since this language can form regular expression which is {{ a(a + b)+a } + {b(a + b)+b}}, i.e., s
 
+
+
+2 min read
+
+
+
+
 Automata Theory | Set 9
 These questions for practice purpose for GATE CS Exam. Ques-1: Consider the following two statements with respect to Countability: Statement-1: If X union of 'Y' is uncountable, then both set 'X' and set 'Y' must be uncountable. Statement-2: The Cartesian product of two countable sets 'X' and 'Y' is countable. Which of the following option is true
+
+
+
+3 min read
+
+
+
+
 
 Automata Theory | Set 10
 These questions for practice purpose of GATE CS Exam. Ques-1: Consider the following statements: X: For any language either a language L or its complement L' must be finite.Y: DFA for language which contains epsilon must have initial state as final state.Z: Non-deterministic finite automata is more powerful than deterministic finite automata. Which
 
 
+
+3 min read
+
+
+
+
 Regular Graph in Graph Theory
 Prerequisite: Graph Theory Basics – Set 1, Set 2 Regular Graph: A graph is called regular graph if degree of each vertex is equal. A graph is called K regular if degree of each vertex in the graph is K. Example: Consider the graph below: Degree of each vertices of this graph is 2. So, the graph is 2 Regular. Similarly, below graphs are 3 Regular an
+
+
+
+2 min read
+
+
+
 
 5 Color Theorem in Graph Theory
 The graph is a data structure that is used extensively in real-life. Planar Graph: If a graph can be drawn on the plane without crossing, it is said to be planar. Coloring of a simple graph is the assignment of color to each vertex of the graph so that no two adjacent vertices are assigned the same color. Bi-Partite Graphs: A bipartite graph, also
 
+
+
+4 min read
+
+
+
+
 Mathematics | Graph Theory Basics - Set 1
 A graph is a data structure that is defined by two components : A node or a vertex.An edge E or ordered pair is a connection between two nodes u,v that is identified by unique pair(u,v). The pair (u,v) is ordered because (u,v) is not same as (v,u) in case of directed graph.The edge may have a weight or is set to one in case of unweighted graph.Cons
 
+
+
+4 min read
+
+
+
+
+Mathematics | Graph theory practice questions
 Problem 1 - There are 25 telephones in Geeksland. Is it possible to connect them with wires so that each telephone is connected with exactly 7 others. Solution - Let us suppose that such an arrangement is possible. This can be viewed as a graph in which telephones are represented using vertices and wires using the edges. Now we have 25 vertices in
 
+
+
+4 min read
+
+
+
+
+Set Theory Operations in Relational Algebra
 Relational Algebra in DBMS These Set Theory operations are the standard mathematical operations on set. These operations are Binary operations that are, operated on 2 relations unlike PROJECT, SELECT and RENAME operations. These operations are used to merge 2 sets in various ways. The set operation is mainly categorized into the following: Union op
 
 
+
+3 min read
+
+
+
+
+
+Applications of Group Theory
+Group theory is the branch of mathematics that includes the study of elements in a group. Group is the fundamental concept of algebraic structure like other algebraic structures like rings and fields. Group: A non-empty set G with * as operation, (G, *) is called a group if it follows the closure, associativity, identity, and inverse properties. Pr
+
+
+
+4 min read
+
+
+
+
+Quotient Group in Group Theory
+We can say that "o" is the binary operation on set G if: G is a non-empty set & G * G = { (a,b): a, b∈ G } and o: G * G --> G. Here, aob denotes the image of ordered pair (a,b) under the function/operation o.Example - "+" is called a binary operation on G (any non-empty set ) if & only if: a+b ∈G; ∀ a,b ∈G and a+b give the same result ev
+
+
+
+12 min read
+
+
+
+
+Types of Sets in Set Theory
+In mathematics, a Set is a fundamental concept representing a collection of well-defined objects or elements. Sets are typically denoted by capital letters, and the individual elements within a set are listed in curly braces, separated by commas. For example, A={1,2,3,4,5} represents a set A with elements 1, 2, 3, 4, and 5. The order of elements wi
+
+
+
+7 min read
+
+
+
+
+Mathematics | Graph Theory Basics - Set 2
+Graph theory is a basic branch of discrete mathematics that mainly focuses on the relationship between objects. These objects are called vertices and these vertices are joined by edges. Graphs are common in computer science, network analysis, and many other everyday uses because they provide a good representation of connection, relationship, and pr
+
+
+
+10 min read
+
+
+
+
+
+Group in Maths: Group Theory
+Group theory is one of the most important branches of abstract algebra which is concerned with the concept of the group. A group consists of a set equipped with a binary operation that satisfies four key properties: specifically, it includes property of closure, associativity, the existence of an identity element, and the existence of inverse eleme
+
+
+
+13 min read
+
+
+
+
+Matching (Graph Theory)
+Matching (Graph Theory): In graph theory, matching is a fundamental concept used to describe a set of edges without common vertices. Matchings are used in various applications such as network design, job assignments, and scheduling. Understanding matchings is essential for solving problems involving optimal pairings and resource allocation. Table o
+
+
+
+4 min read
+
+
+
+
+Automata Theory | Set 2
+Questions Asked in the GATE CS 2012 Exam1) What is the complement of the language accepted by the NFA shown below? Assume ∑ = {a} and ε is the empty string  (A) Φ (B) ε (C) a (D) {a, ε} Answer (B) Explanation: The given alphabet ∑ contains only one symbol {a} and the given NFA accepts all strings with any number of occurrences of 'a'. In other word
+
+
+
+3 min read
+
+
+
+
+
+
+Article Tags : 
+
+
+GATE CS
+
+
 Theory of Computation
+ 
+
+
+
+
+
+
+Like
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Please Login to comment...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+76k+ interested Geeks 
+
+
+
+Core Computer Science Subject for Interview Preparation 
+
+
+
+
+Explore
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+28k+ interested Geeks 
+
+
+
+GATE Computer Science & Information Technology - 2025 
+
+
+
+
+Explore
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+27k+ interested Geeks 
+
+
+
+GATE Data Science and Artificial Intelligence 2025 
+
+
+
+
+Explore
+
+
+
+
+
+
+ 
+
+
+
+
+Explore More
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      Corporate & Communications Address:- A-143, 9th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305) | Registered Address:- K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CompanyAbout UsLegalCareersIn MediaContact UsAdvertise with usGFG Corporate SolutionPlacement Training ProgramExploreJob-A-Thon Hiring ChallengeHack-A-ThonGfG Weekly ContestOffline Classes (Delhi/NCR)DSA in JAVA/C++Master System DesignMaster CPGeeksforGeeks VideosGeeks CommunityLanguagesPythonJavaC++PHPGoLangSQLR LanguageAndroid TutorialDSAData StructuresAlgorithmsDSA for BeginnersBasic DSA ProblemsDSA RoadmapDSA Interview QuestionsCompetitive ProgrammingData Science & MLData Science With PythonData Science For BeginnerMachine LearningML MathsData VisualisationPandasNumPyNLPDeep LearningWeb TechnologiesHTMLCSSJavaScriptTypeScriptReactJSNextJSNodeJsBootstrapTailwind CSSPython TutorialPython Programming ExamplesDjango TutorialPython ProjectsPython TkinterWeb ScrapingOpenCV TutorialPython Interview QuestionComputer ScienceGATE CS NotesOperating SystemsComputer NetworkDatabase Management SystemSoftware EngineeringDigital Logic DesignEngineering MathsDevOpsGitAWSDockerKubernetesAzureGCPDevOps RoadmapSystem DesignHigh Level DesignLow Level DesignUML DiagramsInterview GuideDesign PatternsOOADSystem Design BootcampInterview QuestionsSchool SubjectsMathematicsPhysicsChemistryBiologySocial ScienceEnglish GrammarCommerceAccountancyBusiness StudiesEconomicsManagementHR ManagementFinanceIncome TaxDatabasesSQLMYSQLPostgreSQLPL/SQLMongoDBPreparation CornerCompany-Wise Recruitment ProcessResume TemplatesAptitude PreparationPuzzlesCompany-Wise PreparationCompaniesCollegesCompetitive ExamsJEE AdvancedUGC NETUPSCSSC CGLSBI POSBI ClerkIBPS POIBPS ClerkMore TutorialsSoftware DevelopmentSoftware TestingProduct ManagementProject ManagementLinuxExcelAll Cheat SheetsRecent ArticlesFree Online ToolsTyping TestImage EditorCode FormattersCode ConvertersCurrency ConverterRandom Number GeneratorRandom Password GeneratorWrite & EarnWrite an ArticleImprove an ArticlePick Topics to WriteShare your ExperiencesInternships 
+
+
+
+
+
+
+@GeeksforGeeks, Sanchhaya Education Private Limited, All rights reserved
+
+
+
+
+
+
+
+
+
+
+        We use cookies to ensure you have the best browsing experience on our website. By using our site, you
+        acknowledge that you have read and understood our
+        Cookie Policy &
+        Privacy Policy
+
+
+        Got It !
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Improvement
+
+
+
+
+
+Please go through our recently updated Improvement Guidelines before submitting any improvements.
+This improvement is locked by another user right now. You can suggest the changes for now and it will be under 'My Suggestions' Tab on Write.
+You will be notified via email once the article is available for improvement.
+                        Thank you for your valuable feedback!
+                    
+
+Suggest changes
+
+
+
+Please go through our recently updated Improvement Guidelines before submitting any improvements.
+
+
+Suggest Changes
+Help us improve. Share your suggestions to enhance the article. Contribute your expertise and make a difference in the GeeksforGeeks portal.
+
+
+
+
+
+
+
+Create Improvement
+Enhance the article with your expertise. Contribute to the GeeksforGeeks community and help create better learning resources for all.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Suggest Changes
+
+
+
+
+
+
+
+min 4 words, max CharLimit:2000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Create Improvement
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+What kind of Experience do you want to share?
+
+
+
+
+
+
+
+
+
+Interview Experiences
+
+
+
+
+
+
+
+Admission Experiences
+
+
+
+
+
+
+
+Career Journeys
+
+
+
+
+
+
+
+Work Experiences
+
+
+
+
+
+
+
+Campus Experiences
+
+
+
+
+
+
+
+Competitive Exam Experiences
+
+
+
+
+
+
+                        Can't choose a topic to write? click here for suggested topics
+                    
+
+
+
+                       Write and publish your own Article
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Theory Of Computation Notes PDF, Syllabus ✅ [2021] B Tech
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+
+
+
+
+
+
+
+
+
+
+HomeBest Courses
+
+Google Professional Certificates
+Human Resource
+
+Human Resource Human Resource Management Human Resource Planning Organizational Culture Organization Development Organizational Behavior
+Learning DealsAll Blog PostManagement
+
+Business Statistics Lean Six Sigma Management Operation Management Research Methodology Operations Research Procurement Management Production Management Supply Chain Strategic Management
+Marketing
+
+Economics Brand Management Business Business Communication Business Law Entrepreneurship Consumer Behaviour Marketing Essentials Marketing Management Sales Management Shark Tank India
+Business Tech
+
+Project Management Business Analytics Management Information System Enterprise Resource Planning Technologies Cloud Computing
+About
+
+About Us Cookie Policy DMCA Policy Disclaimer Contact Us
+Toggle website search
+
+
+
+
+
+
+
+
+
+All Category
+Close
+
+
+
+
+
+
+Home
+Best Courses
+
+Google Professional Certificates
+
+
+Human Resource
+
+Human Resource
+Human Resource Management
+Human Resource Planning
+Organizational Culture
+Organization Development
+Organizational Behavior
+
+
+Learning Deals
+All Blog Post
+Management
+
+Business Statistics
+Lean Six Sigma
+Management
+Operation Management
+Research Methodology
+Operations Research
+Procurement Management
+Production Management
+Supply Chain
+Strategic Management
+
+
+Marketing
+
+Economics
+Brand Management
+Business
+Business Communication
+Business Law
+Entrepreneurship
+Consumer Behaviour
+Marketing Essentials
+Marketing Management
+Sales Management
+Shark Tank India
+
+
+Business Tech
+
+Project Management
+Business Analytics
+Management Information System
+Enterprise Resource Planning
+Technologies
+Cloud Computing
+
+
+About
+
+About Us
+Cookie Policy
+DMCA Policy
+Disclaimer
+Contact Us
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+Theory of Computation Notes | PDF, Syllabus | B Tech 2021
+Home>B Tech Study Material>Theory of Computation Notes | PDF, Syllabus | B Tech 2021
+
+
+
+
+
+
+
+Theory of Computation Notes | PDF, Syllabus | B Tech 2021
+
+
+Post last modified:30 March 2021
+Reading time:27 mins read
+Post category:B Tech Study Material
+
+
+
+
+
+
+
+
+
+
+
+
+Download Theory of Computation Notes PDF, syllabus for B Tech, BCA, MCA 2021. We provide a complete theory of computation pdf. Theory of Computation lecture notes includes a theory of computation notes, theory of computation book, theory of computation courses, theory of computation syllabus, theory of computation question paper, MCQ, case study, theory of computation interview questions and available in theory of computation pdf form.
+Theory of Computation Notes
+Theory of Computation subject is included in B Tech CSE, BCA, MCA, M Tech. So, students can able to download theory of computation notes pdf.
+
+Table of Content1 Theory of Computation Syllabus2 Theory of Computation PDF3 Theory of Computation Notes3.1 What is Theory of Computation?3.2 Theory of Computation Handwritten Notes4 Theory of Computation Interview Questions5 Theory of Computation Question Paper6 Theory of Computation Book
+
+Theory of Computation Notes can be downloaded in theory of computation pdf from the below article
+
 Theory of Computation Syllabus
 A detailed theory of computation syllabus as prescribed by various Universities and colleges in India are as under. You can download the syllabus in the theory of computation pdf form.
-Unit 
+Unit I
+
+
+
+
+
 
 Introduction to Automata: The Methods Introduction to Finite Automata, Structural Representations, Automata and Complexity. Proving Equivalences about Sets, The Contrapositive, Proof by Contradiction, Inductive Proofs: General Concepts of Automata Theory: Alphabets Strings, Languages, Applications of Automata Theory. 
 Finite Automata: The Ground Rules, The Protocol, Deterministic Finite Automata: Definition of a Deterministic Finite Automata, How a DFA Processes Strings, Simpler Notations for DFA’s, Extending the Transition Function to Strings, The Language of a DFA 
@@ -139,6 +1625,10 @@ Nondeterministic Finite Automata: An Informal View. The Extended Transition Func
 Regular Expressions and Languages: Regular Expressions: The Operators of regular Expressions, Building Regular Expressions, Precedence of Regular-Expression Operators, Precedence of Regular-Expression Operators Finite Automata and Regular Expressions: From DFA’s to Regular Expressions, Converting DFA’s to Regular Expressions, Converting DFA’s to Regular Expressions by Eliminating States, Converting Regular Expressions to Automata. 
 Algebraic Laws for Regular Expressions: Properties of Regular Languages: The Pumping Lemma for Regular Languages, Applications of the Pumping Lemma Closure Properties of Regular Languages, Decision Properties of Regular Languages, Equivalence and Minimization of Automata, 
 Context-Free Grammars and Languages: Definition of Context-Free Grammars, Derivations Using a Grammars Leftmost and Rightmost Derivations, The Languages of a Grammar, Parse Trees: Constructing Parse Trees, The Yield of a Parse Tree, Inference Derivations, and Parse Trees, From Inferences to Trees, From Trees to Derivations, From Derivation to Recursive Inferences, Applications of Context-Free Grammars: Parsers, Ambiguity in Grammars and Languages: Ambiguous Grammars, Removing Ambiguity.
+
+
+
+
 
 Unit III 
 Pushdown Automata: Definition Formal Definition of Pushdown Automata, A Graphical Notation for PDA’s, Instantaneous Descriptions of a PDA, 
@@ -152,13 +1642,32 @@ Recursive And Recursively Enumerable Languages: Properties of recursive and recu
 
 Theory of Computation PDF
 
+
+
+
+
  Theory of Computation Notes PDF(How to download) Theory of Computation Notes Download  Theory of Computation Book Download Theory of Computation Syllabus Download  Theory of Computation Question Paper Download  Theory of Computation Interview Questions Download 
 
 Theory of Computation Notes
 What is Theory of Computation?
 
+
+
+
+
+ Download PDF
+
+
+
+
+
+
 Theory of computation is the branch that deals with how efficiently problems can be solved on a model of computation, using an algorithm. The field is divided into three major branches: automata theory and languages, computability theory, and computational complexity theory.
 Theory of Computation Handwritten Notes
+
+
+
+ Download PDF
 
 Theory of Computation Interview Questions
 Some of the theory of computation interview questions are mentioned below. You can download the QnA in theory of computation pdf form.
@@ -173,6 +1682,806 @@ Theory of Computation Book
 Below is the list of theory of computation book recommended by the top university in India.
 Introduction to Automata Theory Languages, and Computation, by J.E.Hopcroft, R.Motwani & J.D.Ullman (3rd Edition) – Pearson EducationTheory of Computer Science (Automata Language & Computations), by K.L.Mishra & N. Chandrashekhar, PHI
 
+Download B Tech (CS) Study Material
+
+
+
+Computer Networks Notes ✅ [2020] PDF – Download 
+
+Computer Networks Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper(Download Computer Networks Notes) 
+
+
+
+Computer Graphics Notes ✅ [2020] PDF – Download 
+
+Computer Graphics Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper(Download Computer Graphics Notes)
+
+
+
+Operating System Notes ✅ [2020] PDF – Download  
+
+Operating System Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper (Download Operating System Notes)
+
+
+
+Compiler Design Notes ✅ [2020] PDF – Download
+
+Compiler Design Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper(Download Compiler Design Notes)
+
+
+
+Data Structures Notes ✅ [2020] PDF – Download 
+
+Data Structures Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper (Download Data Structures Notes)
+
+
+
+Digital Image Processing Notes ✅ [2020] PDF – Download 
+
+Digital Image Processing Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper (Download Digital Image Processing Notes) 
+
+
+
+Theory of Computation Notes ✅ [2020] PDF – Download 
+
+Theory of Computation Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper (Download Theory of Computation Notes) 
+
+
+
+Computer Organization and Architecture Notes ✅ [2020] PDF – Download 
+
+Computer Organization and Architecture Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper (Download Computer Organization and Architecture Notes) 
+
+
+
+Cloud Computing Notes ✅ [2020] PDF – Download 
+
+Cloud Computing Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper (Download Cloud Computing Notes) 
+
+
+
+Data Communication and Networking Notes ✅ [2020] PDF – Download 
+
+Data Communication and Networking Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper (Download Data Communication and Networking Notes) 
+
+
+
+ Software Engineering Notes ✅ [2020] PDF – Download 
+
+Software Engineering Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper (Download Software Engineering Notes) 
+
+
+
+Web Technologies Notes ✅ [2020] PDF – Download 
+
+Web Technologies Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper (Download Web Technologies Notes) 
+
+
+
+Microprocessor and Microcontrollers Notes ✅ [2020] PDF – Download 
+
+Microprocessor and Microcontrollers Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper (Download Microprocessor and Microcontrollers Notes) 
+
+
+
+Design and Analysis of Algorithm Notes ✅ [2020] PDF – Download 
+
+Design and Analysis of Algorithm Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper (Download Design and Analysis of Algorithm Notes) 
+
+
+
+Operation Research Notes ✅ [2020] PDF – Download 
+
+Operation Research Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper (Download Operation Research Notes) 
+
+
+
+Database Management Systems Notes ✅ [2020] PDF – Download 
+
+Database Management Systems Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper (Download Database Management Systems Notes)
+
+
+
+Compiler Design Notes ✅ [2020] PDF – Download 
+
+Compiler Design Notes [2020] PDF, Syllabus, PPT, Book, Interview questions, Question Paper (Download Compiler Design Notes)
+
+
+
+
+
+In the above article, a student can download theory of computation notes for B Tech, BCA, MCA, M Tech. Theory of Computation lecture notes and study material includes theory of computation notes, theory of computation books, theory of computation syllabus, theory of computation question paper, theory of computation case study, theory of computation interview questions, theory of computation courses in theory of computation pdf form.
+
+Go On, Share & Help your Friend
+ Did we miss something in B.Tech Computer Science Notes or You want something More? Come on! Tell us what you think about our post on Theory of Computation Notes | PDF, Syllabus, Book | B Tech 2020 in the comments section and Share this post with your friends.
+
+
+
+
+
+
+
+
+
+
+
+Read more articles
+ Previous PostWeb Technologies Notes | PDF, Syllabus, Book | B Tech 2021 Next PostDigital Image Processing Notes | PDF, Syllabus | B Tech 2021
+
+
+Tags: B Tech, B Tech CS Books, B Tech CS Syllabus, B Tech CSE Books, B Tech CSE Notes, B Tech CSE Syllabus, B Tech Notes, B Tech Study Material, Computer Science Notes PDF, CS Notes, CSE Notes, Theory of Computation Book, Theory of Computation Course, Theory of Computation Interview Questions, Theory of Computation Notes, Theory of Computation PDF, Theory of Computation PPT, Theory of Computation Question Paper, Theory of Computation Syllabus, Theory of Computation Tutorial
+
+
+You Might Also Like
+
+
+
+
+Java Programming Notes PDF, Syllabus | B Tech 2021
+
+22 November 2020
+
+
+
+Signals and Systems Notes | PDF, Syllabus, Book | B Tech (2024)
+
+3 July 2020
+
+
+
+Electromagnetic Theory PDF | Notes, Syllabus | B Tech 2021
+
+3 July 2020
+
+
+
+
+ 
+
+
+Computer Networks Notes | PDF, Syllabus, Books | B Tech (2024)
+
+21 March 2020
+
+
+
+
+ 
+
+
+Digital Image Processing Notes | PDF, Syllabus | B Tech 2021
+
+22 March 2020
+
+
+
+
+ 
+
+
+Data Structures Notes | PDF, Book, Syllabus | B Tech [2021]
+
+4 March 2020
+
+
+
+Business Intelligence Notes | PDF, Syllabus | B Tech 2021
+
+3 July 2020
+
+
+
+Wireless Communication PDF | Notes, Syllabus | B Tech (2024)
+
+3 July 2020
+
+
+
+
+ 
+
+
+Design and Analysis of Algorithm Notes PDF | B Tech (2024)
+
+20 March 2020
+
+
+
+Network Programming Notes | PDF, Syllabus | B Tech 2021
+
+3 July 2020
+
+
+
+How to Download Notes on Geektonight
+
+27 June 2020
+
+
+
+Digital Communication Notes | PDF, Syllabus | B Tech 2021
+
+3 July 2020
+
+
+
+
+
+Leave a Reply Cancel replyYou must be logged in to post a comment. 
+
+
+
+
+
+
+All CategoryAll Category
+Select Category
+Accounting
+B Tech Study Material
+BBA Study Material
+BCOM Study Material
+Best Online Course
+Best Online Deal
+Best Software Review
+Brand Management
+Business
+Business Analytics
+Business Communication
+Business Ethics
+Business Law
+Business Statistics
+Certification Answers
+Cloud Computing
+Computer Network
+Consumer Behaviour
+Corporate Finance
+Corporate Social Responsibility
+Customer Relationship Management
+Digital Marketing
+E-Business
+Economics
+Enterprise Resource Planning
+Entrepreneurship
+Finance
+Financial Accounting
+Financial Institutions & Markets
+Financial Management
+Google Career Certificates
+Google Certification
+Hotel Management
+HubSpot Certification
+Human Resource
+Human Resource Development
+Human Resource Management
+Human Resource Planning
+Insurance and Risk Management
+International Banking
+Lean Six Sigma
+LinkedIn Certification
+Management
+Management Accounting
+Management Information System
+Marketing Essentials
+Marketing Management
+MBA Study Material
+MCOM Study Material
+Microsoft Certification
+Operation Management
+Operations Research
+Organization Development
+Organizational Behavior
+Organizational Culture
+Performance Management
+Portfolio Management
+Procurement Management
+Production Management
+Project Management
+Puzzle
+Research Methodology
+Sales Management
+SEMrush Certification
+Service Operations Management
+Shark Tank India
+Shipping and Insurance
+Software Engineering
+Strategic Management
+Strategy Tools
+Supply Chain
+Technologies
+Treasury Management in Banking
+Twitter Certification
+Uncategorized
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+World's Best Online Courses at One Place 
+
+
+
+We’ve spent the time in finding, so you can spend your time in learning 
+
+
+
+
+
+
+
+
+
+
+
+Digital Marketing 
+
+
+
+Google Ads CourseFacebook Ads CourseSEO CourseInstagram Marketing CourseSEM CourseSocial Media CourseEmail Marketing CoursePinterest CourseChatbot CourseBlogging CourseContent Marketing CourseWooCommerce CourseClickbank Affiliate Marketing CourseAffiliate Marketing CourseAmazon Affiliate Marketing CourseShopify, eCommerce & Dropshipping CourseExcel Data Analysis CourseWordPress CourseGoogle Tag Manager CourseGoogle Analytics CourseDigital Marketing CourseYoutube Marketing CourseBing Ads CourseSocial Media Analytics Course 
+
+
+
+
+
+
+
+Business 
+
+
+
+Product Strategy CourseSales CourseBrand Strategy CourseBusiness Law CourseStrategic Management CourseMarketing Analytics CourseBusiness Strategy CourseMarketing Management CourseHuman Resource CourseProduct Management CourseProduct Marketing CourseB2B Marketing CourseGrowth Hacking CoursePeople HR Analytics CourseEntrepreneurship CourseBusiness Statistics CourseProject Management CourseNegotiation CourseTime Management CourseLeadership CourseCareer Development CourseStress Management CourseAnxiety Management CourseDesign Thinking CourseEmotional Intelligence CourseTeam Building CourseBusiness Analytics CourseDigital Transformation Course 
+
+
+
+
+
+
+
+Personal Growth 
+
+
+
+English Grammar CourseVocabulary CourseSoft Skills CoursePublic Speaking CoursePhotography CourseBody Language CourseCommunication Skills CourseInterview Preparation CourseProductivity CourseMindfulness CourseMemory CourseSelf DisciplineSpeed ReadingAcademic WritingCopywriting CourseScientific Writing CourseNovel Writing CourseAcademic Writing CourseTravel Writer CourseCreative Writing CourseInterior Design CourseGraphic Design CourseDrawing CourseDigital Art CourseUI UX Designer Course 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+Finance 
+
+
+
+Mutual Fund CourseFinancial Analysis CoursePersonal Finance CourseCost Accounting CourseAudit CourseFintech CourseValue Investing CourseTrading CourseFinancial Modeling CourseInvestment CourseProject Finance CourseStock Trading CourseFinancial & Capital Markets CourseAccounting CourseFinancial Engineering Course 
+
+
+
+
+
+
+
+FinTech 
+
+
+
+NFT CourseMongoDB CoursejQuery CourseBlockchain CourseCryptocurrency CourseSwift CourseAWS CourseRedux CourseGo CourseDeFi CourseSolidity CourseMetaverse CourseDjango CourseJIRA CourseConversion Rate Optimization (CRO) CourseAnalytics CourseCustomer Loyalty Course 
+
+
+
+
+
+
+
+Language 
+
+
+
+English SpeakingKorean LanguageGerman LanguageSpanish LanguageFrench Language Italian Language Russian Language Japanese Language Arabic LanguageSwedish LanguageHindi LanguagePortuguese LanguageDutch LanguageLatin LanguageTurkish LanguageHungarian LanguageVietnameseAmerican AccentPronunciationSpelling Courses 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+Tech 
+
+
+
+Data Science CourseR Programming CourseBig Data CourseSQL CourseData Analytics CourseMachine Learning CoursePython CourseSQL Data Science CourseArtificial Intelligence CourseCloud Computing CourseData Warehouse CourseNLP Course 
+
+
+
+
+
+
+
+Development 
+
+
+
+React JS CoursesFront End Development CourseFull Stack Web Developer CourseC++ CourseData Engineering CourseHTML & CSS3 CourseMicrosoft SQL CourseMySQL CourseJava CourseJavaScript CourseTypeScript CourseBack End Development CourseDatabase CourseGraphQL Course 
+
+
+
+
+
+
+
+Exam Prep 
+
+
+
+GRE PrepGMAT PrepMCAT PrepIELTS PrepDAT PrepPSAT PrepCFA PrepOAT PrepACT PrepLSAT PrepFRM PrepSSAT PrepCPA PrepTESOL PrepSAT PrepSSAT Prep 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+Python 
+
+
+
+Python CourseDeep Learning Python CoursePython Data Science CoursePython for Marketing CoursePython for Finance CoursePython Pandas CoursePython Data Visualization CoursePython Machine Learning CoursePython Data Processing CoursePython Scripting CoursePython for Data Analysis CoursePython Data Structure CourseNLP Python CourseMatplotlib CourseData Cleaning CourseStatistical Modeling CourseKeras CoursePytorch CourseMachine Learning Finance Course 
+
+
+
+
+
+
+
+Tech 
+
+
+
+SCADA CourseASP.net CourseScrum CourseSpring Boot and MVC CourseIT Support & Help Desk CourseRuby on Rails CourseKubernetes CourseDocker CourseNodeJs CourseAngular CoursePHP CourseAPI CourseAlteryx CoursePower BI CourseTableau CourseData Visualization CourseDAX CourseData Streaming CourseRegex CourseQlik Sense CoursePlotly Dash CourseData Modeling Course 
+
+
+
+
+
+
+
+Development 
+
+
+
+Android CourseiOS Development CourseFlutter CourseKotlin CourseIonic CourseXamarin CourseVirtual Reality CourseMatlab CourseGit & GitHub CourseSelenium CourseShell Scripting CourseARKit CourseGame Design CourseUnity CourseUnreal Engine CourseGame Development CourseBlender CourseDreamweaver CourseVisual Studio CourseC# (C-Sharp) CourseBootstrap Course 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+Child Care 
+
+
+
+Child Nutrition CourseBaby Massage CourseChildcare & Early Education CourseBaby Sign Language CourseKids Art & Drawing CourseKids Coding CourseChild Development Course 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ Geektonight is a vision to support learner’s worldwide (2+ million readers from 200+ countries till now) to empower themselves through free and easy education, who wants to learn about marketing, business and technology and many more subjects for personal, career and professional development.
+
+ 
+
+Connect With Us
+
+Opens in a new tabOpens in a new tabOpens in a new tabOpens in a new tabOpens in a new tabOpens in a new tab 
+
+ 
+
+MoreAbout UsOpens in a new tabDisclaimerOpens in a new tabCookie PolicyOpens in a new tabPrivacy PolicyOpens in a new tabDMCA PolicyOpens in a new tab 
+
+CategoriesCategories
+Select Category
+Accounting
+B Tech Study Material
+BBA Study Material
+BCOM Study Material
+Best Online Course
+Best Online Deal
+Best Software Review
+Brand Management
+Business
+Business Analytics
+Business Communication
+Business Ethics
+Business Law
+Business Statistics
+Certification Answers
+Cloud Computing
+Computer Network
+Consumer Behaviour
+Corporate Finance
+Corporate Social Responsibility
+Customer Relationship Management
+Digital Marketing
+E-Business
+Economics
+Enterprise Resource Planning
+Entrepreneurship
+Finance
+Financial Accounting
+Financial Institutions & Markets
+Financial Management
+Google Career Certificates
+Google Certification
+Hotel Management
+HubSpot Certification
+Human Resource
+Human Resource Development
+Human Resource Management
+Human Resource Planning
+Insurance and Risk Management
+International Banking
+Lean Six Sigma
+LinkedIn Certification
+Management
+Management Accounting
+Management Information System
+Marketing Essentials
+Marketing Management
+MBA Study Material
+MCOM Study Material
+Microsoft Certification
+Operation Management
+Operations Research
+Organization Development
+Organizational Behavior
+Organizational Culture
+Performance Management
+Portfolio Management
+Procurement Management
+Production Management
+Project Management
+Puzzle
+Research Methodology
+Sales Management
+SEMrush Certification
+Service Operations Management
+Shark Tank India
+Shipping and Insurance
+Software Engineering
+Strategic Management
+Strategy Tools
+Supply Chain
+Technologies
+Treasury Management in Banking
+Twitter Certification
+Uncategorized
+
+
+ 
+
+
+
+
+
+Copyright 2023 Geektonight  
+
+
+
+
+
+
+
+
+
+
+
+Search this website
+
+Type then hit enter to search
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MBA NOTES 
 THEORY OF COMPUTATION
 BCS601T 
 THEORY OF COMPUTATION 
@@ -269,6 +2578,9 @@ Undecidable Problems About Turing Machines: Reductions, Turing Machines That Acc
 Empty Language. Post’s Correspondence Problem: Definition of Post’s Correspondence Problem, 
 The “Modified” PCP, Other Undecidable Prob lems: Undecidability of Ambiguity for CFG’s 
  
+ 
+ 
+ 
 Text Book: 
  
 1. Introduction to Automata Theory Languages, and Computation, by J.E.Hopcroft, 
@@ -277,7 +2589,15 @@ R.Motwani & J.D.Ullman (3rd Edition) – Pearson Education
 www.indiansbrain.com
  
 UNIT - I 
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 What is TOC? 
  
 In theoretical computer science, the theory of computation is the branch that deals with 
@@ -304,6 +2624,16 @@ As the automaton sees a symbol of input, it makes a transition (or jump) to anot
 according to its transition function (which takes the current state and the recent symbol as 
 its inputs). 
 Uses of Automata: compiler design and parsing. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
 Introduction to formal proof: 
 Basic Symbols used : 
@@ -351,6 +2681,9 @@ relation.
 Deductive proof: Consists of sequence of statements whose truth lead us from some 
 initial statement called the hypothesis or the give statement to a conclusion statement. 
  
+ 
+ 
+ 
 Additional forms of proof: 
 Proof of sets 
 Proof by contradiction 
@@ -365,13 +2698,51 @@ number. Odd number can be represented as 2n+1
 a=2x+1, b=2y+1 
 product of a X b = (2x+1) X (2y+1) 
 = 2(2xy+x+y)+1 = 2z+1 (odd number) 
-
+www.indiansbrain.com
+ 
+ 
+ 
+Proof by contrapositive: 
+www.indiansbrain.com
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 Proof by Contradiction: 
  
 H and not C implies falsehood. 
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 Be regarded as an observation than a theorem. 
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 For any sets a,b,c if a∩b = Φ and c is a subset of b the prove that a∩c 
 =Φ Given : a∩b=Φ and c subset b 
  
@@ -381,9 +2752,27 @@ Then
  
  
 = > a∩b Φ = > a∩c=Φ(i.e., the assumption is wrong) 
-
+www.indiansbrain.com
 Proof by mathematical Induction: 
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
 Languages : 
  
@@ -407,6 +2796,12 @@ subscripts may be used (e.g.
 etc) or sometimes other symbol like G may also be 
  
 introduced. 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
 Example : 
@@ -496,6 +2891,13 @@ of all strings of length zero. That is,
 = { e }. For the binary alphabet { 0, 1 } we have 
  
 the following. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
 The set of all strings over an alphabet 
  is denoted by 
@@ -647,11 +3049,28 @@ concatenate any number of languages. Or we can concatenate a language with itsel
  
 number of times. The operation L with itself n times. This is 
 defined formally as follows: 
-
+ 
+ 
+ 
+ 
+ 
+ 
 Example :  Let L = { a, ab }. Then according to the definition, 
 we have 
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 and so on. 
+ 
+ 
  
 Kleene's Star operation : The Kleene star operation on a language L, denoted as is defined as 
 follows : 
@@ -738,7 +3157,24 @@ on the type of the storage.
 The most important feature of the automaton is its control unit, which can be in any 
 one of a finite number of interval states at any point. It can change state in some de-
 fined manner determined by a transition function. 
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 Figure 1: The figure above shows a diagrammatic representation of a generic 
 automa-tion. 
  
@@ -901,8 +3337,24 @@ L(M) = {
  
  
 Example 1 : 
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 is the start state 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
 It is a formal description of a DFA. But it is hard to comprehend. For ex. The language of the 
@@ -911,6 +3363,9 @@ DFA is any string over { 0, 1} having at least one 1
 We can describe the same DFA by transition table or state transition diagram as follow-
 ing: 
  
+ 
+ 
+ 
 Transition Table : 
  
 0    1 
@@ -918,6 +3373,16 @@ www.indiansbrain.com
  
  
 It is easy to comprehend the transition diagram. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
 Explanation :  We cannot 
 reach find state 
@@ -962,6 +3427,13 @@ symbols.)
 3. There is an arrow with no source into the start state. 
 4. Accepting states are indicated by double circle. 
 www.indiansbrain.com
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
 5. 
  
@@ -1024,6 +3496,9 @@ iii)
  
  
 iv) 
+ 
+ 
+ 
  
  
 Closure : r is RE over only if it can be obtained from the basis elements (Primitive 
@@ -1288,6 +3763,16 @@ and
 , and the following NFA N accepts L(r). Formally
 where 
 . 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 Since the start state is also the accept step, and there is no any transition defined, it 
 will accept the only string 
 and nothing else. 
@@ -1353,7 +3838,26 @@ and
 to accept the language denoted by RE 
 as 
 follows :
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 Create a new (initial) start state 
 and give 
 - transition to the initial state of 
@@ -1445,7 +3949,21 @@ from
 to accept 
 as follows :
 www.indiansbrain.com
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 Create a new start state 
 and a new final state 
  
@@ -1769,6 +4287,18 @@ an accept state in N'.
 Ex: Consider the following NFA with 
 - transition. 
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 Transition Diagram 
  
  
@@ -1978,8 +4508,24 @@ with
  
  
 Now, 
-
-N ow, given any NFA with -transition, we can first construct an equivalent NFA without 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Now, given any NFA with -transition, we can first construct an equivalent NFA without 
 -transition and then use the above construction process to construct an equivalent 
 DFA , thus, proving the equivalence of NFA s and DFA s.. 
  
@@ -2073,17 +4619,62 @@ in the NFA).
  
 {   } 
 Let us compute one entry, 
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  Similarly, all other transitions can be computed 
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 0 
 1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
 Corresponding Transition fig. for DFA.Note that states 
  
 are not accessible and hence can be removed. 
 This gives us the following simplified DFA with only 3 states. 
 www.indiansbrain.com
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
 It is interesting to note that we can avoid encountering all those inaccessible 
 or unnecessary states in the equivalent DFA by performing the following two 
@@ -5511,6 +8102,9 @@ on which M loops for.
  
 It is quite clear that 
  
+ 
+ 
+ 
 That is, we assume that a TM M halts 
  
  
@@ -5580,7 +8174,21 @@ return LoopIfHaltsOnItself (LoopIfHaltsOnItself):
 This machine, when applied to itself, goes into an infinite loop if and only if it halts 
 when applied to itself. This is impossible. Hence the theorem is proved. 
 www.indiansbrain.com
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
 Implications of Halting Problem 
  
@@ -5598,7 +8206,12 @@ The basic outline is as follows:
 (i) If we could solve a problem X, we could solve the Halting problem 
 (ii) We cannot solve the Halting Problem 
 (iii) Therefore, we cannot solve problem X 
-
+ 
+ 
+ 
+ 
+ 
+ 
 A Turing machine can be "programmed," in much the same manner as a computer is 
  
 programmed. When one specifies the function which we usually call δ for a Tm, he is really 
@@ -5616,7 +8229,55 @@ Example
 Consider the Turing machine 
 Solution 
 www.indiansbrain.com
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 2. Multiple Tracks 
  
 We can imagine that the tape of the Turing machine is divided into k tracks, for any finite k. This 
@@ -5652,11 +8313,51 @@ third track.
 www.indiansbrain.com
  
 UNDECIDABILITY 
-
+ 
+ 
 Design a Turing machine to add two given integers. 
  
 Solution: 
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 Some unsolvable Problems are as follows: 
 (i) Does a given Turing machine M halts on all input? 
 (ii) Does Turing machine M halt for any input? 
@@ -5675,20 +8376,189 @@ www.indiansbrain.com
 www.indiansbrain.com
  
 Diagonalization language: 
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 This table represents language acceptable by Turing machine 
 www.indiansbrain.com
 Proof that Ld is not recursively enumerable: 
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 Recursive Languages: 
-
+www.indiansbrain.com
+www.indiansbrain.com
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 Universal 
  
 Language: 
 www.indiansbrain.com
  
 Undecidability of Universal Language: 
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 Problem -Reduction : 
 If P1 reduced to P2, 
  
@@ -5718,7 +8588,12 @@ Example 1 : Consider the post correspondence system
  
 Because 
  
-
+ 
+ 
+ 
+ 
+ 
+ 
 i 
              xi                                 yi 
  
@@ -5764,28 +8639,64 @@ i
    
 y
 i 
-
+ 
+ 
+ 
+   
+ 
+  
+  
+ 
+ 
 1 
  
 1 
  
 101 
-
+ 
+ 
+ 
+   
+ 
+  
+  
+ 
+ 
 2 
  
 10 
  
 00 
-
+ 
+ 
+ 
+   
+ 
+  
+  
+ 
+ 
 3 
 011 
 11 
-
+ 
+ 
+ 
+   
+ 
+  
+  
+ 
+ 
 The following properties can easily be proved. 
  
 Proposition The Post Correspondence System 
  
  has solutions if and only if 
+ 
+ 
+ 
+ 
  
  
 Corollary : PCP over one-letter alphabet is decidable. 
@@ -5829,7 +8740,21 @@ construct two CFG's Gx and Gy from the ordered pairs x,y respectively as follows
  and 
  
  where 
-  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
 and 
  
@@ -5844,9 +8769,25 @@ strings that can be obtained from the RHS of a sequence and the corresponding se
 reverse order). 
  
 Now, if the Post Correspondence System has a solution, then there must be a sequence 
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 According to the construction of 
 and 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
 In this case 
@@ -5856,6 +8797,10 @@ www.indiansbrain.com
 Hence , 
 and 
 implying 
+ 
+ 
+ 
+ 
  
 Conversely, let 
  
@@ -30065,3 +33010,448 @@ Science, Prentice-Hall of India, New Delhi, 2001.
 Ginsburg,
 S.,
 The
+Mathematical
+Theory
+of Context-Free
+Languages,
+McGraw-HilL New York. 1966.
+Glorioso. R.M., Engineering Cybernetics, Prentice-Hall. Englewood Cliffs,
+New Jersey. 1975.
+Gries, D., The Science ofProgramming, Narosa Publishing House, New Delhi,
+1981.
+Hanison, M.A., Introduction to Fonnal Language Them}', Addison-Wesley,
+Reading (Mass.). 1978.
+Hein. J.L., Discrete Structures, Logic and Computability, Narosa Publishing
+House, New Delhi, 2004.
+Hopcroft. J.E. and J.D. Ullman, Fanl1al Languages and Their Relation to
+Automata, Addison-Welsey, Reading (Mass.). 1969.
+Hopcroft J.E., and J.D. Ullman, Introduction to Automata Theory, Languages
+and Computation, Narosa Publishing House. New Delhi, 1987.
+Hopcroft. J.E..
+.T. Motwani. and J.D. Ullman, Introduction to Automata
+Theory, Languages and Computation, Pearson Education, Asia, 2002.
+417
+-
+418
+~
+Further Reading
+Kain, R.Y., Automata Theon: Machines and Languages, McGraw-HilI,
+New York. 1972.
+Kohavi, ZVI. Switching and Finite Automata Theory', Tata McGraw-Hil!.
+New Delhi, 1986.
+Korfhage,
+RR..
+Discrete
+Computational
+Structures,
+Academic
+Press
+New York, 1984.
+Krishnamurthy, E.V., Introductory Theory of Computer Science, Affiliated
+East-West Press. New Delhi. 1984.
+Levy,
+L.S..
+Discrete
+Structures
+of" Computer
+Science,
+Wiley Eastern,
+New Delhi. 1988.
+Lewis, H.R and c.L. Papadimitrou, Elements of" the Theory of Computation,
+2nd ed., Prentice-Hall of India, New Delhi. 2003.
+Linz. P.. An Introduction to Formal Languages and Automata, Narosa
+Publishing House. New Delhi. 1997.
+Mandelson, E., Introduction
+to Mathematical Logic, D. Van Nostrand,
+New York, 1964.
+Manna, Z.. Mathematical Theory of Computation, McGraw-Hill Kogakusha,
+Tokyo. 1974.
+Martin, J.H.. Introduction to Languages and the Theory of Computation,
+McGraw-Hill International Edition. New York. 1991.
+Minsky, M., Computation:
+Finite and Int"inite Machines,
+Prentice-Hall,
+Englewood Cliffs, New Jersey, 1967.
+Nelson, R.J., Introduction to Automata, Wiley, New York, 1968.
+Preparata,
+F.P.
+and
+RT.
+Yeh,
+Introduction
+to
+Discrete
+Structures,
+Addison-Wesley, Reading (Mass.), 1973.
+Rani Siromoney. Fonnal Languages and Automata, The Chiristian Literature
+Society, Madras, 1979.
+Revesz. G.E., Introduction to Fomwl Languages, McGraw-HilL New York,
+1986.
+Sahni, D.F. and D.F. McAllister. Discrete Mathematics in Computer Science,
+Prentice-Hall, Englewood Cliffs. New Jersey. 1977.
+Sipser, M., Introduction to the Theory of Computation, Brooks/Cole, Thomson
+Learning, London. 2003.
+Tremblay. J.P. and R. Monohar. Discrete Mathematical Structures with
+Applications to Computer Science, McGraw-Hill, New York, 1975.
+Ullman.
+J.D.,
+Fundamental
+Concepts
+of
+Programming
+Systems,
+Addison-Wesley, Reading (Mass.), 1976.
+Index
+Abelian group. 38
+Acceptance
+by finite automaton. 77
+by NDFA, 79
+by pda by final state, 233-240
+by pda by nun store, 234-240
+by Turing machine, 284
+Accepting state (see Final state)
+Ackermann's function, 330
+Algebraic system, 39
+Algorith.'Il, 124, 309, 310
+Alphabet. 54
+Ambiguous grammar, 188
+Ancestor of a vertex, 51
+Arden's theorem. 139
+Associativity. 38
+A-tree. 183
+Automaton. 71. 72
+minimization of. 91-97
+Bijection, 45
+Binary operation, 38
+Binary trees. 51
+Boolean expressions, 353
+Bottom-up parsing, 258
+Chain production (see Unit production)
+Characteristic function, 344
+Chomsky classification. 220
+Chomsky normal form (see Normal form)
+Church-Turing thesis, 362
+Circuit. 49
+Closure, 37
+properties, 126-128, 165-167, 272
+of relations, 43
+Commutativity, 38, 39
+Comparison method, 152
+Complexity, 346-371
+Composition of functions. 324
+Concatenation, 54
+Congruence relation, 41
+Conjunction (AND), 2
+Conjunctive normal form, 14
+Connectives, 2-6
+Construction of reduced grammar, 190-196
+Context-free
+grammar
+(language),
+122,
+180-218
+decision algorithms for, 217
+normal forms for, 201-213
+and pda, 240-251
+simplification of, 189-201
+Context-sensitive grammar (language), 120,
+299
+Contradiction, 8
+Cook's theorem. 354
+CSAT. 359
+Decidability. 310
+Decidable languages, 311
+419
+-
+420
+~
+Index
+Decision algorithms (see Context-free grammar)
+Derivation, 110, 111
+leftmost, 187
+rightmost, 187
+Derivation tree (parse tree), 181. 184
+definition of, 181
+subtree of, 182
+yield of, 182
+Descendant, 51
+Deterministic
+finite automaton, 73
+pda, 236
+Directed graph (or digraph), 47
+Dirichlet drawer principle, 46
+Disjunction (OR), 3
+Disjunctive nonnal fonn, 11
+Distributivity, 39
+Elementary product, 11
+Equivalence
+class, 42
+of DFA and NDFA, 80--84
+of finite automata, 157, 158
+of regular expressions, 160
+relation, 41
+of states, 91
+of well-fonned fonnulas, 9
+Euclidean algorithm, 349
+Fibonacci numbers, 69
+Field, 39
+Final state, 73, 74, 77
+Finite automaton
+deterrrtinistic, 73
+minimization of, 91-97
+nondeterministic, 78
+and regular expression, 153
+Function (or map), 45
+by minimization, 330
+partial, 322
+by recursion, 328
+total, 322
+GOdel, Kurt, 332
+Grammar, 109
+monotonic, 121
+self-embedding, 226
+Graph,47
+connected, 49
+representation, 47
+Greibach nonnal fonn (see Nonnal fonn)
+Group, 38
+Growth rate of functions, 346
+Halting
+problem
+of
+Turing
+machine,
+314-315
+Hamiltonian circuit problem, 359
+Handle production, 268
+Hierarchy of languages, 120--122
+ID (Instantaneous description)
+of pushdown automaton, 229
+of Turing machine, 279
+Identities
+logical, 10
+for regular expressions, 138
+Identity element, 38, 55
+If and only if, 4
+Implication (IF,,,THEN,,,), 4
+Inclusion relation, 123
+Initial function, 323
+Induction, 57, 58, 60
+Initial state, 73-74, 78, 228, 278
+Internal vertex, 50
+Inverse, 38
+Kleene's theorem, 142
+A-move, 140
+elimination of, 141
+Language(s)
+and automaton, 128
+classification of, 120
+generated by a grammar, 110
+Leaf of a tree, 50
+Length
+of path, 51
+of string, 55
+Levi's theorem, 56
+Linear bounded automaton (LBA), 297-299,
+301-303
+and languages, 299-301
+Logical connectives (see Connectives)
+LR(k) graJlh'TIar, 267
+Map, 45, 46
+bijection (one-to-one correspondence), 45
+one-to-one (injective), 45
+onto (surjective), 45
+Maxterm. 14
+Mealy machine, 84
+transformation
+into
+Moore
+machine,
+85-87
+Minimization of automata. 91-97
+Minterm, 12
+Modus ponens, 16
+Modus tollens, 16
+Monoid. 38
+Moore machine, 84
+transformation into Mealy machine, 87-
+89
+"\love relation
+in pda, 230
+in Turing machine, 280
+.'{AND, 33
+Negation (NOT), 2
+Nondeterministic finite automaton, 78
+conversion to DFA, 80
+Nondeterministic Turing machine, 295-297
+NOR. 33
+Normal form
+Chomsky, 201-203
+Greibach. 206--213
+of well-formed formulas, II
+NP-complete problem, 352
+importance of, 352
+Null productions, 196
+elimination of. 196--199
+One-to-oniC
+correspondence
+(see
+also
+Bijection),45
+Operations on languages. 126--128
+Ordered directed tree. 50
+Palindrome. 55, 113
+Parse tree (see Derivation tree)
+Parsing and pda, 251-260
+Letial recursive function. 330
+and Turing machine. 332-340
+Partition, 37
+Index
+l;i
+421
+Path,48
+acceptance by, 231-240
+pda, 230
+Phrase structure grammar (see Grammar)
+Pigeonhole principle, 46
+Post
+correspondence
+problem
+(PCP),
+315-317
+Power set 37
+Predecessor, 48
+Predicate. 19
+Prefix of a string, 55
+Primitive recursive function, 323-329
+Principal conjunctive normal form, 15
+construction to obtain, 15
+Principle of induction, 57
+Production (or production rule), 109
+Proof
+by contradiction, 61
+by induction, 57
+by modified method, 58
+by simultaneous induction, 60
+Proposition (or Statement), I
+Propositional variable, 6
+Pumping lemma
+for context-free languages and appli-
+cations, 213, 216
+for regular sets and applications, 162-163
+Push-down automaton, 227-251, 254
+and context-free languages, 240-251
+Quantum computation, 360
+Quantum computers, 361
+Quantum bit (qubiO, 361
+Quantifier
+existential, 20
+universal, 20
+Recursion, 37
+Recursive definition of a set, 37
+Recursive function, 329
+Recursive set, 124
+Recursively enumerable set, 124, 310
+Reduction technique, 351
+Reflexive-transitive closure, 43
+Regular expressions, 136
+finite automata and, 140
+identities for. 138
+rl
+422
+);!
+Index
+Regular grammar, 122
+Regular sets, 137
+closure properties of, 165-167
+and regular grammar, 167
+Relations
+reflexive, 41
+symmetric, 41
+transitive, 41
+Right-linear grammar, 226
+Ring, 39
+Root, 50
+Russels paradox, 320
+SAT problem (satisfiability problem), 353
+Self-embedding grammar, 226
+Semigroup, 38
+Sentence, 110
+Sentential form, 110
+Sets, 36, 37, 38, 39, 40
+complement of, 37
+intersection of, 37
+union of, 37
+Simple graph, 70
+Start symbol, 109
+Statement (see Proposition)
+String
+empty, 54
+length of, 55
+operations on, 54
+prefix of, 55
+suffix of, 55
+Strong Church-Turing thesis, 363
+Subroutines, 290
+Successor, 48
+Symmetric difference, 68
+Tautology, 8
+Time complexity, 294, 349
+Top-down parsing, 252
+Top-down parsing, using deterministic pda's
+256
+Transition function, 73, 78, 228
+properties of, 75-76
+Transition system, 74
+containing A-moves, 140
+and regular grammar, 169
+Transitive closure, 43
+Transpose, 55
+Travelling salesman problem, 359
+Tree. 49
+height of, 51
+properties of, 49-50
+Turing-computable functions, 333
+Turing machine, 277
+construction of, to compute the projection
+function. 336
+construction of, to compute the successor
+function, 335
+construction of, to compute the zero
+function, 334
+construction of, to pertorm composition,
+338
+construction of, to perform minimization.
+340
+construction of, to perform recursion, 339
+description of, 289
+design of, 284
+multiple track, 290
+multitape, 292
+nondetenninistic, 295
+representation by 10, 279
+representation by transition diagram, 281
+representation by transition table, 280
+and type 0 grammar, 299-301
+Type 0 grammar (see Grammar)
+Type
+1 grarmnar
+(see Context-sensitive
+grammar)
+Type 2 grammar (see Context-free grammar)
+Type 3 grammar (see Regular grammar)
+Unambiguous grammar, 271
+Undecidable language, 313
+Unit production, 199
+elimination of, 199-201
+Valid
+argument, 15
+predicate formula, 22
+Variable. 109
+Vertex, 47
+ancestor of. 51
+degree of, 48
+descendant of, 51
+son of. 51
+Well-formed formula, 6
+or predicate calculus, 21
