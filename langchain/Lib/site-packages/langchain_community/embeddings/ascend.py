@@ -2,7 +2,7 @@ import os
 from typing import Any, Dict, List, Optional
 
 from langchain_core.embeddings import Embeddings
-from pydantic import BaseModel, model_validator
+from langchain_core.pydantic_v1 import BaseModel, root_validator
 
 
 class AscendEmbeddings(Embeddings, BaseModel):
@@ -54,9 +54,8 @@ class AscendEmbeddings(Embeddings, BaseModel):
             self.model.half()
         self.encode([f"warmup {i} times" for i in range(10)])
 
-    @model_validator(mode="before")
-    @classmethod
-    def validate_environment(cls, values: Dict) -> Any:
+    @root_validator(pre=True)
+    def validate_environment(cls, values: Dict) -> Dict:
         if "model_path" not in values:
             raise ValueError("model_path is required")
         if not os.access(values["model_path"], os.F_OK):

@@ -10,8 +10,8 @@ from typing import (
 )
 
 from langchain_core.embeddings import Embeddings
+from langchain_core.pydantic_v1 import BaseModel, root_validator
 from langchain_core.utils import get_from_dict_or_env
-from pydantic import BaseModel, ConfigDict, model_validator
 from requests.exceptions import HTTPError
 from tenacity import (
     before_sleep_log,
@@ -101,20 +101,18 @@ class DashScopeEmbeddings(BaseModel, Embeddings):
 
     """
 
-    client: Any = None  #: :meta private:
+    client: Any  #: :meta private:
     """The DashScope client."""
     model: str = "text-embedding-v1"
     dashscope_api_key: Optional[str] = None
     max_retries: int = 5
     """Maximum number of retries to make when generating."""
 
-    model_config = ConfigDict(
-        extra="forbid",
-    )
+    class Config:
+        extra = "forbid"
 
-    @model_validator(mode="before")
-    @classmethod
-    def validate_environment(cls, values: Dict) -> Any:
+    @root_validator(pre=True)
+    def validate_environment(cls, values: Dict) -> Dict:
         import dashscope
 
         """Validate that api key and python package exists in environment."""

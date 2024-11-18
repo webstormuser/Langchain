@@ -8,8 +8,8 @@ from typing import Any, Dict, Iterable, List, Optional, Tuple, Union
 
 from langchain_core.documents import Document
 from langchain_core.embeddings import Embeddings
+from langchain_core.pydantic_v1 import BaseSettings
 from langchain_core.vectorstores import VectorStore
-from pydantic_settings import BaseSettings, SettingsConfigDict
 
 logger = logging.getLogger()
 
@@ -95,12 +95,10 @@ class ClickhouseSettings(BaseSettings):
     def __getitem__(self, item: str) -> Any:
         return getattr(self, item)
 
-    model_config = SettingsConfigDict(
-        env_file=".env",
-        env_file_encoding="utf-8",
-        env_prefix="clickhouse_",
-        extra="ignore",
-    )
+    class Config:
+        env_file = ".env"
+        env_file_encoding = "utf-8"
+        env_prefix = "clickhouse_"
 
 
 class Clickhouse(VectorStore):

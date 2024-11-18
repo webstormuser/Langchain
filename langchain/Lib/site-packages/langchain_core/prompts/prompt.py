@@ -4,9 +4,7 @@ from __future__ import annotations
 
 import warnings
 from pathlib import Path
-from typing import Any, Literal, Optional, Union
-
-from pydantic import BaseModel, model_validator
+from typing import Any, Dict, List, Literal, Optional, Union
 
 from langchain_core.prompts.string import (
     DEFAULT_FORMATTER_MAPPING,
@@ -15,6 +13,7 @@ from langchain_core.prompts.string import (
     get_template_variables,
     mustache_schema,
 )
+from langchain_core.pydantic_v1 import BaseModel, root_validator
 from langchain_core.runnables.config import RunnableConfig
 
 
@@ -54,13 +53,13 @@ class PromptTemplate(StringPromptTemplate):
     """
 
     @property
-    def lc_attributes(self) -> dict[str, Any]:
+    def lc_attributes(self) -> Dict[str, Any]:
         return {
             "template_format": self.template_format,
         }
 
     @classmethod
-    def get_lc_namespace(cls) -> list[str]:
+    def get_lc_namespace(cls) -> List[str]:
         """Get the namespace of the langchain object."""
         return ["langchain", "prompts", "prompt"]
 
@@ -74,9 +73,8 @@ class PromptTemplate(StringPromptTemplate):
     validate_template: bool = False
     """Whether or not to try validating the template."""
 
-    @model_validator(mode="before")
-    @classmethod
-    def pre_init_validation(cls, values: dict) -> Any:
+    @root_validator(pre=True)
+    def pre_init_validation(cls, values: Dict) -> Dict:
         """Check that template and input variables are consistent."""
         if values.get("template") is None:
             # Will let pydantic fail with a ValidationError if template
@@ -89,12 +87,12 @@ class PromptTemplate(StringPromptTemplate):
 
         if values.get("validate_template"):
             if values["template_format"] == "mustache":
-                msg = "Mustache templates cannot be validated."
-                raise ValueError(msg)
+                raise ValueError("Mustache templates cannot be validated.")
 
             if "input_variables" not in values:
-                msg = "Input variables must be provided to validate the template."
-                raise ValueError(msg)
+                raise ValueError(
+                    "Input variables must be provided to validate the template."
+                )
 
             all_inputs = values["input_variables"] + list(values["partial_variables"])
             check_valid_template(
@@ -131,22 +129,23 @@ class PromptTemplate(StringPromptTemplate):
         # Allow for easy combining
         if isinstance(other, PromptTemplate):
             if self.template_format != "f-string":
-                msg = "Adding prompt templates only supported for f-strings."
-                raise ValueError(msg)
+                raise ValueError(
+                    "Adding prompt templates only supported for f-strings."
+                )
             if other.template_format != "f-string":
-                msg = "Adding prompt templates only supported for f-strings."
-                raise ValueError(msg)
+                raise ValueError(
+                    "Adding prompt templates only supported for f-strings."
+                )
             input_variables = list(
                 set(self.input_variables) | set(other.input_variables)
             )
             template = self.template + other.template
             # If any do not want to validate, then don't
             validate_template = self.validate_template and other.validate_template
-            partial_variables = dict(self.partial_variables.items())
+            partial_variables = {k: v for k, v in self.partial_variables.items()}
             for k, v in other.partial_variables.items():
                 if k in partial_variables:
-                    msg = "Cannot have same variable partialed twice."
-                    raise ValueError(msg)
+                    raise ValueError("Cannot have same variable partialed twice.")
                 else:
                     partial_variables[k] = v
             return PromptTemplate(
@@ -160,8 +159,7 @@ class PromptTemplate(StringPromptTemplate):
             prompt = PromptTemplate.from_template(other)
             return self + prompt
         else:
-            msg = f"Unsupported operand type for +: {type(other)}"
-            raise NotImplementedError(msg)
+            raise NotImplementedError(f"Unsupported operand type for +: {type(other)}")
 
     @property
     def _prompt_type(self) -> str:
@@ -183,9 +181,9 @@ class PromptTemplate(StringPromptTemplate):
     @classmethod
     def from_examples(
         cls,
-        examples: list[str],
+        examples: List[str],
         suffix: str,
-        input_variables: list[str],
+        input_variables: List[str],
         example_separator: str = "\n\n",
         prefix: str = "",
         **kwargs: Any,
@@ -215,7 +213,7 @@ class PromptTemplate(StringPromptTemplate):
     def from_file(
         cls,
         template_file: Union[str, Path],
-        input_variables: Optional[list[str]] = None,
+        input_variables: Optional[List[str]] = None,
         encoding: Optional[str] = None,
         **kwargs: Any,
     ) -> PromptTemplate:
@@ -249,7 +247,7 @@ class PromptTemplate(StringPromptTemplate):
         template: str,
         *,
         template_format: str = "f-string",
-        partial_variables: Optional[dict[str, Any]] = None,
+        partial_variables: Optional[Dict[str, Any]] = None,
         **kwargs: Any,
     ) -> PromptTemplate:
         """Load a prompt template from a template.
