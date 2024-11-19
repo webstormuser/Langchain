@@ -1,4 +1,3 @@
-# simple translator APP
 import os 
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_groq import ChatGroq
@@ -13,27 +12,21 @@ llm = ChatGroq(
     model="llama3-70b-8192"
 )
 
-parser=StrOutputParser()
+parser = StrOutputParser()
 
-system_template="Translate  the following into{language}"
+system_template = "You are an expert in Theory of Computation (TOC). Answer the following question."
 
-prompt_template=ChatPromptTemplate.from_messages([
-    ('system',system_template),
-    ('user','{text}')
+prompt_template = ChatPromptTemplate.from_messages([
+    ('system', system_template),
+    ('user', '{question}')
 ])
 
-chain=prompt_template | llm | parser
+chain = prompt_template | llm | parser
 
 app = FastAPI(
-  title="simpleTranslator",
+  title="TOCQuestionAnswering",
   version="1.0",
-  description="A simple API server using LangChain's Runnable interfaces",
-)
-
-aapp = FastAPI(
-  title="simpleTranslator",
-  version="1.0",
-  description="A simple API server using LangChain's Runnable interfaces",
+  description="A simple API server for answering Theory of Computation questions using LangChain's Runnable interfaces",
 )
 
 add_routes(
